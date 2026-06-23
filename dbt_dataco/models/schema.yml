@@ -1,0 +1,424 @@
+﻿version: 2
+
+models:
+  - name: stg_orders
+    description: "Staging model chuẩn hóa thông tin đơn hàng, vận chuyển và tài chính từ Bronze."
+    columns:
+      - name: order_item_id
+        description: "Mã dòng sản phẩm trong đơn hàng. Đây là khóa duy nhất ở mức order item."
+        tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        description: "Mã đơn hàng từ dữ liệu nguồn."
+        tests:
+          - not_null
+
+      - name: order_date
+        description: "Ngày đặt hàng sau khi được parse từ chuỗi ngày trong Bronze."
+
+      - name: shipping_date
+        description: "Ngày giao hàng sau khi được parse từ chuỗi ngày trong Bronze."
+
+      - name: order_year_month
+        description: "Chuỗi năm-tháng dạng YYYY-MM, dùng cho các mart phân tích theo tháng."
+
+      - name: late_delivery_risk
+        description: "Nhãn rủi ro giao hàng trễ. Giá trị 1 là có rủi ro/giao trễ, 0 là không."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+
+      - name: market
+        description: "Thị trường của đơn hàng."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Africa', 'Europe', 'LATAM', 'Pacific Asia', 'USCA']
+
+      - name: shipping_mode
+        description: "Phương thức vận chuyển."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['First Class', 'Second Class', 'Same Day', 'Standard Class']
+
+      - name: delivery_status
+        description: "Trạng thái giao hàng thực tế."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Advance shipping', 'Late delivery', 'Shipping canceled', 'Shipping on time']
+
+
+  - name: stg_customers
+    description: "Staging model chuẩn hóa thông tin khách hàng, đã loại bỏ các trường PII chi tiết không cần cho phân tích."
+    columns:
+      - name: customer_id
+        description: "Mã khách hàng tự nhiên từ dữ liệu nguồn."
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_segment
+        description: "Phân khúc khách hàng."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Consumer', 'Corporate', 'Home Office']
+
+
+  - name: stg_products
+    description: "Staging model chuẩn hóa thông tin sản phẩm, danh mục và department."
+    columns:
+      - name: product_card_id
+        description: "Mã sản phẩm tự nhiên từ dữ liệu nguồn."
+        tests:
+          - not_null
+          - unique
+
+
+  - name: int_order_enriched
+    description: "Intermediate model kết hợp dữ liệu đơn hàng, khách hàng và sản phẩm ở mức chi tiết order item."
+    columns:
+      - name: order_item_id
+        description: "Mã dòng sản phẩm trong đơn hàng. Vẫn giữ duy nhất sau bước join."
+        tests:
+          - not_null
+          - unique
+
+
+  - name: int_delivery_metrics
+    description: "Intermediate model tính các biến vận chuyển, trạng thái giao hàng và chỉ số tài chính dùng cho fact/mart."
+    columns:
+      - name: order_item_id
+        description: "Mã dòng sản phẩm trong đơn hàng. Vẫn giữ duy nhất sau khi tính biến nghiệp vụ."
+        tests:
+          - not_null
+          - unique
+
+
+  - name: dim_date
+    description: "Bảng chiều thời gian, dùng cho phân tích theo ngày, tháng, quý và năm."
+    columns:
+      - name: date_key
+        description: "Khóa thời gian dạng YYYYMMDD."
+        tests:
+          - not_null
+          - unique
+
+      - name: date_day
+        description: "Ngày đầy đủ."
+
+      - name: year
+        description: "Năm."
+
+      - name: month
+        description: "Tháng."
+
+      - name: day
+        description: "Ngày trong tháng."
+
+      - name: quarter
+        description: "Quý trong năm."
+
+      - name: day_of_week
+        description: "Thứ trong tuần dạng số."
+
+      - name: year_month
+        description: "Chuỗi năm-tháng dạng YYYY-MM."
+
+      - name: month_name
+        description: "Tên tháng."
+
+
+  - name: dim_customer
+    description: "Bảng chiều khách hàng, phục vụ phân tích theo phân khúc và địa lý khách hàng."
+    columns:
+      - name: customer_key
+        description: "Khóa chính của bảng khách hàng."
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: "Mã khách hàng tự nhiên từ hệ thống nguồn."
+
+      - name: customer_segment
+        description: "Phân khúc khách hàng."
+
+      - name: customer_city
+        description: "Thành phố của khách hàng."
+
+      - name: customer_country
+        description: "Quốc gia của khách hàng."
+
+      - name: customer_state
+        description: "Bang hoặc khu vực hành chính của khách hàng."
+
+      - name: customer_zipcode
+        description: "Mã bưu điện của khách hàng."
+
+      - name: customer_latitude
+        description: "Vĩ độ của khách hàng."
+
+      - name: customer_longitude
+        description: "Kinh độ của khách hàng."
+
+
+  - name: dim_product
+    description: "Bảng chiều sản phẩm, phục vụ phân tích theo sản phẩm, category và department."
+    columns:
+      - name: product_key
+        description: "Khóa chính của bảng sản phẩm."
+        tests:
+          - not_null
+          - unique
+
+      - name: product_card_id
+        description: "Mã sản phẩm tự nhiên từ dữ liệu nguồn."
+
+      - name: product_category_id
+        description: "Mã liên kết giữa sản phẩm và danh mục sản phẩm."
+
+      - name: product_name
+        description: "Tên sản phẩm."
+
+      - name: product_price
+        description: "Giá sản phẩm."
+
+      - name: product_status
+        description: "Trạng thái sản phẩm."
+
+      - name: category_id
+        description: "Mã danh mục sản phẩm."
+
+      - name: category_name
+        description: "Tên danh mục sản phẩm."
+
+      - name: department_id
+        description: "Mã department hoặc nhóm ngành hàng."
+
+      - name: department_name
+        description: "Tên department hoặc nhóm ngành hàng."
+
+      - name: product_description
+        description: "Trường mô tả hoặc metadata sản phẩm theo dữ liệu nguồn."
+
+      - name: product_image
+        description: "Đường dẫn hoặc thông tin ảnh sản phẩm."
+
+
+  - name: dim_location
+    description: "Bảng chiều địa lý đơn hàng, phục vụ phân tích theo market, region, country và city."
+    columns:
+      - name: location_key
+        description: "Khóa chính của bảng địa lý đơn hàng."
+        tests:
+          - not_null
+          - unique
+
+      - name: market
+        description: "Thị trường của đơn hàng."
+
+      - name: order_region
+        description: "Khu vực giao hàng."
+
+      - name: order_country
+        description: "Quốc gia điểm đến của đơn hàng."
+
+      - name: order_city
+        description: "Thành phố điểm đến của đơn hàng."
+
+      - name: order_state
+        description: "Bang hoặc khu vực hành chính của điểm đến."
+
+      - name: order_zipcode
+        description: "Mã bưu điện nơi nhận hàng."
+
+
+  - name: dim_shipping
+    description: "Bảng chiều vận chuyển, phục vụ phân tích theo phương thức vận chuyển, trạng thái giao hàng và trạng thái đơn hàng."
+    columns:
+      - name: shipping_key
+        description: "Khóa chính của bảng vận chuyển."
+        tests:
+          - not_null
+          - unique
+
+      - name: shipping_mode
+        description: "Phương thức vận chuyển."
+
+      - name: delivery_status
+        description: "Trạng thái giao hàng thực tế."
+
+      - name: order_status
+        description: "Trạng thái xử lý hoặc thanh toán của đơn hàng."
+
+
+  - name: fct_order_items
+    description: "Fact table chính ở mức một dòng bằng một order item transaction."
+    columns:
+      - name: order_item_id
+        description: "Khóa chính của fact table, đại diện cho một dòng sản phẩm trong đơn hàng."
+        tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        description: "Mã đơn hàng. Một đơn hàng có thể có nhiều order items."
+        tests:
+          - not_null
+
+      - name: order_date_key
+        description: "Khóa ngày đặt hàng, liên kết với dim_date.date_key."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_key
+
+      - name: shipping_date_key
+        description: "Khóa ngày giao hàng, liên kết với dim_date.date_key."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_key
+
+      - name: customer_key
+        description: "Khóa khách hàng, liên kết với dim_customer.customer_key."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_customer')
+                field: customer_key
+
+      - name: product_key
+        description: "Khóa sản phẩm, liên kết với dim_product.product_key."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_product')
+                field: product_key
+
+      - name: location_key
+        description: "Khóa địa lý đơn hàng, liên kết với dim_location.location_key."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_location')
+                field: location_key
+
+      - name: shipping_key
+        description: "Khóa vận chuyển, liên kết với dim_shipping.shipping_key."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_shipping')
+                field: shipping_key
+
+      - name: sales_amount
+        description: "Doanh thu theo khách hàng hoặc dòng giao dịch."
+
+      - name: sales
+        description: "Giá trị doanh thu từ dữ liệu nguồn."
+
+      - name: order_item_total
+        description: "Tổng giá trị của dòng sản phẩm trong đơn hàng."
+
+      - name: profit_amount
+        description: "Lợi nhuận của đơn hàng hoặc dòng giao dịch."
+
+      - name: total_cost
+        description: "Chi phí ước tính, được tính từ doanh thu và lợi nhuận."
+
+      - name: discount_amount
+        description: "Giá trị giảm giá."
+
+      - name: discount_rate
+        description: "Tỷ lệ giảm giá."
+
+      - name: product_unit_price
+        description: "Đơn giá sản phẩm."
+
+      - name: profit_ratio
+        description: "Tỷ lệ lợi nhuận theo dữ liệu nguồn."
+
+      - name: quantity
+        description: "Số lượng sản phẩm trong dòng đơn hàng."
+
+      - name: days_for_shipping_real
+        description: "Số ngày giao hàng thực tế."
+
+      - name: days_for_shipment_scheduled
+        description: "Số ngày giao hàng cam kết."
+
+      - name: delivery_delay_days
+        description: "Độ lệch giữa số ngày giao thực tế và số ngày cam kết."
+
+      - name: shipping_variance
+        description: "Biến chênh lệch vận chuyển dùng cho phân tích hiệu suất giao hàng."
+
+      - name: late_delivery_risk
+        description: "Nhãn rủi ro giao hàng trễ."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+
+      - name: is_late_delivery
+        description: "Cờ nhị phân đánh dấu giao hàng trễ."
+
+      - name: is_on_time_delivery
+        description: "Cờ nhị phân đánh dấu giao hàng đúng hạn."
+
+      - name: is_advance_shipping
+        description: "Cờ nhị phân đánh dấu giao hàng sớm."
+
+      - name: is_shipping_canceled
+        description: "Cờ nhị phân đánh dấu giao hàng bị hủy."
+
+
+  - name: mart_supply_chain_kpi
+    description: "Data Mart KPI tổng quan, phục vụ Executive Overview và GenAI summary."
+
+  - name: mart_delivery_performance
+    description: "Data Mart phân tích hiệu suất giao hàng theo thời gian, thị trường và phương thức vận chuyển."
+
+  - name: mart_sales_profitability
+    description: "Data Mart phân tích doanh thu, lợi nhuận và chi phí theo thị trường, phân khúc và sản phẩm."
+
+  - name: mart_ml_delivery_risk_features
+    description: "Data Mart đặc trưng, phục vụ mô hình dự báo giao hàng trễ."
+    columns:
+      - name: order_item_id
+        description: "Mã dòng sản phẩm trong đơn hàng."
+        tests:
+          - not_null
+          - unique
+
+      - name: target_late_delivery_risk
+        description: "Nhãn mục tiêu cho mô hình dự báo giao hàng trễ."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+
+  - name: mart_executive_summary
+    description: "Data Mart tóm tắt KPI theo tháng và thị trường, phục vụ báo cáo quản trị và GenAI."

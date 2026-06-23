@@ -1,0 +1,2478 @@
+﻿location_key,market,order_region,order_country,order_city,order_state,order_zipcode
+1,Africa,Central Africa,Angola,Benguela,Benguela,
+2,Africa,Central Africa,Angola,Huambo,Huambo,
+3,Africa,Central Africa,Angola,Luanda,Luanda,
+4,Africa,Central Africa,Angola,Lubango,Huila,
+5,Africa,Central Africa,Angola,Malanje,Malanje,
+6,Africa,Central Africa,Angola,Namibe,Namibe,
+7,Africa,Central Africa,Chad,Koumra,Mandoul,
+8,Africa,Central Africa,Guinea Ecuatorial,Bata,Litoral,
+9,Africa,East Africa,Burundi,Bujumbura,Buyumbura Mairie,
+10,Africa,East Africa,Eritrea,Keren,Anseba,
+11,Africa,East Africa,Kenia,Kisumu,Nyanza,
+12,Africa,East Africa,Kenia,Marsabit,Oriental,
+13,Africa,East Africa,Kenia,Mombasa,Costa,
+14,Africa,East Africa,Kenia,Nairobi,Nairobi,
+15,Africa,East Africa,Kenia,Nakuru,Gran Valle del Rift,
+16,Africa,East Africa,Kenia,Thika,Central,
+17,Africa,East Africa,Madagascar,Antananarivo,Analamanga,
+18,Africa,East Africa,Madagascar,Antsiranana,Diana,
+19,Africa,East Africa,Madagascar,Fianarantsoa,Haute-Matsiatra,
+20,Africa,East Africa,Madagascar,Mahajanga,Boeny,
+21,Africa,East Africa,Madagascar,Toamasina,Atsinanana,
+22,Africa,East Africa,Madagascar,Toliara,Atsimo-Andrefana,
+23,Africa,East Africa,Mozambique,Beira,Sofala,
+24,Africa,East Africa,Mozambique,Chimoio,Manica,
+25,Africa,East Africa,Mozambique,Lichinga,Niassa,
+26,Africa,East Africa,Mozambique,Maputo,Cidade De Maputo,
+27,Africa,East Africa,Mozambique,Matola,Maputo,
+28,Africa,East Africa,Mozambique,Maxixe,Inhambane,
+29,Africa,East Africa,Mozambique,Nampula,Nampula,
+30,Africa,East Africa,Mozambique,Pemba,Cabo Delgado,
+31,Africa,East Africa,Mozambique,Quelimane,Zambezia,
+32,Africa,East Africa,Mozambique,Tete,Tete,
+33,Africa,East Africa,Ruanda,Butare,Meridional,
+34,Africa,East Africa,Ruanda,Kigali,Kigali,
+35,Africa,East Africa,Somalia,Hargeysa,Gobolka Woqooyi Galbeed,
+36,Africa,East Africa,Somalia,Kismaayo,Jubbada Hoose,
+37,Africa,East Africa,Somalia,Mogadishu,Benadir,
+38,Africa,East Africa,Tanzania,Arusha,Arusha,
+39,Africa,East Africa,Tanzania,Bagamoyo,Pwani,
+40,Africa,East Africa,Tanzania,Chalinze,Pwani,
+41,Africa,East Africa,Tanzania,Dar es Salaam,Dar es Salaam,
+42,Africa,East Africa,Tanzania,Igurusi,Mbeya,
+43,Africa,East Africa,Tanzania,Iringa,Iringa,
+44,Africa,East Africa,Tanzania,Kigoma,Kigoma,
+45,Africa,East Africa,Tanzania,Mbeya,Mbeya,
+46,Africa,East Africa,Tanzania,Mbinga,Ruvuma,
+47,Africa,East Africa,Tanzania,Morogoro,Morogoro,
+48,Africa,East Africa,Tanzania,Moshi,Kilimanjaro,
+49,Africa,East Africa,Tanzania,Mtwara,Mtwara,
+50,Africa,East Africa,Tanzania,Musoma,Mara,
+51,Africa,East Africa,Tanzania,Mwanza,Mwanza,
+52,Africa,East Africa,Tanzania,Shinyanga,Shinyanga,
+53,Africa,East Africa,Tanzania,Tabora,Tabora,
+54,Africa,East Africa,Tanzania,Tanga,Tanga,
+55,Africa,East Africa,Tanzania,Uvinza,Kigoma,
+56,Africa,East Africa,Uganda,Fort Portal,Kabarole,
+57,Africa,East Africa,Uganda,Gulu,Gulu,
+58,Africa,East Africa,Uganda,Jinja,Jinja,
+59,Africa,East Africa,Uganda,Kampala,Kampala,
+60,Africa,East Africa,Yibuti,Yibuti,Yibuti,
+61,Africa,East Africa,Zambia,Chililabombwe,Copperbelt,
+62,Africa,East Africa,Zambia,Chingola,Copperbelt,
+63,Africa,East Africa,Zambia,Chipata,Oriental,
+64,Africa,East Africa,Zambia,Kabwe,Central,
+65,Africa,East Africa,Zambia,Kasama,Septentrional,
+66,Africa,East Africa,Zambia,Kitwe,Copperbelt,
+67,Africa,East Africa,Zambia,Livingstone,Meridional,
+68,Africa,East Africa,Zambia,Luanshya,Copperbelt,
+69,Africa,East Africa,Zambia,Lusaka,Lusaka,
+70,Africa,East Africa,Zambia,Mufulira,Copperbelt,
+71,Africa,East Africa,Zambia,Ndola,Copperbelt,
+72,Africa,East Africa,Zimbabue,Bulawayo,Bulawayo,
+73,Africa,East Africa,Zimbabue,Chitungwiza,Harare,
+74,Africa,East Africa,Zimbabue,Epworth,Harare,
+75,Africa,East Africa,Zimbabue,Harare,Harare,
+76,Africa,East Africa,Zimbabue,Kadoma,Mashonalandia Occidental,
+77,Africa,East Africa,Zimbabue,Mutare,Manicalandia,
+78,Africa,North Africa,Argelia,Ain Oussera,Djelfa,
+79,Africa,North Africa,Argelia,Algiers,Alger,
+80,Africa,North Africa,Argelia,Annaba,Annaba,
+81,Africa,North Africa,Argelia,Baraki,Tipaza,
+82,Africa,North Africa,Argelia,Barika,Batna,
+83,Africa,North Africa,Argelia,Batna,Batna,
+84,Africa,North Africa,Argelia,Boghni,Tizi Ouzou,
+85,Africa,North Africa,Argelia,Constantina,Constantina,
+86,Africa,North Africa,Argelia,Dar Chioukh,Djelfa,
+87,Africa,North Africa,Argelia,Guelma,Guelma,
+88,Africa,North Africa,Argelia,Laghouat,Laghouat,
+89,Africa,North Africa,Argelia,Messaad,Djelfa,
+90,Africa,North Africa,Argelia,Mostaganem,Mostaganem,
+91,Africa,North Africa,Argelia,Saida,Saida,
+92,Africa,North Africa,Argelia,Sidi Bel Abbes,Sidi Bel Abbes,
+93,Africa,North Africa,Argelia,Skikda,Skikda,
+94,Africa,North Africa,Argelia,Tlemcen,Tlemcen,
+95,Africa,North Africa,Egipto,Abu Kabir,Ash Sharqiyah,
+96,Africa,North Africa,Egipto,Al Mahallah al Kubra,Gharbia,
+97,Africa,North Africa,Egipto,Asiut,Asiut,
+98,Africa,North Africa,Egipto,Aswan,Aswan,
+99,Africa,North Africa,Egipto,Beni Suef,Bani Suwayf,
+100,Africa,North Africa,Egipto,Bilbeis,Ash Sharqiyah,
+101,Africa,North Africa,Egipto,Cairo,El Cairo,
+102,Africa,North Africa,Egipto,Damanhur,Al Buhayrah,
+103,Africa,North Africa,Egipto,Disuq,Kafr el Sheij,
+104,Africa,North Africa,Egipto,Girga,Suhaj,
+105,Africa,North Africa,Egipto,Hurghada,Al Bahr al Ahmar,
+106,Africa,North Africa,Egipto,Idfu,Aswan,
+107,Africa,North Africa,Egipto,Kafr ad Dawwar,Al Buhayrah,
+108,Africa,North Africa,Egipto,Mallawi,Menia,
+109,Africa,North Africa,Egipto,Marsa Matruh,Matruh,
+110,Africa,North Africa,Egipto,Menia,Menia,
+111,Africa,North Africa,Egipto,Qena,Qina,
+112,Africa,North Africa,Egipto,Samalut,Menia,
+113,Africa,North Africa,Egipto,Sohag,Suhaj,
+114,Africa,North Africa,Egipto,Tahta,Suhaj,
+115,Africa,North Africa,Egipto,Tanta,Gharbia,
+116,Africa,North Africa,Libia,Al Khums,Al Marqab,
+117,Africa,North Africa,Libia,Benghazi,Bengasi,
+118,Africa,North Africa,Libia,Misurata,Misurata,
+119,Africa,North Africa,Marruecos,Agadir,Sus-Masa-Draa,
+120,Africa,North Africa,Marruecos,Beni Mellal,Tadla-Azilal,
+121,Africa,North Africa,Marruecos,Casablanca,Gran Casablanca,
+122,Africa,North Africa,Marruecos,El Jadida,Dukala-Abda,
+123,Africa,North Africa,Marruecos,Guelmim,Guelmim-Esmara,
+124,Africa,North Africa,Marruecos,Kenitra,Garb-Chrarda-Beni Hsen,
+125,Africa,North Africa,Marruecos,Khenifra,Mequinez-Tafilalet,
+126,Africa,North Africa,Marruecos,Marrakech,Marrakech-Tensift-Al Hauz,
+127,Africa,North Africa,Marruecos,Meknes,Mequinez-Tafilalet,
+128,Africa,North Africa,Marruecos,Mohammedia,Gran Casablanca,
+129,Africa,North Africa,Marruecos,Safi,Dukala-Abda,
+130,Africa,North Africa,Marruecos,Sidi Qacem,Garb-Chrarda-Beni Hsen,
+131,Africa,North Africa,Marruecos,Taza,Taza-Alhucemas-Taunat,
+132,Africa,Southern Africa,Botsuana,Gaborone,Sudeste,
+133,Africa,Southern Africa,Lesoto,Maseru,Maseru,
+134,Africa,Southern Africa,Namibia,Windhoek,Khomas,
+135,Africa,Southern Africa,Suazilandia,Manzini,Manzini,
+136,Africa,Southern Africa,SudAfrica,Benoni,Gauteng,
+137,Africa,Southern Africa,SudAfrica,Bloemfontein,Estado Libre,
+138,Africa,Southern Africa,SudAfrica,Boksburg,Gauteng,
+139,Africa,Southern Africa,SudAfrica,Botshabelo,Estado Libre,
+140,Africa,Southern Africa,SudAfrica,Cape Town,Cabo Occidental,
+141,Africa,Southern Africa,SudAfrica,Centurion,Gauteng,
+142,Africa,Southern Africa,SudAfrica,Durban,KwaZulu-Natal,
+143,Africa,Southern Africa,SudAfrica,East London,Cabo Oriental,
+144,Africa,Southern Africa,SudAfrica,George,Cabo Occidental,
+145,Africa,Southern Africa,SudAfrica,Giyani,Limpopo,
+146,Africa,Southern Africa,SudAfrica,Johannesburg,Gauteng,
+147,Africa,Southern Africa,SudAfrica,Krugersdorp,Gauteng,
+148,Africa,Southern Africa,SudAfrica,Mabopane,Gauteng,
+149,Africa,Southern Africa,SudAfrica,Mpumalanga,KwaZulu-Natal,
+150,Africa,Southern Africa,SudAfrica,Newcastle,KwaZulu-Natal,
+151,Africa,Southern Africa,SudAfrica,Pietermaritzburg,KwaZulu-Natal,
+152,Africa,Southern Africa,SudAfrica,Port Elizabeth,Cabo Oriental,
+153,Africa,Southern Africa,SudAfrica,Potchefstroom,Noroeste,
+154,Africa,Southern Africa,SudAfrica,Pretoria,Gauteng,
+155,Africa,Southern Africa,SudAfrica,Randfontein,Gauteng,
+156,Africa,Southern Africa,SudAfrica,Roodepoort,Gauteng,
+157,Africa,Southern Africa,SudAfrica,Rustenburg,Noroeste,
+158,Africa,Southern Africa,SudAfrica,Soweto,Gauteng,
+159,Africa,Southern Africa,SudAfrica,Springs,Gauteng,
+160,Africa,Southern Africa,SudAfrica,Stanger,KwaZulu-Natal,
+161,Africa,Southern Africa,SudAfrica,Stellenbosch,Cabo Occidental,
+162,Africa,Southern Africa,SudAfrica,Tembisa,Gauteng,
+163,Africa,Southern Africa,SudAfrica,Ulundi,KwaZulu-Natal,
+164,Africa,Southern Africa,SudAfrica,Umtata,Cabo Oriental,
+165,Africa,Southern Africa,SudAfrica,Vanderbijlpark,Gauteng,
+166,Africa,Southern Africa,SudAfrica,Vereeniging,Gauteng,
+167,Africa,Southern Africa,SudAfrica,Volksrust,Mpumalanga,
+168,Africa,Southern Africa,SudAfrica,Vryburg,Noroeste,
+169,Africa,Southern Africa,SudAfrica,Westonaria,Gauteng,
+170,Africa,Southern Africa,SudAfrica,eMbalenhle,Mpumalanga,
+171,Africa,West Africa,Burkina Faso,Ouagadougou,Centro,
+172,Africa,West Africa,Costa de Marfil,Abidjan,Lagunes,
+173,Africa,West Africa,Costa de Marfil,Daloa,Haut-Sassandra,
+174,Africa,West Africa,Costa de Marfil,Gagnoa,Fromager,
+175,Africa,West Africa,Costa de Marfil,Korhogo,Savanes,
+176,Africa,West Africa,Costa de Marfil,Man,Dix-Huit Montagnes,
+177,Africa,West Africa,Costa de Marfil,Yamoussoukro,Lacs,
+178,Africa,West Africa,Ghana,Accra,Gran Accra,
+179,Africa,West Africa,Ghana,Cape Coast,Central,
+180,Africa,West Africa,Ghana,Kumasi,Ashanti,
+181,Africa,West Africa,Ghana,Tamale,Septentrional,
+182,Africa,West Africa,Guinea,Kankan,Kankan,
+183,Africa,West Africa,Guinea,Kindia,Kindia,
+184,Africa,West Africa,Liberia,Monrovia,Montserrado,
+185,Africa,West Africa,Liberia,Zwedru,Grand Gedeh,
+186,Africa,West Africa,Mali,Bamako,Bamako,
+187,Africa,West Africa,Mali,Kayes,Kayes,
+188,Africa,West Africa,Mali,Mopti,Mopti,
+189,Africa,West Africa,Mali,Sikasso,Sikasso,
+190,Africa,West Africa,Mauritania,Nouakchott,Nouakchott,
+191,Africa,West Africa,Nigeria,Aba,Abia,
+192,Africa,West Africa,Nigeria,Abakaliki,Ebonyi,
+193,Africa,West Africa,Nigeria,Abeokuta,Ogun,
+194,Africa,West Africa,Nigeria,Akure,Ondo,
+195,Africa,West Africa,Nigeria,Bauchi,Bauchi,
+196,Africa,West Africa,Nigeria,Benin City,Edo,
+197,Africa,West Africa,Nigeria,Calabar,Cross River,
+198,Africa,West Africa,Nigeria,Damaturu,Yobe,
+199,Africa,West Africa,Nigeria,Enugu,Enugu,
+200,Africa,West Africa,Nigeria,Funtua,Katsina,
+201,Africa,West Africa,Nigeria,Gombe,Gombe,
+202,Africa,West Africa,Nigeria,Gusau,Zamfara,
+203,Africa,West Africa,Nigeria,Ibadan,Oyo,
+204,Africa,West Africa,Nigeria,Ikot Ekpene,Akwa Ibom,
+205,Africa,West Africa,Nigeria,Ilesha,Osun,
+206,Africa,West Africa,Nigeria,Ilorin,Kwara,
+207,Africa,West Africa,Nigeria,Jos,Plateau,
+208,Africa,West Africa,Nigeria,Kaduna,Kaduna,
+209,Africa,West Africa,Nigeria,Kano,Kano,
+210,Africa,West Africa,Nigeria,Katsina,Katsina,
+211,Africa,West Africa,Nigeria,Lagos,Lagos,
+212,Africa,West Africa,Nigeria,Maiduguri,Borno,
+213,Africa,West Africa,Nigeria,Makurdi,Benue,
+214,Africa,West Africa,Nigeria,Mubi,Adamawa,
+215,Africa,West Africa,Nigeria,Onitsha,Anambra,
+216,Africa,West Africa,Nigeria,Owerri,Imo,
+217,Africa,West Africa,Nigeria,Owo,Ondo,
+218,Africa,West Africa,Nigeria,Sapele,Delta,
+219,Africa,West Africa,Nigeria,Shagamu,Ogun,
+220,Africa,West Africa,Nigeria,Sokoto,Sokoto,
+221,Africa,West Africa,Nigeria,Ugep,Cross River,
+222,Africa,West Africa,Nigeria,Warri,Delta,
+223,Africa,West Africa,Nigeria,Zaria,Kaduna,
+224,Africa,West Africa,Senegal,Dakar,Dakar,
+225,Africa,West Africa,Senegal,Saint-Louis,Saint-Louis,
+226,Africa,West Africa,Senegal,Ziguinchor,Ziguinchor,
+227,Africa,West Africa,Sierra Leona,Bo,Meridional,
+228,Africa,West Africa,Sierra Leona,Koidu,Oriental,
+229,Africa,West Africa,Sierra Leona,Makeni,Septentrional,
+230,Africa,West Africa,Togo,Atakpame,Plateaux,
+231,Africa,West Africa,Togo,Kara,Kara,
+232,Africa,West Africa,Togo,Sokode,Central,
+233,Europe,Eastern Europe,Bielorrusia,Brest,Brest,
+234,Europe,Eastern Europe,Bielorrusia,Grodno,Grodno,
+235,Europe,Eastern Europe,Bielorrusia,Lida,Grodno,
+236,Europe,Eastern Europe,Bielorrusia,Orsha,Vitsyebsk,
+237,Europe,Eastern Europe,Bielorrusia,Pinsk,Brest,
+238,Europe,Eastern Europe,Bielorrusia,Polatsk,Vitsyebsk,
+239,Europe,Eastern Europe,Bulgaria,Burgas,Burgas,
+240,Europe,Eastern Europe,Bulgaria,Pazardzhik,Pazardzhik,
+241,Europe,Eastern Europe,Bulgaria,Pernik,Pernik,
+242,Europe,Eastern Europe,Bulgaria,Plovdiv,Plovdiv,
+243,Europe,Eastern Europe,Bulgaria,Shumen,Shumen,
+244,Europe,Eastern Europe,Bulgaria,Sliven,Sliven,
+245,Europe,Eastern Europe,Bulgaria,Stara Zagora,Stara Zagora,
+246,Europe,Eastern Europe,Bulgaria,Varna,Varna,
+247,Europe,Eastern Europe,Bulgaria,Yambol,Yambol,
+248,Europe,Eastern Europe,Eslovaquia,Nitra,Nitra,
+249,Europe,Eastern Europe,Moldavia,Balti,Balti,
+250,Europe,Eastern Europe,Polonia,Bialystok,Podlaquia,
+251,Europe,Eastern Europe,Polonia,Bielsko-Biala,Silesia,
+252,Europe,Eastern Europe,Polonia,Bytom,Silesia,
+253,Europe,Eastern Europe,Polonia,Chorzow,Silesia,
+254,Europe,Eastern Europe,Polonia,Czestochowa,Silesia,
+255,Europe,Eastern Europe,Polonia,Dabrowa Gornicza,Silesia,
+256,Europe,Eastern Europe,Polonia,Gdansk,Pomerania,
+257,Europe,Eastern Europe,Polonia,Gdynia,Pomerania,
+258,Europe,Eastern Europe,Polonia,Gliwice,Silesia,
+259,Europe,Eastern Europe,Polonia,Gorzow Wielkopolski,Lubusz,
+260,Europe,Eastern Europe,Polonia,Jastrzebie Zdroj,Silesia,
+261,Europe,Eastern Europe,Polonia,Kalisz,Gran Polonia,
+262,Europe,Eastern Europe,Polonia,Katowice,Silesia,
+263,Europe,Eastern Europe,Polonia,Lodz,Lodz,
+264,Europe,Eastern Europe,Polonia,Lublin,Lublin,
+265,Europe,Eastern Europe,Polonia,Myslowice,Silesia,
+266,Europe,Eastern Europe,Polonia,Nysa,Opole,
+267,Europe,Eastern Europe,Polonia,Opole,Opole,
+268,Europe,Eastern Europe,Polonia,Pila,Gran Polonia,
+269,Europe,Eastern Europe,Polonia,Piotrkow Trybunalski,Lodz,
+270,Europe,Eastern Europe,Polonia,Plock,Mazovia,
+271,Europe,Eastern Europe,Polonia,Poznan,Gran Polonia,
+272,Europe,Eastern Europe,Polonia,Radom,Mazovia,
+273,Europe,Eastern Europe,Polonia,Ruda Slaska,Silesia,
+274,Europe,Eastern Europe,Polonia,Rybnik,Silesia,
+275,Europe,Eastern Europe,Polonia,Siedlce,Mazovia,
+276,Europe,Eastern Europe,Polonia,Slupsk,Pomerania,
+277,Europe,Eastern Europe,Polonia,Sosnowiec,Silesia,
+278,Europe,Eastern Europe,Polonia,Tarnow,Polonia Menor,
+279,Europe,Eastern Europe,Polonia,Tychy,Silesia,
+280,Europe,Eastern Europe,Polonia,Warsaw,Mazovia,
+281,Europe,Eastern Europe,Polonia,Zabrze,Silesia,
+282,Europe,Eastern Europe,Polonia,Zielona Gora,Lubusz,
+283,Europe,Eastern Europe,Rumania,Arad,Arad,
+284,Europe,Eastern Europe,Rumania,Bacau,Bacau,
+285,Europe,Eastern Europe,Rumania,Baia Mare,Maramures,
+286,Europe,Eastern Europe,Rumania,Bistrita,Bistrita-Nasaud,
+287,Europe,Eastern Europe,Rumania,Botosani,Botosani,
+288,Europe,Eastern Europe,Rumania,Bra?ov,Bra?ov,
+289,Europe,Eastern Europe,Rumania,Braila,Braila,
+290,Europe,Eastern Europe,Rumania,Buzau,Buzau,
+291,Europe,Eastern Europe,Rumania,Cluj-Napoca,Cluj,
+292,Europe,Eastern Europe,Rumania,Constanza,Constanza,
+293,Europe,Eastern Europe,Rumania,Craiova,Dolj,
+294,Europe,Eastern Europe,Rumania,Deva,Hunedoara,
+295,Europe,Eastern Europe,Rumania,Drobeta-Turnu Severin,Mehedinti,
+296,Europe,Eastern Europe,Rumania,Focsani,Vrancea,
+297,Europe,Eastern Europe,Rumania,Galati,Galati,
+298,Europe,Eastern Europe,Rumania,Giurgiu,Giurgiu,
+299,Europe,Eastern Europe,Rumania,Iasi,Iasi,
+300,Europe,Eastern Europe,Rumania,Lugoj,Timis,
+301,Europe,Eastern Europe,Rumania,Oradea,Bihor,
+302,Europe,Eastern Europe,Rumania,Piatra-Neamt,Neamt,
+303,Europe,Eastern Europe,Rumania,Pitesti,Arges,
+304,Europe,Eastern Europe,Rumania,Ploiesti,Prahova,
+305,Europe,Eastern Europe,Rumania,Resita,Caras-Severin,
+306,Europe,Eastern Europe,Rumania,Roman,Neamt,
+307,Europe,Eastern Europe,Rumania,Satu Mare,Satu Mare,
+308,Europe,Eastern Europe,Rumania,Sibiu,Sibiu,
+309,Europe,Eastern Europe,Rumania,Suceava,Suceava,
+310,Europe,Eastern Europe,Rumania,Targu Jiu,Gorj,
+311,Europe,Eastern Europe,Rumania,Targu Mures,Mures,
+312,Europe,Eastern Europe,Rumania,Timisoara,Timis,
+313,Europe,Eastern Europe,Rusia,Angarsk,Irkutsk,
+314,Europe,Eastern Europe,Rusia,Birobidzhan,Yevrey,
+315,Europe,Eastern Europe,Rusia,Blagoveshchensk,Amur,
+316,Europe,Eastern Europe,Rusia,Bratsk,Irkutsk,
+317,Europe,Eastern Europe,Rusia,Briansk,Briansk,
+318,Europe,Eastern Europe,Rusia,Irkutsk,Irkutsk,
+319,Europe,Eastern Europe,Rusia,Ivanovo,Ivanovo,
+320,Europe,Eastern Europe,Rusia,Kaliningrado,Kaliningrado,
+321,Europe,Eastern Europe,Rusia,Kaluga,Kaluga,
+322,Europe,Eastern Europe,Rusia,Nal'chik,Kabardia-Balkaria,
+323,Europe,Eastern Europe,Rusia,Rybinsk,Yaroslavl,
+324,Europe,Eastern Europe,Rusia,Usol'ye-Sibirskoye,Irkutsk,
+325,Europe,Eastern Europe,Rusia,Uvarovo,Tambov,
+326,Europe,Eastern Europe,Rusia,Yaroslavl,Yaroslavl,
+327,Europe,Eastern Europe,Serbia,Belgrade,Serbia Central,
+328,Europe,Eastern Europe,Ucrania,Berdyans'k,Zaporiyia,
+329,Europe,Eastern Europe,Ucrania,Cherkasy,Cherkasy,
+330,Europe,Eastern Europe,Ucrania,Chernihiv,Chernihiv,
+331,Europe,Eastern Europe,Ucrania,Dniprodzerzhyns'k,Dnipropetrovsk,
+332,Europe,Eastern Europe,Ucrania,Dnipropetrovsk,Dnipropetrovsk,
+333,Europe,Eastern Europe,Ucrania,Donets'k,Donetsk,
+334,Europe,Eastern Europe,Ucrania,Drogobych,Lviv,
+335,Europe,Eastern Europe,Ucrania,Horlivka,Donetsk,
+336,Europe,Eastern Europe,Ucrania,Ivano-Frankivs'k,Ivano-Frankivsk,
+337,Europe,Eastern Europe,Ucrania,Khmelnytskyi,Khmelnytskyi,
+338,Europe,Eastern Europe,Ucrania,Kirovohrad,Kirovohrad,
+339,Europe,Eastern Europe,Ucrania,Kramators'k,Donetsk,
+340,Europe,Eastern Europe,Ucrania,Krasnyy Luch,Lugansk,
+341,Europe,Eastern Europe,Ucrania,Kremenchuk,Poltava,
+342,Europe,Eastern Europe,Ucrania,Kryvyy Rih,Dnipropetrovsk,
+343,Europe,Eastern Europe,Ucrania,Lisichansk,Lugansk,
+344,Europe,Eastern Europe,Ucrania,Lugansk,Lugansk,
+345,Europe,Eastern Europe,Ucrania,Luts'k,Volinia,
+346,Europe,Eastern Europe,Ucrania,Lviv,Lviv,
+347,Europe,Eastern Europe,Ucrania,Mariupol,Donetsk,
+348,Europe,Eastern Europe,Ucrania,Melitopol,Zaporiyia,
+349,Europe,Eastern Europe,Ucrania,Mykolayiv,Mykolayiv,
+350,Europe,Eastern Europe,Ucrania,Nikopol,Dnipropetrovsk,
+351,Europe,Eastern Europe,Ucrania,Nizhyn,Chernihiv,
+352,Europe,Eastern Europe,Ucrania,Oleksandriya,Kirovohrad,
+353,Europe,Eastern Europe,Ucrania,Poltava,Poltava,
+354,Europe,Eastern Europe,Ucrania,Rivne,Rivne,
+355,Europe,Eastern Europe,Ucrania,Sevastopol,Sevastopol,
+356,Europe,Eastern Europe,Ucrania,Stakhanov,Lugansk,
+357,Europe,Eastern Europe,Ucrania,Sumy,Sumy,
+358,Europe,Eastern Europe,Ucrania,Uman,Cherkasy,
+359,Europe,Eastern Europe,Ucrania,Zaporiyia,Zaporiyia,
+360,Europe,Northern Europe,Dinamarca,Esbjerg,Dinamarca Meridional,
+361,Europe,Northern Europe,Dinamarca,Kalundborg,Selandia,
+362,Europe,Northern Europe,Dinamarca,Odense,Dinamarca Meridional,
+363,Europe,Northern Europe,Dinamarca,Randers,Jutlandia Central,
+364,Europe,Northern Europe,Dinamarca,Sonderborg,Dinamarca Meridional,
+365,Europe,Northern Europe,Estonia,Tallinn,Harjumaa,
+366,Europe,Northern Europe,Estonia,Tartu,Tartu,
+367,Europe,Northern Europe,Finlandia,Espoo,Uusimaa,
+368,Europe,Northern Europe,Finlandia,Helsinki,Uusimaa,
+369,Europe,Northern Europe,Finlandia,Kotka,Kymenlaakso,
+370,Europe,Northern Europe,Finlandia,Turku,Finlandia del Sudoeste,
+371,Europe,Northern Europe,Finlandia,Vantaa,Uusimaa,
+372,Europe,Northern Europe,Irlanda,Cork,Cork,
+373,Europe,Northern Europe,Irlanda,Galway,Galway,
+374,Europe,Northern Europe,Lituania,Kaunas,Kaunas,
+375,Europe,Northern Europe,Lituania,Klaip?da,Klaip?da,
+376,Europe,Northern Europe,Lituania,Panevezys,Panevezys,
+377,Europe,Northern Europe,Lituania,Vilna,Vilna,
+378,Europe,Northern Europe,Noruega,Bergen,Hordaland,
+379,Europe,Northern Europe,Noruega,Drammen,Buskerud,
+380,Europe,Northern Europe,Noruega,Hamar,Hedmark,
+381,Europe,Northern Europe,Noruega,Kristiansand,Vest-Agder,
+382,Europe,Northern Europe,Noruega,Oslo,Oslo,
+383,Europe,Northern Europe,Noruega,Sandnes,Rogaland,
+384,Europe,Northern Europe,Noruega,Stavanger,Rogaland,
+385,Europe,Northern Europe,Reino Unido,Aberdeen,Escocia,
+386,Europe,Northern Europe,Reino Unido,Ashford,Inglaterra,
+387,Europe,Northern Europe,Reino Unido,Aylesbury,Inglaterra,
+388,Europe,Northern Europe,Reino Unido,Barnsley,Inglaterra,
+389,Europe,Northern Europe,Reino Unido,Barry,Gales,
+390,Europe,Northern Europe,Reino Unido,Basildon,Inglaterra,
+391,Europe,Northern Europe,Reino Unido,Basingstoke,Inglaterra,
+392,Europe,Northern Europe,Reino Unido,Bath,Inglaterra,
+393,Europe,Northern Europe,Reino Unido,Bebington,Inglaterra,
+394,Europe,Northern Europe,Reino Unido,Bedford,Inglaterra,
+395,Europe,Northern Europe,Reino Unido,Bideford,Inglaterra,
+396,Europe,Northern Europe,Reino Unido,Birkenhead,Inglaterra,
+397,Europe,Northern Europe,Reino Unido,Birmingham,Inglaterra,
+398,Europe,Northern Europe,Reino Unido,Blackburn,Inglaterra,
+399,Europe,Northern Europe,Reino Unido,Blackpool,Inglaterra,
+400,Europe,Northern Europe,Reino Unido,Bognor Regis,Inglaterra,
+401,Europe,Northern Europe,Reino Unido,Bolton,Inglaterra,
+402,Europe,Northern Europe,Reino Unido,Bournemouth,Inglaterra,
+403,Europe,Northern Europe,Reino Unido,Bracknell,Inglaterra,
+404,Europe,Northern Europe,Reino Unido,Bradford,Inglaterra,
+405,Europe,Northern Europe,Reino Unido,Brighton,Inglaterra,
+406,Europe,Northern Europe,Reino Unido,Bristol,Inglaterra,
+407,Europe,Northern Europe,Reino Unido,Briton Ferry,Gales,
+408,Europe,Northern Europe,Reino Unido,Burnley,Inglaterra,
+409,Europe,Northern Europe,Reino Unido,Bury,Inglaterra,
+410,Europe,Northern Europe,Reino Unido,Cambridge,Inglaterra,
+411,Europe,Northern Europe,Reino Unido,Cardiff,Gales,
+412,Europe,Northern Europe,Reino Unido,Carlisle,Inglaterra,
+413,Europe,Northern Europe,Reino Unido,Chapel Allerton,Inglaterra,
+414,Europe,Northern Europe,Reino Unido,Chatham,Inglaterra,
+415,Europe,Northern Europe,Reino Unido,Chelmsford,Inglaterra,
+416,Europe,Northern Europe,Reino Unido,Cheltenham,Inglaterra,
+417,Europe,Northern Europe,Reino Unido,Cheshunt,Inglaterra,
+418,Europe,Northern Europe,Reino Unido,Chester,Inglaterra,
+419,Europe,Northern Europe,Reino Unido,Chesterfield,Inglaterra,
+420,Europe,Northern Europe,Reino Unido,Clacton-on-Sea,Inglaterra,
+421,Europe,Northern Europe,Reino Unido,Clydach,Gales,
+422,Europe,Northern Europe,Reino Unido,Colchester,Inglaterra,
+423,Europe,Northern Europe,Reino Unido,Coventry,Inglaterra,
+424,Europe,Northern Europe,Reino Unido,Crawley,Inglaterra,
+425,Europe,Northern Europe,Reino Unido,Crewe,Inglaterra,
+426,Europe,Northern Europe,Reino Unido,Cumbernauld,Escocia,
+427,Europe,Northern Europe,Reino Unido,Darlington,Inglaterra,
+428,Europe,Northern Europe,Reino Unido,Dartford,Inglaterra,
+429,Europe,Northern Europe,Reino Unido,Darton,Inglaterra,
+430,Europe,Northern Europe,Reino Unido,Derby,Inglaterra,
+431,Europe,Northern Europe,Reino Unido,Dewsbury,Inglaterra,
+432,Europe,Northern Europe,Reino Unido,Doncaster,Inglaterra,
+433,Europe,Northern Europe,Reino Unido,Dronfield,Inglaterra,
+434,Europe,Northern Europe,Reino Unido,Dudley,Inglaterra,
+435,Europe,Northern Europe,Reino Unido,Dundee,Escocia,
+436,Europe,Northern Europe,Reino Unido,Dunstable,Inglaterra,
+437,Europe,Northern Europe,Reino Unido,East Kilbride,Escocia,
+438,Europe,Northern Europe,Reino Unido,Eastbourne,Inglaterra,
+439,Europe,Northern Europe,Reino Unido,Edinburgh,Escocia,
+440,Europe,Northern Europe,Reino Unido,Exeter,Inglaterra,
+441,Europe,Northern Europe,Reino Unido,Fareham,Inglaterra,
+442,Europe,Northern Europe,Reino Unido,Farnborough,Inglaterra,
+443,Europe,Northern Europe,Reino Unido,Ferndown,Inglaterra,
+444,Europe,Northern Europe,Reino Unido,Garforth,Inglaterra,
+445,Europe,Northern Europe,Reino Unido,Gateshead,Inglaterra,
+446,Europe,Northern Europe,Reino Unido,Gillingham,Inglaterra,
+447,Europe,Northern Europe,Reino Unido,Glasgow,Escocia,
+448,Europe,Northern Europe,Reino Unido,Gloucester,Inglaterra,
+449,Europe,Northern Europe,Reino Unido,Gosport,Inglaterra,
+450,Europe,Northern Europe,Reino Unido,Gravesend,Inglaterra,
+451,Europe,Northern Europe,Reino Unido,Great Yarmouth,Inglaterra,
+452,Europe,Northern Europe,Reino Unido,Guildford,Inglaterra,
+453,Europe,Northern Europe,Reino Unido,Halesowen,Inglaterra,
+454,Europe,Northern Europe,Reino Unido,Halifax,Inglaterra,
+455,Europe,Northern Europe,Reino Unido,Harlow,Inglaterra,
+456,Europe,Northern Europe,Reino Unido,Harrogate,Inglaterra,
+457,Europe,Northern Europe,Reino Unido,Harrow,Inglaterra,
+458,Europe,Northern Europe,Reino Unido,Hartlepool,Inglaterra,
+459,Europe,Northern Europe,Reino Unido,Hastings,Inglaterra,
+460,Europe,Northern Europe,Reino Unido,Hemel Hempstead,Inglaterra,
+461,Europe,Northern Europe,Reino Unido,Hereford,Inglaterra,
+462,Europe,Northern Europe,Reino Unido,High Wycombe,Inglaterra,
+463,Europe,Northern Europe,Reino Unido,Hinckley,Inglaterra,
+464,Europe,Northern Europe,Reino Unido,Hove,Inglaterra,
+465,Europe,Northern Europe,Reino Unido,Huddersfield,Inglaterra,
+466,Europe,Northern Europe,Reino Unido,Huyton,Inglaterra,
+467,Europe,Northern Europe,Reino Unido,Ipswich,Inglaterra,
+468,Europe,Northern Europe,Reino Unido,Kettering,Inglaterra,
+469,Europe,Northern Europe,Reino Unido,Kidderminster,Inglaterra,
+470,Europe,Northern Europe,Reino Unido,Kilwinning,Escocia,
+471,Europe,Northern Europe,Reino Unido,Kingswood,Inglaterra,
+472,Europe,Northern Europe,Reino Unido,Leeds,Inglaterra,
+473,Europe,Northern Europe,Reino Unido,Leicester,Inglaterra,
+474,Europe,Northern Europe,Reino Unido,Letchworth,Inglaterra,
+475,Europe,Northern Europe,Reino Unido,Lincoln,Inglaterra,
+476,Europe,Northern Europe,Reino Unido,Littlehampton,Inglaterra,
+477,Europe,Northern Europe,Reino Unido,Liverpool,Inglaterra,
+478,Europe,Northern Europe,Reino Unido,Livingston,Escocia,
+479,Europe,Northern Europe,Reino Unido,London,Inglaterra,
+480,Europe,Northern Europe,Reino Unido,Loughborough,Inglaterra,
+481,Europe,Northern Europe,Reino Unido,Lowestoft,Inglaterra,
+482,Europe,Northern Europe,Reino Unido,Luton,Inglaterra,
+483,Europe,Northern Europe,Reino Unido,Maidenhead,Inglaterra,
+484,Europe,Northern Europe,Reino Unido,Maidstone,Inglaterra,
+485,Europe,Northern Europe,Reino Unido,Manchester,Inglaterra,
+486,Europe,Northern Europe,Reino Unido,Mansfield,Inglaterra,
+487,Europe,Northern Europe,Reino Unido,Margate,Inglaterra,
+488,Europe,Northern Europe,Reino Unido,Middlesbrough,Inglaterra,
+489,Europe,Northern Europe,Reino Unido,Morley,Inglaterra,
+490,Europe,Northern Europe,Reino Unido,Newcastle upon Tyne,Inglaterra,
+491,Europe,Northern Europe,Reino Unido,Northampton,Inglaterra,
+492,Europe,Northern Europe,Reino Unido,Northwich,Inglaterra,
+493,Europe,Northern Europe,Reino Unido,Norwich,Inglaterra,
+494,Europe,Northern Europe,Reino Unido,Nottingham,Inglaterra,
+495,Europe,Northern Europe,Reino Unido,Nuneaton,Inglaterra,
+496,Europe,Northern Europe,Reino Unido,Oldham,Inglaterra,
+497,Europe,Northern Europe,Reino Unido,Oxford,Inglaterra,
+498,Europe,Northern Europe,Reino Unido,Paisley,Escocia,
+499,Europe,Northern Europe,Reino Unido,Peterborough,Inglaterra,
+500,Europe,Northern Europe,Reino Unido,Plymouth,Inglaterra,
+501,Europe,Northern Europe,Reino Unido,Poole,Inglaterra,
+502,Europe,Northern Europe,Reino Unido,Portsmouth,Inglaterra,
+503,Europe,Northern Europe,Reino Unido,Preston,Inglaterra,
+504,Europe,Northern Europe,Reino Unido,Reading,Inglaterra,
+505,Europe,Northern Europe,Reino Unido,Redditch,Inglaterra,
+506,Europe,Northern Europe,Reino Unido,Rhondda,Gales,
+507,Europe,Northern Europe,Reino Unido,Rochdale,Inglaterra,
+508,Europe,Northern Europe,Reino Unido,Rotherham,Inglaterra,
+509,Europe,Northern Europe,Reino Unido,Rottingdean,Inglaterra,
+510,Europe,Northern Europe,Reino Unido,Rugby,Inglaterra,
+511,Europe,Northern Europe,Reino Unido,Runcorn,Inglaterra,
+512,Europe,Northern Europe,Reino Unido,Sale,Inglaterra,
+513,Europe,Northern Europe,Reino Unido,Sheffield,Inglaterra,
+514,Europe,Northern Europe,Reino Unido,Shrewsbury,Inglaterra,
+515,Europe,Northern Europe,Reino Unido,Slough,Inglaterra,
+516,Europe,Northern Europe,Reino Unido,Solihull,Inglaterra,
+517,Europe,Northern Europe,Reino Unido,South Shields,Inglaterra,
+518,Europe,Northern Europe,Reino Unido,Southampton,Inglaterra,
+519,Europe,Northern Europe,Reino Unido,Southend-on-Sea,Inglaterra,
+520,Europe,Northern Europe,Reino Unido,Southport,Inglaterra,
+521,Europe,Northern Europe,Reino Unido,Stafford,Inglaterra,
+522,Europe,Northern Europe,Reino Unido,Stevenage,Inglaterra,
+523,Europe,Northern Europe,Reino Unido,Stockport,Inglaterra,
+524,Europe,Northern Europe,Reino Unido,Stockton-on-Tees,Inglaterra,
+525,Europe,Northern Europe,Reino Unido,Stoke-on-Trent,Inglaterra,
+526,Europe,Northern Europe,Reino Unido,Stourbridge,Inglaterra,
+527,Europe,Northern Europe,Reino Unido,Sunderland,Inglaterra,
+528,Europe,Northern Europe,Reino Unido,Swansea,Gales,
+529,Europe,Northern Europe,Reino Unido,Swindon,Inglaterra,
+530,Europe,Northern Europe,Reino Unido,Tamworth,Inglaterra,
+531,Europe,Northern Europe,Reino Unido,Taunton,Inglaterra,
+532,Europe,Northern Europe,Reino Unido,Torquay,Inglaterra,
+533,Europe,Northern Europe,Reino Unido,Wakefield,Inglaterra,
+534,Europe,Northern Europe,Reino Unido,Wallasey,Inglaterra,
+535,Europe,Northern Europe,Reino Unido,Walsall,Inglaterra,
+536,Europe,Northern Europe,Reino Unido,Warrington,Inglaterra,
+537,Europe,Northern Europe,Reino Unido,Washington,Inglaterra,
+538,Europe,Northern Europe,Reino Unido,Waterlooville,Inglaterra,
+539,Europe,Northern Europe,Reino Unido,Watford,Inglaterra,
+540,Europe,Northern Europe,Reino Unido,West Bromwich,Inglaterra,
+541,Europe,Northern Europe,Reino Unido,Weston-super-Mare,Inglaterra,
+542,Europe,Northern Europe,Reino Unido,Widnes,Inglaterra,
+543,Europe,Northern Europe,Reino Unido,Wigan,Inglaterra,
+544,Europe,Northern Europe,Reino Unido,Woking,Inglaterra,
+545,Europe,Northern Europe,Reino Unido,Wolverhampton,Inglaterra,
+546,Europe,Northern Europe,Reino Unido,Worcester,Inglaterra,
+547,Europe,Northern Europe,Reino Unido,Worthing,Inglaterra,
+548,Europe,Northern Europe,Reino Unido,York,Inglaterra,
+549,Europe,Northern Europe,Suecia,Estocolmo,Estocolmo,
+550,Europe,Northern Europe,Suecia,Halmstad,Halland,
+551,Europe,Northern Europe,Suecia,Haninge,Estocolmo,
+552,Europe,Northern Europe,Suecia,Helsingborg,Escania,
+553,Europe,Northern Europe,Suecia,Huddinge,Estocolmo,
+554,Europe,Northern Europe,Suecia,Landskrona,Escania,
+555,Europe,Northern Europe,Suecia,Lund,Escania,
+556,Europe,Northern Europe,Suecia,Nacka,Estocolmo,
+557,Europe,Northern Europe,Suecia,Solna,Estocolmo,
+558,Europe,Northern Europe,Suecia,Upsala,Upsala,
+559,Europe,Southern Europe,Albania,Elbasan,Elbasan,
+560,Europe,Southern Europe,Chipre,Nicosia,Nicosia,
+561,Europe,Southern Europe,Croacia,Osijek,Osjecko-Baranjska,
+562,Europe,Southern Europe,Croacia,Rijeka,Primorje-Gorski Kotar,
+563,Europe,Southern Europe,Croacia,Samobor,Zagrebacka,
+564,Europe,Southern Europe,Croacia,Split,Split-Dalmacia,
+565,Europe,Southern Europe,Croacia,Zagreb,Grad Zagreb,
+566,Europe,Southern Europe,Eslovenia,Liubliana,Liubliana,
+567,Europe,Southern Europe,Grecia,Athens,Attica,
+568,Europe,Southern Europe,Italia,Acerra,Campania,
+569,Europe,Southern Europe,Italia,Acireale,Sicilia,
+570,Europe,Southern Europe,Italia,Afragola,Campania,
+571,Europe,Southern Europe,Italia,Agrigento,Sicilia,
+572,Europe,Southern Europe,Italia,Alessandria,Piamonte,
+573,Europe,Southern Europe,Italia,Altamura,Apulia,
+574,Europe,Southern Europe,Italia,Ancona,Marche,
+575,Europe,Southern Europe,Italia,Andria,Apulia,
+576,Europe,Southern Europe,Italia,Aprilia,Lacio,
+577,Europe,Southern Europe,Italia,Arezzo,Toscana,
+578,Europe,Southern Europe,Italia,Asti,Piamonte,
+579,Europe,Southern Europe,Italia,Avellino,Campania,
+580,Europe,Southern Europe,Italia,Bari,Apulia,
+581,Europe,Southern Europe,Italia,Barletta,Apulia,
+582,Europe,Southern Europe,Italia,Battipaglia,Campania,
+583,Europe,Southern Europe,Italia,Benevento,Campania,
+584,Europe,Southern Europe,Italia,Bisceglie,Apulia,
+585,Europe,Southern Europe,Italia,Bitonto,Apulia,
+586,Europe,Southern Europe,Italia,Bolzano,Trentino-Alto Adigio,
+587,Europe,Southern Europe,Italia,Boscoreale,Campania,
+588,Europe,Southern Europe,Italia,Brindisi,Apulia,
+589,Europe,Southern Europe,Italia,Capannori,Toscana,
+590,Europe,Southern Europe,Italia,Capua,Campania,
+591,Europe,Southern Europe,Italia,Carrara,Toscana,
+592,Europe,Southern Europe,Italia,Caserta,Campania,
+593,Europe,Southern Europe,Italia,Casoria,Campania,
+594,Europe,Southern Europe,Italia,Castellammare di Stabia,Campania,
+595,Europe,Southern Europe,Italia,Catania,Sicilia,
+596,Europe,Southern Europe,Italia,Cercola,Campania,
+597,Europe,Southern Europe,Italia,Cerignola,Apulia,
+598,Europe,Southern Europe,Italia,Chieti,Abruzos,
+599,Europe,Southern Europe,Italia,Civitavecchia,Lacio,
+600,Europe,Southern Europe,Italia,Cosenza,Calabria,
+601,Europe,Southern Europe,Italia,Crotone,Calabria,
+602,Europe,Southern Europe,Italia,Cuneo,Piamonte,
+603,Europe,Southern Europe,Italia,Ercolano,Campania,
+604,Europe,Southern Europe,Italia,Falconara Marittima,Marche,
+605,Europe,Southern Europe,Italia,Fano,Marche,
+606,Europe,Southern Europe,Italia,Fiumicino,Lacio,
+607,Europe,Southern Europe,Italia,Florence,Toscana,
+608,Europe,Southern Europe,Italia,Foggia,Apulia,
+609,Europe,Southern Europe,Italia,Gela,Sicilia,
+610,Europe,Southern Europe,Italia,Genoa,Liguria,
+611,Europe,Southern Europe,Italia,Grosseto,Toscana,
+612,Europe,Southern Europe,Italia,Guidonia Montecelio,Lacio,
+613,Europe,Southern Europe,Italia,La Spezia,Liguria,
+614,Europe,Southern Europe,Italia,Latina,Lacio,
+615,Europe,Southern Europe,Italia,Lecce,Apulia,
+616,Europe,Southern Europe,Italia,Lucca,Toscana,
+617,Europe,Southern Europe,Italia,Manfredonia,Apulia,
+618,Europe,Southern Europe,Italia,Marano di Napoli,Campania,
+619,Europe,Southern Europe,Italia,Marina di Carrara,Toscana,
+620,Europe,Southern Europe,Italia,Marsala,Sicilia,
+621,Europe,Southern Europe,Italia,Massa,Toscana,
+622,Europe,Southern Europe,Italia,Messina,Sicilia,
+623,Europe,Southern Europe,Italia,Modica,Sicilia,
+624,Europe,Southern Europe,Italia,Molfetta,Apulia,
+625,Europe,Southern Europe,Italia,Moncalieri,Piamonte,
+626,Europe,Southern Europe,Italia,Montecatini Terme,Toscana,
+627,Europe,Southern Europe,Italia,Naples,Campania,
+628,Europe,Southern Europe,Italia,Novara,Piamonte,
+629,Europe,Southern Europe,Italia,Palermo,Sicilia,
+630,Europe,Southern Europe,Italia,Pesaro,Marche,
+631,Europe,Southern Europe,Italia,Pescara,Abruzos,
+632,Europe,Southern Europe,Italia,Pisa,Toscana,
+633,Europe,Southern Europe,Italia,Pistoia,Toscana,
+634,Europe,Southern Europe,Italia,Pomezia,Lacio,
+635,Europe,Southern Europe,Italia,Portici,Campania,
+636,Europe,Southern Europe,Italia,Potenza,Basilicata,
+637,Europe,Southern Europe,Italia,Pozzuoli,Campania,
+638,Europe,Southern Europe,Italia,Prato,Toscana,
+639,Europe,Southern Europe,Italia,Ragusa,Sicilia,
+640,Europe,Southern Europe,Italia,Rome,Lacio,
+641,Europe,Southern Europe,Italia,San Severo,Apulia,
+642,Europe,Southern Europe,Italia,Savona,Liguria,
+643,Europe,Southern Europe,Italia,Siena,Toscana,
+644,Europe,Southern Europe,Italia,Taranto,Apulia,
+645,Europe,Southern Europe,Italia,Teramo,Abruzos,
+646,Europe,Southern Europe,Italia,Tivoli,Lacio,
+647,Europe,Southern Europe,Italia,Torre del Greco,Campania,
+648,Europe,Southern Europe,Italia,Trani,Apulia,
+649,Europe,Southern Europe,Italia,Trapani,Sicilia,
+650,Europe,Southern Europe,Italia,Trento,Trentino-Alto Adigio,
+651,Europe,Southern Europe,Italia,Trieste,Friuli-Venecia Julia,
+652,Europe,Southern Europe,Italia,Turin,Piamonte,
+653,Europe,Southern Europe,Italia,Velletri,Lacio,
+654,Europe,Southern Europe,Italia,Viterbo,Lacio,
+655,Europe,Southern Europe,Italia,Vittoria,Sicilia,
+656,Europe,Southern Europe,Macedonia,Bitola,Bitola,
+657,Europe,Southern Europe,Macedonia,Kumanovo,Kumanovo,
+658,Europe,Southern Europe,Montenegro,Podgorica,Podgorica,
+659,Europe,Southern Europe,Portugal,Amadora,Lisboa,
+660,Europe,Southern Europe,Portugal,Braga,Braga,
+661,Europe,Southern Europe,Portugal,Coimbra,Coimbra,
+662,Europe,Southern Europe,Portugal,Feira,Aveiro,
+663,Europe,Southern Europe,Portugal,Lisbon,Lisboa,
+664,Europe,Southern Europe,Portugal,Loures,Lisboa,
+665,Europe,Southern Europe,Portugal,Odivelas,Lisboa,
+666,Europe,Southern Europe,Portugal,Porto,Porto,
+667,Europe,Southern Europe,Portugal,Vila Nova de Gaia,Porto,
+668,Europe,Western Europe,Alemania,Aachen,Renania del Norte-Westfalia,
+669,Europe,Western Europe,Alemania,Aalen,Baden-Wurtemberg,
+670,Europe,Western Europe,Alemania,Arnsberg,Renania del Norte-Westfalia,
+671,Europe,Western Europe,Alemania,Aschaffenburg,Bavaria,
+672,Europe,Western Europe,Alemania,Augsburg,Bavaria,
+673,Europe,Western Europe,Alemania,Bad Waldsee,Baden-Wurtemberg,
+674,Europe,Western Europe,Alemania,Baden-Baden,Baden-Wurtemberg,
+675,Europe,Western Europe,Alemania,Bamberg,Bavaria,
+676,Europe,Western Europe,Alemania,Bayreuth,Bavaria,
+677,Europe,Western Europe,Alemania,Bergheim,Renania del Norte-Westfalia,
+678,Europe,Western Europe,Alemania,Bergisch Gladbach,Renania del Norte-Westfalia,
+679,Europe,Western Europe,Alemania,Bielefeld,Renania del Norte-Westfalia,
+680,Europe,Western Europe,Alemania,Bochum,Renania del Norte-Westfalia,
+681,Europe,Western Europe,Alemania,Bonn,Renania del Norte-Westfalia,
+682,Europe,Western Europe,Alemania,Borken,Renania del Norte-Westfalia,
+683,Europe,Western Europe,Alemania,Bottrop,Renania del Norte-Westfalia,
+684,Europe,Western Europe,Alemania,Brandenburgo,Brandenburgo,
+685,Europe,Western Europe,Alemania,Bremen,Bremen,
+686,Europe,Western Europe,Alemania,Bremerhaven,Bremen,
+687,Europe,Western Europe,Alemania,Castrop-Rauxel,Renania del Norte-Westfalia,
+688,Europe,Western Europe,Alemania,Celle,Baja Sajonia,
+689,Europe,Western Europe,Alemania,Chemnitz,Sajonia,
+690,Europe,Western Europe,Alemania,Cologne,Renania del Norte-Westfalia,
+691,Europe,Western Europe,Alemania,Cottbus,Brandenburgo,
+692,Europe,Western Europe,Alemania,Cuxhaven,Baja Sajonia,
+693,Europe,Western Europe,Alemania,Darmstadt,Hesse,
+694,Europe,Western Europe,Alemania,Delmenhorst,Baja Sajonia,
+695,Europe,Western Europe,Alemania,Detmold,Renania del Norte-Westfalia,
+696,Europe,Western Europe,Alemania,Dinslaken,Renania del Norte-Westfalia,
+697,Europe,Western Europe,Alemania,Dormagen,Renania del Norte-Westfalia,
+698,Europe,Western Europe,Alemania,Dorsten,Renania del Norte-Westfalia,
+699,Europe,Western Europe,Alemania,Dortmund,Renania del Norte-Westfalia,
+700,Europe,Western Europe,Alemania,Dresden,Sajonia,
+701,Europe,Western Europe,Alemania,Duisburg,Renania del Norte-Westfalia,
+702,Europe,Western Europe,Alemania,Eggenstein-Leopoldshafen,Baden-Wurtemberg,
+703,Europe,Western Europe,Alemania,Emden,Baja Sajonia,
+704,Europe,Western Europe,Alemania,Ennigerloh,Renania del Norte-Westfalia,
+705,Europe,Western Europe,Alemania,Erftstadt,Renania del Norte-Westfalia,
+706,Europe,Western Europe,Alemania,Erfurt,Turingia,
+707,Europe,Western Europe,Alemania,Erlangen,Bavaria,
+708,Europe,Western Europe,Alemania,Essen,Renania del Norte-Westfalia,
+709,Europe,Western Europe,Alemania,Euskirchen,Renania del Norte-Westfalia,
+710,Europe,Western Europe,Alemania,Flensburg,Schleswig-Holstein,
+711,Europe,Western Europe,Alemania,Forst,Brandenburgo,
+712,Europe,Western Europe,Alemania,Frankfurt,Hesse,
+713,Europe,Western Europe,Alemania,Freiburg,Baden-Wurtemberg,
+714,Europe,Western Europe,Alemania,Friedberg,Hesse,
+715,Europe,Western Europe,Alemania,Friedrichshafen,Baden-Wurtemberg,
+716,Europe,Western Europe,Alemania,Fulda,Hesse,
+717,Europe,Western Europe,Alemania,Garbsen,Baja Sajonia,
+718,Europe,Western Europe,Alemania,Gelsenkirchen,Renania del Norte-Westfalia,
+719,Europe,Western Europe,Alemania,Gera,Turingia,
+720,Europe,Western Europe,Alemania,Gladbeck,Renania del Norte-Westfalia,
+721,Europe,Western Europe,Alemania,Greifswald,Mecklemburgo-Pomerania Occidental,
+722,Europe,Western Europe,Alemania,Grevenbroich,Renania del Norte-Westfalia,
+723,Europe,Western Europe,Alemania,Gronau,Renania del Norte-Westfalia,
+724,Europe,Western Europe,Alemania,Gummersbach,Renania del Norte-Westfalia,
+725,Europe,Western Europe,Alemania,Hagen,Renania del Norte-Westfalia,
+726,Europe,Western Europe,Alemania,Halle,Renania del Norte-Westfalia,
+727,Europe,Western Europe,Alemania,Halle,Sajonia-Anhalt,
+728,Europe,Western Europe,Alemania,Hamburgo,Hamburgo,
+729,Europe,Western Europe,Alemania,Hamm,Renania del Norte-Westfalia,
+730,Europe,Western Europe,Alemania,Hanover,Baja Sajonia,
+731,Europe,Western Europe,Alemania,Hattingen,Renania del Norte-Westfalia,
+732,Europe,Western Europe,Alemania,Heidelberg,Baden-Wurtemberg,
+733,Europe,Western Europe,Alemania,Heilbronn,Baden-Wurtemberg,
+734,Europe,Western Europe,Alemania,Herford,Renania del Norte-Westfalia,
+735,Europe,Western Europe,Alemania,Herne,Renania del Norte-Westfalia,
+736,Europe,Western Europe,Alemania,Herten,Renania del Norte-Westfalia,
+737,Europe,Western Europe,Alemania,Hilden,Renania del Norte-Westfalia,
+738,Europe,Western Europe,Alemania,Hildesheim,Baja Sajonia,
+739,Europe,Western Europe,Alemania,Ingolstadt,Bavaria,
+740,Europe,Western Europe,Alemania,Iserlohn,Renania del Norte-Westfalia,
+741,Europe,Western Europe,Alemania,Jena,Turingia,
+742,Europe,Western Europe,Alemania,Kaiserslautern,Renania-Palatinado,
+743,Europe,Western Europe,Alemania,Karlsruhe,Baden-Wurtemberg,
+744,Europe,Western Europe,Alemania,Kassel,Hesse,
+745,Europe,Western Europe,Alemania,Kerpen,Renania del Norte-Westfalia,
+746,Europe,Western Europe,Alemania,Kiel,Schleswig-Holstein,
+747,Europe,Western Europe,Alemania,Koblenz,Renania-Palatinado,
+748,Europe,Western Europe,Alemania,Krefeld,Renania del Norte-Westfalia,
+749,Europe,Western Europe,Alemania,Langen,Baja Sajonia,
+750,Europe,Western Europe,Alemania,Langen,Hesse,
+751,Europe,Western Europe,Alemania,Langenfeld,Renania del Norte-Westfalia,
+752,Europe,Western Europe,Alemania,Langenhagen,Baja Sajonia,
+753,Europe,Western Europe,Alemania,Leipzig,Sajonia,
+754,Europe,Western Europe,Alemania,Leverkusen,Renania del Norte-Westfalia,
+755,Europe,Western Europe,Alemania,Lippstadt,Renania del Norte-Westfalia,
+756,Europe,Western Europe,Alemania,Lohne,Baja Sajonia,
+757,Europe,Western Europe,Alemania,Ludwigsburg,Baden-Wurtemberg,
+758,Europe,Western Europe,Alemania,Ludwigsfelde,Brandenburgo,
+759,Europe,Western Europe,Alemania,Ludwigshafen am Rhein,Renania-Palatinado,
+760,Europe,Western Europe,Alemania,Magdeburg,Sajonia-Anhalt,
+761,Europe,Western Europe,Alemania,Mainz,Renania-Palatinado,
+762,Europe,Western Europe,Alemania,Mannheim,Baden-Wurtemberg,
+763,Europe,Western Europe,Alemania,Marl,Renania del Norte-Westfalia,
+764,Europe,Western Europe,Alemania,Menden,Renania del Norte-Westfalia,
+765,Europe,Western Europe,Alemania,Minden,Renania del Norte-Westfalia,
+766,Europe,Western Europe,Alemania,Moers,Renania del Norte-Westfalia,
+767,Europe,Western Europe,Alemania,Munich,Bavaria,
+768,Europe,Western Europe,Alemania,Munster,Baja Sajonia,
+769,Europe,Western Europe,Alemania,Naumburg,Sajonia-Anhalt,
+770,Europe,Western Europe,Alemania,Neu-Ulm,Bavaria,
+771,Europe,Western Europe,Alemania,Neubrandenburg,Mecklemburgo-Pomerania Occidental,
+772,Europe,Western Europe,Alemania,Neunkirchen,Sarre,
+773,Europe,Western Europe,Alemania,Neuwied,Renania-Palatinado,
+774,Europe,Western Europe,Alemania,Norderstedt,Schleswig-Holstein,
+775,Europe,Western Europe,Alemania,Nuremberg,Bavaria,
+776,Europe,Western Europe,Alemania,Oberhausen,Renania del Norte-Westfalia,
+777,Europe,Western Europe,Alemania,Offenbach,Hesse,
+778,Europe,Western Europe,Alemania,Offenburg,Baden-Wurtemberg,
+779,Europe,Western Europe,Alemania,Oldenburg,Baja Sajonia,
+780,Europe,Western Europe,Alemania,Paderborn,Renania del Norte-Westfalia,
+781,Europe,Western Europe,Alemania,Passau,Bavaria,
+782,Europe,Western Europe,Alemania,Pforzheim,Baden-Wurtemberg,
+783,Europe,Western Europe,Alemania,Potsdam,Brandenburgo,
+784,Europe,Western Europe,Alemania,Pulheim,Renania del Norte-Westfalia,
+785,Europe,Western Europe,Alemania,Ratingen,Renania del Norte-Westfalia,
+786,Europe,Western Europe,Alemania,Recklinghausen,Renania del Norte-Westfalia,
+787,Europe,Western Europe,Alemania,Regensburg,Bavaria,
+788,Europe,Western Europe,Alemania,Remscheid,Renania del Norte-Westfalia,
+789,Europe,Western Europe,Alemania,Reutlingen,Baden-Wurtemberg,
+790,Europe,Western Europe,Alemania,Rheine,Renania del Norte-Westfalia,
+791,Europe,Western Europe,Alemania,Rosenheim,Bavaria,
+792,Europe,Western Europe,Alemania,Rostock,Mecklemburgo-Pomerania Occidental,
+793,Europe,Western Europe,Alemania,Schiffweiler,Sarre,
+794,Europe,Western Europe,Alemania,Schwerin,Mecklemburgo-Pomerania Occidental,
+795,Europe,Western Europe,Alemania,Siegen,Renania del Norte-Westfalia,
+796,Europe,Western Europe,Alemania,Sindelfingen,Baden-Wurtemberg,
+797,Europe,Western Europe,Alemania,Solingen,Renania del Norte-Westfalia,
+798,Europe,Western Europe,Alemania,Sonneberg,Turingia,
+799,Europe,Western Europe,Alemania,Stadtlohn,Renania del Norte-Westfalia,
+800,Europe,Western Europe,Alemania,Stolberg,Renania del Norte-Westfalia,
+801,Europe,Western Europe,Alemania,Stralsund,Mecklemburgo-Pomerania Occidental,
+802,Europe,Western Europe,Alemania,Stuttgart,Baden-Wurtemberg,
+803,Europe,Western Europe,Alemania,Trier,Renania-Palatinado,
+804,Europe,Western Europe,Alemania,Troisdorf,Renania del Norte-Westfalia,
+805,Europe,Western Europe,Alemania,Ulm,Baden-Wurtemberg,
+806,Europe,Western Europe,Alemania,Unna,Renania del Norte-Westfalia,
+807,Europe,Western Europe,Alemania,Velbert,Renania del Norte-Westfalia,
+808,Europe,Western Europe,Alemania,Viersen,Renania del Norte-Westfalia,
+809,Europe,Western Europe,Alemania,Villingen-Schwenningen,Baden-Wurtemberg,
+810,Europe,Western Europe,Alemania,Waiblingen,Baden-Wurtemberg,
+811,Europe,Western Europe,Alemania,Weimar,Turingia,
+812,Europe,Western Europe,Alemania,Wetter (Ruhr),Renania del Norte-Westfalia,
+813,Europe,Western Europe,Alemania,Wetzlar,Hesse,
+814,Europe,Western Europe,Alemania,Wiesbaden,Hesse,
+815,Europe,Western Europe,Alemania,Wilhelmshaven,Baja Sajonia,
+816,Europe,Western Europe,Alemania,Willich,Renania del Norte-Westfalia,
+817,Europe,Western Europe,Alemania,Witten,Renania del Norte-Westfalia,
+818,Europe,Western Europe,Alemania,Wolfsburg,Baja Sajonia,
+819,Europe,Western Europe,Alemania,Worms,Renania-Palatinado,
+820,Europe,Western Europe,Alemania,Wuppertal,Renania del Norte-Westfalia,
+821,Europe,Western Europe,Alemania,Zwickau,Sajonia,
+822,Europe,Western Europe,Austria,Graz,Stiria,
+823,Europe,Western Europe,Austria,Innsbruck,Tirol,
+824,Europe,Western Europe,Austria,Klagenfurt,Carintia,
+825,Europe,Western Europe,Austria,Leoben,Stiria,
+826,Europe,Western Europe,Austria,Linz,Alta Austria,
+827,Europe,Western Europe,Austria,Salzburgo,Salzburgo,
+828,Europe,Western Europe,Austria,Viena,Viena,
+829,Europe,Western Europe,Austria,Villach,Carintia,
+830,Europe,Western Europe,Austria,Wels,Alta Austria,
+831,Europe,Western Europe,Francia,Aix-en-Provence,Provenza-Alpes-Costa Azul,
+832,Europe,Western Europe,Francia,Ajaccio,Corse,
+833,Europe,Western Europe,Francia,Alfortville,Isla de Francia,
+834,Europe,Western Europe,Francia,Allauch,Provenza-Alpes-Costa Azul,
+835,Europe,Western Europe,Francia,Antibes,Provenza-Alpes-Costa Azul,
+836,Europe,Western Europe,Francia,Antony,Isla de Francia,
+837,Europe,Western Europe,Francia,Argenteuil,Isla de Francia,
+838,Europe,Western Europe,Francia,Arles,Provenza-Alpes-Costa Azul,
+839,Europe,Western Europe,Francia,Athis-Mons,Isla de Francia,
+840,Europe,Western Europe,Francia,Aubervilliers,Isla de Francia,
+841,Europe,Western Europe,Francia,Aulnay-sous-Bois,Isla de Francia,
+842,Europe,Western Europe,Francia,Avignon,Provenza-Alpes-Costa Azul,
+843,Europe,Western Europe,Francia,Avon,Isla de Francia,
+844,Europe,Western Europe,Francia,Bagneux,Isla de Francia,
+845,Europe,Western Europe,Francia,Bagnolet,Isla de Francia,
+846,Europe,Western Europe,Francia,Bastia,Corse,
+847,Europe,Western Europe,Francia,Bezons,Isla de Francia,
+848,Europe,Western Europe,Francia,Blois,Centro-Valle de Loira,
+849,Europe,Western Europe,Francia,Bobigny,Isla de Francia,
+850,Europe,Western Europe,Francia,Bondy,Isla de Francia,
+851,Europe,Western Europe,Francia,Bonneuil-sur-Marne,Isla de Francia,
+852,Europe,Western Europe,Francia,Boulogne-Billancourt,Isla de Francia,
+853,Europe,Western Europe,Francia,Bourges,Centro-Valle de Loira,
+854,Europe,Western Europe,Francia,Bry-sur-Marne,Isla de Francia,
+855,Europe,Western Europe,Francia,Cachan,Isla de Francia,
+856,Europe,Western Europe,Francia,Cagnes-sur-Mer,Provenza-Alpes-Costa Azul,
+857,Europe,Western Europe,Francia,Cannes,Provenza-Alpes-Costa Azul,
+858,Europe,Western Europe,Francia,Carpentras,Provenza-Alpes-Costa Azul,
+859,Europe,Western Europe,Francia,Cavaillon,Provenza-Alpes-Costa Azul,
+860,Europe,Western Europe,Francia,Cergy,Isla de Francia,
+861,Europe,Western Europe,Francia,Champigny-sur-Marne,Isla de Francia,
+862,Europe,Western Europe,Francia,Chartres,Centro-Valle de Loira,
+863,Europe,Western Europe,Francia,Chatou,Isla de Francia,
+864,Europe,Western Europe,Francia,Chaville,Isla de Francia,
+865,Europe,Western Europe,Francia,Chelles,Isla de Francia,
+866,Europe,Western Europe,Francia,Chevilly-Larue,Isla de Francia,
+867,Europe,Western Europe,Francia,Chilly-Mazarin,Isla de Francia,
+868,Europe,Western Europe,Francia,Choisy-le-Roi,Isla de Francia,
+869,Europe,Western Europe,Francia,Clamart,Isla de Francia,
+870,Europe,Western Europe,Francia,Clermont-Ferrand,Auvernia,
+871,Europe,Western Europe,Francia,Clichy,Isla de Francia,
+872,Europe,Western Europe,Francia,Clichy-sous-Bois,Isla de Francia,
+873,Europe,Western Europe,Francia,Colombes,Isla de Francia,
+874,Europe,Western Europe,Francia,Conflans-Sainte-Honorine,Isla de Francia,
+875,Europe,Western Europe,Francia,Corbeil-Essonnes,Isla de Francia,
+876,Europe,Western Europe,Francia,Cormeilles-en-Parisis,Isla de Francia,
+877,Europe,Western Europe,Francia,Coulommiers,Isla de Francia,
+878,Europe,Western Europe,Francia,Courbevoie,Isla de Francia,
+879,Europe,Western Europe,Francia,Cournon-d'Auvergne,Auvernia,
+880,Europe,Western Europe,Francia,Deuil-la-Barre,Isla de Francia,
+881,Europe,Western Europe,Francia,Domont,Isla de Francia,
+882,Europe,Western Europe,Francia,Draguignan,Provenza-Alpes-Costa Azul,
+883,Europe,Western Europe,Francia,Drancy,Isla de Francia,
+884,Europe,Western Europe,Francia,Dreux,Centro-Valle de Loira,
+885,Europe,Western Europe,Francia,Eragny,Isla de Francia,
+886,Europe,Western Europe,Francia,Ermont,Isla de Francia,
+887,Europe,Western Europe,Francia,Evry,Isla de Francia,
+888,Europe,Western Europe,Francia,Fleury-les-Aubrais,Centro-Valle de Loira,
+889,Europe,Western Europe,Francia,Fontainebleau,Isla de Francia,
+890,Europe,Western Europe,Francia,Fontenay-aux-Roses,Isla de Francia,
+891,Europe,Western Europe,Francia,Fontenay-sous-Bois,Isla de Francia,
+892,Europe,Western Europe,Francia,Franconville,Isla de Francia,
+893,Europe,Western Europe,Francia,Fresnes,Isla de Francia,
+894,Europe,Western Europe,Francia,Gagny,Isla de Francia,
+895,Europe,Western Europe,Francia,Gap,Provenza-Alpes-Costa Azul,
+896,Europe,Western Europe,Francia,Garches,Isla de Francia,
+897,Europe,Western Europe,Francia,Gardanne,Provenza-Alpes-Costa Azul,
+898,Europe,Western Europe,Francia,Gennevilliers,Isla de Francia,
+899,Europe,Western Europe,Francia,Gien,Centro-Valle de Loira,
+900,Europe,Western Europe,Francia,Gonesse,Isla de Francia,
+901,Europe,Western Europe,Francia,Goussainville,Isla de Francia,
+902,Europe,Western Europe,Francia,Grasse,Provenza-Alpes-Costa Azul,
+903,Europe,Western Europe,Francia,Grigny,Isla de Francia,
+904,Europe,Western Europe,Francia,Guyancourt,Isla de Francia,
+905,Europe,Western Europe,Francia,Houilles,Isla de Francia,
+906,Europe,Western Europe,Francia,Issoire,Auvernia,
+907,Europe,Western Europe,Francia,Issy-les-Moulineaux,Isla de Francia,
+908,Europe,Western Europe,Francia,Istres,Provenza-Alpes-Costa Azul,
+909,Europe,Western Europe,Francia,Ivry-sur-Seine,Isla de Francia,
+910,Europe,Western Europe,Francia,La Celle-Saint-Cloud,Isla de Francia,
+911,Europe,Western Europe,Francia,La Ciotat,Provenza-Alpes-Costa Azul,
+912,Europe,Western Europe,Francia,La Crau,Provenza-Alpes-Costa Azul,
+913,Europe,Western Europe,Francia,La Seyne-sur-Mer,Provenza-Alpes-Costa Azul,
+914,Europe,Western Europe,Francia,Lagny-sur-Marne,Isla de Francia,
+915,Europe,Western Europe,Francia,Le Blanc-Mesnil,Isla de Francia,
+916,Europe,Western Europe,Francia,Le Cannet,Provenza-Alpes-Costa Azul,
+917,Europe,Western Europe,Francia,Le Chesnay,Isla de Francia,
+918,Europe,Western Europe,Francia,Le Plessis-Robinson,Isla de Francia,
+919,Europe,Western Europe,Francia,Le Pontet,Provenza-Alpes-Costa Azul,
+920,Europe,Western Europe,Francia,Les Clayes-sous-Bois,Isla de Francia,
+921,Europe,Western Europe,Francia,Les Lilas,Isla de Francia,
+922,Europe,Western Europe,Francia,Les Mureaux,Isla de Francia,
+923,Europe,Western Europe,Francia,Les Pavillons-sous-Bois,Isla de Francia,
+924,Europe,Western Europe,Francia,Les Pennes-Mirabeau,Provenza-Alpes-Costa Azul,
+925,Europe,Western Europe,Francia,Les Ulis,Isla de Francia,
+926,Europe,Western Europe,Francia,Levallois-Perret,Isla de Francia,
+927,Europe,Western Europe,Francia,Limay,Isla de Francia,
+928,Europe,Western Europe,Francia,Livry-Gargan,Isla de Francia,
+929,Europe,Western Europe,Francia,Longjumeau,Isla de Francia,
+930,Europe,Western Europe,Francia,Maisons-Alfort,Isla de Francia,
+931,Europe,Western Europe,Francia,Maisons-Laffitte,Isla de Francia,
+932,Europe,Western Europe,Francia,Malakoff,Isla de Francia,
+933,Europe,Western Europe,Francia,Mantes-la-Jolie,Isla de Francia,
+934,Europe,Western Europe,Francia,Mantes-la-Ville,Isla de Francia,
+935,Europe,Western Europe,Francia,Marignane,Provenza-Alpes-Costa Azul,
+936,Europe,Western Europe,Francia,Marly-le-Roi,Isla de Francia,
+937,Europe,Western Europe,Francia,Marseille,Provenza-Alpes-Costa Azul,
+938,Europe,Western Europe,Francia,Martigues,Provenza-Alpes-Costa Azul,
+939,Europe,Western Europe,Francia,Massy,Isla de Francia,
+940,Europe,Western Europe,Francia,Meaux,Isla de Francia,
+941,Europe,Western Europe,Francia,Melun,Isla de Francia,
+942,Europe,Western Europe,Francia,Menton,Provenza-Alpes-Costa Azul,
+943,Europe,Western Europe,Francia,Meudon,Isla de Francia,
+944,Europe,Western Europe,Francia,Miramas,Provenza-Alpes-Costa Azul,
+945,Europe,Western Europe,Francia,Mitry-Mory,Isla de Francia,
+946,Europe,Western Europe,Francia,Moissy-Cramayel,Isla de Francia,
+947,Europe,Western Europe,Francia,Montargis,Centro-Valle de Loira,
+948,Europe,Western Europe,Francia,Montereau-Fault-Yonne,Isla de Francia,
+949,Europe,Western Europe,Francia,Montesson,Isla de Francia,
+950,Europe,Western Europe,Francia,Montfermeil,Isla de Francia,
+951,Europe,Western Europe,Francia,Montgeron,Isla de Francia,
+952,Europe,Western Europe,Francia,Montigny-le-Bretonneux,Isla de Francia,
+953,Europe,Western Europe,Francia,Montmorency,Isla de Francia,
+954,Europe,Western Europe,Francia,Montreuil,Isla de Francia,
+955,Europe,Western Europe,Francia,Montrouge,Isla de Francia,
+956,Europe,Western Europe,Francia,Mougins,Provenza-Alpes-Costa Azul,
+957,Europe,Western Europe,Francia,Moulins,Auvernia,
+958,Europe,Western Europe,Francia,Nanterre,Isla de Francia,
+959,Europe,Western Europe,Francia,Neuilly-Plaisance,Isla de Francia,
+960,Europe,Western Europe,Francia,Neuilly-sur-Marne,Isla de Francia,
+961,Europe,Western Europe,Francia,Neuilly-sur-Seine,Isla de Francia,
+962,Europe,Western Europe,Francia,Nice,Provenza-Alpes-Costa Azul,
+963,Europe,Western Europe,Francia,Noisy-le-Grand,Isla de Francia,
+964,Europe,Western Europe,Francia,Noisy-le-Sec,Isla de Francia,
+965,Europe,Western Europe,Francia,Olivet,Centro-Valle de Loira,
+966,Europe,Western Europe,Francia,Orsay,Isla de Francia,
+967,Europe,Western Europe,Francia,Osny,Isla de Francia,
+968,Europe,Western Europe,Francia,Palaiseau,Isla de Francia,
+969,Europe,Western Europe,Francia,Pantin,Isla de Francia,
+970,Europe,Western Europe,Francia,Paris,Isla de Francia,
+971,Europe,Western Europe,Francia,Pertuis,Provenza-Alpes-Costa Azul,
+972,Europe,Western Europe,Francia,Pierrefitte-sur-Seine,Isla de Francia,
+973,Europe,Western Europe,Francia,Plaisir,Isla de Francia,
+974,Europe,Western Europe,Francia,Poissy,Isla de Francia,
+975,Europe,Western Europe,Francia,Pontault-Combault,Isla de Francia,
+976,Europe,Western Europe,Francia,Pontoise,Isla de Francia,
+977,Europe,Western Europe,Francia,Puteaux,Isla de Francia,
+978,Europe,Western Europe,Francia,Rambouillet,Isla de Francia,
+979,Europe,Western Europe,Francia,Riom,Auvernia,
+980,Europe,Western Europe,Francia,Ris-Orangis,Isla de Francia,
+981,Europe,Western Europe,Francia,Roissy-en-Brie,Isla de Francia,
+982,Europe,Western Europe,Francia,Rosny-sous-Bois,Isla de Francia,
+983,Europe,Western Europe,Francia,Rueil-Malmaison,Isla de Francia,
+984,Europe,Western Europe,Francia,Saint-Cloud,Isla de Francia,
+985,Europe,Western Europe,Francia,Saint-Cyr-sur-Loire,Centro-Valle de Loira,
+986,Europe,Western Europe,Francia,Saint-Denis,Isla de Francia,
+987,Europe,Western Europe,Francia,Saint-Germain-en-Laye,Isla de Francia,
+988,Europe,Western Europe,Francia,Saint-Gratien,Isla de Francia,
+989,Europe,Western Europe,Francia,Saint-Jean-de-la-Ruelle,Centro-Valle de Loira,
+990,Europe,Western Europe,Francia,Saint-Laurent-du-Var,Provenza-Alpes-Costa Azul,
+991,Europe,Western Europe,Francia,Saint-Michel-sur-Orge,Isla de Francia,
+992,Europe,Western Europe,Francia,Saint-Ouen,Isla de Francia,
+993,Europe,Western Europe,Francia,Saint-Pierre-des-Corps,Centro-Valle de Loira,
+994,Europe,Western Europe,Francia,Salon-de-Provence,Provenza-Alpes-Costa Azul,
+995,Europe,Western Europe,Francia,Sanary-sur-Mer,Provenza-Alpes-Costa Azul,
+996,Europe,Western Europe,Francia,Sannois,Isla de Francia,
+997,Europe,Western Europe,Francia,Sarcelles,Isla de Francia,
+998,Europe,Western Europe,Francia,Sartrouville,Isla de Francia,
+999,Europe,Western Europe,Francia,Savigny-le-Temple,Isla de Francia,
+1000,Europe,Western Europe,Francia,Sceaux,Isla de Francia,
+1001,Europe,Western Europe,Francia,Sevran,Isla de Francia,
+1002,Europe,Western Europe,Francia,Six-Fours-les-Plages,Provenza-Alpes-Costa Azul,
+1003,Europe,Western Europe,Francia,Sorgues,Provenza-Alpes-Costa Azul,
+1004,Europe,Western Europe,Francia,Stains,Isla de Francia,
+1005,Europe,Western Europe,Francia,Sucy-en-Brie,Isla de Francia,
+1006,Europe,Western Europe,Francia,Suresnes,Isla de Francia,
+1007,Europe,Western Europe,Francia,Taverny,Isla de Francia,
+1008,Europe,Western Europe,Francia,Thiais,Isla de Francia,
+1009,Europe,Western Europe,Francia,Torcy,Isla de Francia,
+1010,Europe,Western Europe,Francia,Toulon,Provenza-Alpes-Costa Azul,
+1011,Europe,Western Europe,Francia,Tours,Centro-Valle de Loira,
+1012,Europe,Western Europe,Francia,Trappes,Isla de Francia,
+1013,Europe,Western Europe,Francia,Tremblay-en-France,Isla de Francia,
+1014,Europe,Western Europe,Francia,Vallauris,Provenza-Alpes-Costa Azul,
+1015,Europe,Western Europe,Francia,Vanves,Isla de Francia,
+1016,Europe,Western Europe,Francia,Vence,Provenza-Alpes-Costa Azul,
+1017,Europe,Western Europe,Francia,Versailles,Isla de Francia,
+1018,Europe,Western Europe,Francia,Vichy,Auvernia,
+1019,Europe,Western Europe,Francia,Vigneux-sur-Seine,Isla de Francia,
+1020,Europe,Western Europe,Francia,Villejuif,Isla de Francia,
+1021,Europe,Western Europe,Francia,Villemomble,Isla de Francia,
+1022,Europe,Western Europe,Francia,Villeneuve-Saint-Georges,Isla de Francia,
+1023,Europe,Western Europe,Francia,Villeneuve-la-Garenne,Isla de Francia,
+1024,Europe,Western Europe,Francia,Villeneuve-le-Roi,Isla de Francia,
+1025,Europe,Western Europe,Francia,Villeparisis,Isla de Francia,
+1026,Europe,Western Europe,Francia,Villiers-le-Bel,Isla de Francia,
+1027,Europe,Western Europe,Francia,Villiers-sur-Marne,Isla de Francia,
+1028,Europe,Western Europe,Francia,Vincennes,Isla de Francia,
+1029,Europe,Western Europe,Francia,Viroflay,Isla de Francia,
+1030,Europe,Western Europe,Francia,Vitrolles,Provenza-Alpes-Costa Azul,
+1031,Europe,Western Europe,Francia,Vitry-sur-Seine,Isla de Francia,
+1032,Europe,Western Europe,Francia,Yerres,Isla de Francia,
+1033,Europe,Western Europe,Luxemburgo,Luxemburgo,Luxemburgo,
+1034,Europe,Western Europe,Suiza,Basel,Basilea-Ciudad,
+1035,Europe,Western Europe,Suiza,Berne,Berna,
+1036,Europe,Western Europe,Suiza,Ginebra,Ginebra,
+1037,Europe,Western Europe,Suiza,Lausanne,Vaud,
+1038,Europe,Western Europe,Suiza,Lucerna,Lucerna,
+1039,Europe,Western Europe,Suiza,San Galo,San Galo,
+1040,LATAM,Caribbean,Barbados,Bridgetown,San Miguel,
+1041,LATAM,Caribbean,Cuba,Artemisa,Artemisa,
+1042,LATAM,Caribbean,Cuba,Bayamo,Granma,
+1043,LATAM,Caribbean,Cuba,Cienfuegos,Cienfuegos,
+1044,LATAM,Caribbean,Cuba,Contramaestre,Santiago de Cuba,
+1045,LATAM,Caribbean,Cuba,Las Tunas,Las Tunas,
+1046,LATAM,Caribbean,Cuba,Manzanillo,Granma,
+1047,LATAM,Caribbean,Cuba,Matanzas,Matanzas,
+1048,LATAM,Caribbean,Cuba,Nueva Gerona,Isla de la Juventud,
+1049,LATAM,Caribbean,Cuba,Palma Soriano,Santiago de Cuba,
+1050,LATAM,Caribbean,Cuba,Puerto Padre,Las Tunas,
+1051,LATAM,Caribbean,Cuba,Santa Clara,Villa Clara,
+1052,LATAM,Caribbean,Cuba,Santiago de Cuba,Santiago de Cuba,
+1053,LATAM,Caribbean,Guadalupe,Les Abymes,Guadalupe,
+1054,LATAM,Caribbean,Jamaica,Portmore,Santa Caterina,
+1055,LATAM,Caribbean,Jamaica,Spanish Town,Santa Caterina,
+1056,LATAM,Caribbean,Martinica,Fort-de-France,Martinica,
+1057,LATAM,Caribbean,Trinidad y Tobago,Chaguanas,Chaguanas,
+1058,LATAM,Caribbean,Trinidad y Tobago,San Fernando,San Fernando,
+1059,LATAM,Central America,Belice,San Ignacio,Distrito de Cayo,
+1060,LATAM,Central America,Costa Rica,Nicoya,Guanacaste,
+1061,LATAM,Central America,El Salvador,Apopa,San Salvador,
+1062,LATAM,Central America,El Salvador,Cuscatancingo,San Salvador,
+1063,LATAM,Central America,El Salvador,Delgado,San Salvador,
+1064,LATAM,Central America,El Salvador,Ilopango,San Salvador,
+1065,LATAM,Central America,El Salvador,Mejicanos,San Salvador,
+1066,LATAM,Central America,El Salvador,San Salvador,San Salvador,
+1067,LATAM,Central America,El Salvador,Santa Ana,Santa Ana,
+1068,LATAM,Central America,El Salvador,Sonsonate,Sonsonate,
+1069,LATAM,Central America,El Salvador,Soyapango,San Salvador,
+1070,LATAM,Central America,Guatemala,Chimaltenango,Chimaltenango,
+1071,LATAM,Central America,Guatemala,Chinautla,Guatemala,
+1072,LATAM,Central America,Guatemala,Escuintla,Escuintla,
+1073,LATAM,Central America,Guatemala,Guatemala City,Guatemala,
+1074,LATAM,Central America,Guatemala,Huehuetenango,Huehuetenango,
+1075,LATAM,Central America,Guatemala,Mixco,Guatemala,
+1076,LATAM,Central America,Guatemala,Petapa,Guatemala,
+1077,LATAM,Central America,Guatemala,Quetzaltenango,Quezaltenango,
+1078,LATAM,Central America,Guatemala,Villa Canales,Guatemala,
+1079,LATAM,Central America,Guatemala,Villa Nueva,Guatemala,
+1080,LATAM,Central America,Honduras,Choluteca,Choluteca,
+1081,LATAM,Central America,Honduras,El Progreso,Yoro,
+1082,LATAM,Central America,Nicaragua,Chinandega,Chinandega,
+1083,LATAM,Central America,Nicaragua,Granada,Granada,
+1084,LATAM,Central America,Nicaragua,Managua,Managua,
+1085,LATAM,Central America,Nicaragua,Masaya,Masaya,
+1086,LATAM,Central America,Nicaragua,Matagalpa,Matagalpa,
+1087,LATAM,Central America,Nicaragua,Tipitapa,Managua,
+1088,LATAM,South America,Argentina,Avellaneda,Santa Fe,
+1089,LATAM,South America,Argentina,Buenos Aires,Buenos Aires,
+1090,LATAM,South America,Argentina,Comodoro Rivadavia,Chubut,
+1091,LATAM,South America,Argentina,Corrientes,Corrientes,
+1092,LATAM,South America,Argentina,Esquina,Corrientes,
+1093,LATAM,South America,Argentina,La Plata,Buenos Aires (provincia),
+1094,LATAM,South America,Argentina,La Rioja,La Rioja,
+1095,LATAM,South America,Argentina,Mar del Plata,Buenos Aires (provincia),
+1096,LATAM,South America,Argentina,Mendoza,Mendoza,
+1097,LATAM,South America,Argentina,Posadas,Misiones,
+1098,LATAM,South America,Argentina,Quilmes,Buenos Aires (provincia),
+1099,LATAM,South America,Argentina,Resistencia,Chaco,
+1100,LATAM,South America,Argentina,Rosario,Santa Fe,
+1101,LATAM,South America,Argentina,Salta,Salta,
+1102,LATAM,South America,Argentina,San Fernando del Valle de Catamarca,Catamarca,
+1103,LATAM,South America,Argentina,San Juan,San Juan,
+1104,LATAM,South America,Argentina,San Justo,Santa Fe,
+1105,LATAM,South America,Argentina,San Luis,San Luis,
+1106,LATAM,South America,Argentina,San Rafael,Mendoza,
+1107,LATAM,South America,Argentina,San Salvador de Jujuy,Jujuy,
+1108,LATAM,South America,Argentina,Santa Fe,Santa Fe,
+1109,LATAM,South America,Argentina,Santa Rosa,La Pampa,
+1110,LATAM,South America,Argentina,Santiago del Estero,Santiago del Estero,
+1111,LATAM,South America,Argentina,Tartagal,Salta,
+1112,LATAM,South America,Bolivia,Cochabamba,Cochabamba,
+1113,LATAM,South America,Bolivia,La Paz,La Paz,
+1114,LATAM,South America,Bolivia,Oruro,Oruro,
+1115,LATAM,South America,Bolivia,Riberalta,El Beni,
+1116,LATAM,South America,Bolivia,Santa Cruz de la Sierra,Santa Cruz,
+1117,LATAM,South America,Bolivia,Sucre,Chuquisaca,
+1118,LATAM,South America,Bolivia,Trinidad,El Beni,
+1119,LATAM,South America,Bolivia,Yacuiba,Tarija,
+1120,LATAM,South America,Brasil,Abreu e Lima,Pernambuco,
+1121,LATAM,South America,Brasil,Aracaju,Sergipe,
+1122,LATAM,South America,Brasil,Arapiraca,Alagoas,
+1123,LATAM,South America,Brasil,Arcoverde,Pernambuco,
+1124,LATAM,South America,Brasil,Barbacena,Minas Gerais,
+1125,LATAM,South America,Brasil,Belo Horizonte,Minas Gerais,
+1126,LATAM,South America,Brasil,Betim,Minas Gerais,
+1127,LATAM,South America,Brasil,Bezerros,Pernambuco,
+1128,LATAM,South America,Brasil,Blumenau,Santa Catarina,
+1129,LATAM,South America,Brasil,Boa Vista,Roraima,
+1130,LATAM,South America,Brasil,Cabo de Santo Agostinho,Pernambuco,
+1131,LATAM,South America,Brasil,Camaragibe,Pernambuco,
+1132,LATAM,South America,Brasil,Campo Grande,Mato Grosso del Sur,
+1133,LATAM,South America,Brasil,Canoas,Rio Grande do Sul,
+1134,LATAM,South America,Brasil,Caxias do Sul,Rio Grande do Sul,
+1135,LATAM,South America,Brasil,Coari,Amazonas,
+1136,LATAM,South America,Brasil,Conselheiro Lafaiete,Minas Gerais,
+1137,LATAM,South America,Brasil,Contagem,Minas Gerais,
+1138,LATAM,South America,Brasil,Cruzeiro do Sul,Acre,
+1139,LATAM,South America,Brasil,Dourados,Mato Grosso del Sur,
+1140,LATAM,South America,Brasil,Erechim,Rio Grande do Sul,
+1141,LATAM,South America,Brasil,Farroupilha,Rio Grande do Sul,
+1142,LATAM,South America,Brasil,Garanhuns,Pernambuco,
+1143,LATAM,South America,Brasil,Gaspar,Santa Catarina,
+1144,LATAM,South America,Brasil,Gurupi,Tocantins,
+1145,LATAM,South America,Brasil,Igarassu,Pernambuco,
+1146,LATAM,South America,Brasil,Indaial,Santa Catarina,
+1147,LATAM,South America,Brasil,Ipatinga,Minas Gerais,
+1148,LATAM,South America,Brasil,Ituiutaba,Minas Gerais,
+1149,LATAM,South America,Brasil,Joinville,Santa Catarina,
+1150,LATAM,South America,Brasil,Juiz de Fora,Minas Gerais,
+1151,LATAM,South America,Brasil,Jurema,Pernambuco,
+1152,LATAM,South America,Brasil,Lajeado,Rio Grande do Sul,
+1153,LATAM,South America,Brasil,Manacapuru,Amazonas,
+1154,LATAM,South America,Brasil,Manaus,Amazonas,
+1155,LATAM,South America,Brasil,Montes Claros,Minas Gerais,
+1156,LATAM,South America,Brasil,Navegantes,Santa Catarina,
+1157,LATAM,South America,Brasil,Nova Serrana,Minas Gerais,
+1158,LATAM,South America,Brasil,Novo Cruzeiro,Minas Gerais,
+1159,LATAM,South America,Brasil,Palmares,Pernambuco,
+1160,LATAM,South America,Brasil,Paracatu,Minas Gerais,
+1161,LATAM,South America,Brasil,Parintins,Amazonas,
+1162,LATAM,South America,Brasil,Passo Fundo,Rio Grande do Sul,
+1163,LATAM,South America,Brasil,Passos,Minas Gerais,
+1164,LATAM,South America,Brasil,Paulista,Pernambuco,
+1165,LATAM,South America,Brasil,Pelotas,Rio Grande do Sul,
+1166,LATAM,South America,Brasil,Penedo,Alagoas,
+1167,LATAM,South America,Brasil,Pilar,Alagoas,
+1168,LATAM,South America,Brasil,Pirapora,Minas Gerais,
+1169,LATAM,South America,Brasil,Ponte Nova,Minas Gerais,
+1170,LATAM,South America,Brasil,Pontes e Lacerda,Mato Grosso,
+1171,LATAM,South America,Brasil,Porto Alegre,Rio Grande do Sul,
+1172,LATAM,South America,Brasil,Pouso Alegre,Minas Gerais,
+1173,LATAM,South America,Brasil,Recife,Pernambuco,
+1174,LATAM,South America,Brasil,Rio Branco,Acre,
+1175,LATAM,South America,Brasil,Rio Grande,Rio Grande do Sul,
+1176,LATAM,South America,Brasil,Santa Cruz do Sul,Rio Grande do Sul,
+1177,LATAM,South America,Brasil,Santa Rosa,Rio Grande do Sul,
+1178,LATAM,South America,Brasil,Sapucaia do Sul,Rio Grande do Sul,
+1179,LATAM,South America,Brasil,Sinop,Mato Grosso,
+1180,LATAM,South America,Brasil,Sorriso,Mato Grosso,
+1181,LATAM,South America,Brasil,Surubim,Pernambuco,
+1182,LATAM,South America,Brasil,Uberaba,Minas Gerais,
+1183,LATAM,South America,Brasil,Uruguaiana,Rio Grande do Sul,
+1184,LATAM,South America,Brasil,Vacaria,Rio Grande do Sul,
+1185,LATAM,South America,Brasil,Vespasiano,Minas Gerais,
+1186,LATAM,South America,Chile,Antofagasta,Antofagasta,
+1187,LATAM,South America,Chile,Arica,Arica y Parinacota,
+1188,LATAM,South America,Chile,Calama,Antofagasta,
+1189,LATAM,South America,Chile,La Pintana,Santiago de Chile,
+1190,LATAM,South America,Chile,Osorno,Los Lagos,
+1191,LATAM,South America,Chile,Puente Alto,Santiago de Chile,
+1192,LATAM,South America,Chile,Puerto Montt,Los Lagos,
+1193,LATAM,South America,Chile,Rancagua,O'Higgins,
+1194,LATAM,South America,Chile,San Bernardo,Santiago de Chile,
+1195,LATAM,South America,Chile,Santiago de Chile,Santiago de Chile,
+1196,LATAM,South America,Colombia,Arauca,Arauca,
+1197,LATAM,South America,Colombia,Bucaramanga,Santander,
+1198,LATAM,South America,Colombia,Cartago,Valle del Cauca,
+1199,LATAM,South America,Colombia,Dos Quebradas,Risaralda,
+1200,LATAM,South America,Colombia,Floridablanca,Santander,
+1201,LATAM,South America,Colombia,Los Patios,Norte de Santander,
+1202,LATAM,South America,Colombia,Manizales,Caldas,
+1203,LATAM,South America,Colombia,Mosquera,Cundinamarca,
+1204,LATAM,South America,Colombia,Neiva,Huila,
+1205,LATAM,South America,Colombia,Palmira,Valle del Cauca,
+1206,LATAM,South America,Colombia,Pereira,Risaralda,
+1207,LATAM,South America,Colombia,Piedecuesta,Santander,
+1208,LATAM,South America,Colombia,Pitalito,Huila,
+1209,LATAM,South America,Colombia,Santa Marta,Magdalena,
+1210,LATAM,South America,Colombia,Soacha,Cundinamarca,
+1211,LATAM,South America,Colombia,Valledupar,Cesar,
+1212,LATAM,South America,Colombia,Villavicencio,Meta,
+1213,LATAM,South America,Colombia,Yopal,Casanare,
+1214,LATAM,South America,Ecuador,Cuenca,Azuay,
+1215,LATAM,South America,Ecuador,Guayaquil,Guayas,
+1216,LATAM,South America,Ecuador,Quito,Pichincha,
+1217,LATAM,South America,Ecuador,Santo Domingo de los Colorados,Pichincha,
+1218,LATAM,South America,Guyana,Linden,Demerara-Berbice Superior,
+1219,LATAM,South America,Paraguay,Fernando de la Mora,Central,
+1220,LATAM,South America,Paraguay,San Lorenzo,Central,
+1221,LATAM,South America,Surinam,Paramaribo,Paramaribo,
+1222,LATAM,South America,Uruguay,Las Piedras,Canelones,
+1223,LATAM,South America,Uruguay,Montevideo,Montevideo,
+1224,LATAM,South America,Uruguay,Rivera,Rivera,
+1225,LATAM,South America,Venezuela,Acarigua,Portuguesa,
+1226,LATAM,South America,Venezuela,Barquisimeto,Lara,
+1227,LATAM,South America,Venezuela,Baruta,Miranda,
+1228,LATAM,South America,Venezuela,Cabimas,Zulia,
+1229,LATAM,South America,Venezuela,Cagua,Aragua,
+1230,LATAM,South America,Venezuela,Caracas,Distrito Capital,
+1231,LATAM,South America,Venezuela,Carora,Lara,
+1232,LATAM,South America,Venezuela,Catia La Mar,Vargas,
+1233,LATAM,South America,Venezuela,Charallave,Miranda,
+1234,LATAM,South America,Venezuela,Guacara,Carabobo,
+1235,LATAM,South America,Venezuela,Guanare,Portuguesa,
+1236,LATAM,South America,Venezuela,Guarenas,Miranda,
+1237,LATAM,South America,Venezuela,Guatire,Miranda,
+1238,LATAM,South America,Venezuela,Maracaibo,Zulia,
+1239,LATAM,South America,Venezuela,Maracay,Aragua,
+1240,LATAM,South America,Venezuela,Palo Negro,Aragua,
+1241,LATAM,South America,Venezuela,Petare,Miranda,
+1242,LATAM,South America,Venezuela,Porlamar,Nueva Esparta,
+1243,LATAM,South America,Venezuela,San Carlos del Zulia,Zulia,
+1244,LATAM,South America,Venezuela,Tinaquillo,Cojedes,
+1245,LATAM,South America,Venezuela,Turmero,Aragua,
+1246,LATAM,South America,Venezuela,Valencia,Carabobo,
+1247,LATAM,South America,Venezuela,Yaritagua,Yaracuy,
+1248,Pacific Asia,Eastern Asia,China,Aksu,Xinjiang Uygur,
+1249,Pacific Asia,Eastern Asia,China,Anqing,Anhui,
+1250,Pacific Asia,Eastern Asia,China,Anshan,Liaoning,
+1251,Pacific Asia,Eastern Asia,China,Anshun,Guizhou,
+1252,Pacific Asia,Eastern Asia,China,Anyang,Henan,
+1253,Pacific Asia,Eastern Asia,China,Baoding,Hebei,
+1254,Pacific Asia,Eastern Asia,China,Baotou,Mongolia Interior,
+1255,Pacific Asia,Eastern Asia,China,Beipiao,Liaoning,
+1256,Pacific Asia,Eastern Asia,China,Bengbu,Anhui,
+1257,Pacific Asia,Eastern Asia,China,Benxi,Liaoning,
+1258,Pacific Asia,Eastern Asia,China,Bijie,Guizhou,
+1259,Pacific Asia,Eastern Asia,China,Binzhou,Heilongjiang,
+1260,Pacific Asia,Eastern Asia,China,Binzhou,Shandong,
+1261,Pacific Asia,Eastern Asia,China,Cangzhou,Hebei,
+1262,Pacific Asia,Eastern Asia,China,Changchun,Jilin,
+1263,Pacific Asia,Eastern Asia,China,Changde,Hunan,
+1264,Pacific Asia,Eastern Asia,China,Changsha,Hunan,
+1265,Pacific Asia,Eastern Asia,China,Changshu,Jiangsu,
+1266,Pacific Asia,Eastern Asia,China,Changzhi,Shanxi,
+1267,Pacific Asia,Eastern Asia,China,Changzhou,Jiangsu,
+1268,Pacific Asia,Eastern Asia,China,Chaohu,Anhui,
+1269,Pacific Asia,Eastern Asia,China,Chaoyang,Jilin,
+1270,Pacific Asia,Eastern Asia,China,Chaoyang,Liaoning,
+1271,Pacific Asia,Eastern Asia,China,Chaozhou,Guangdong,
+1272,Pacific Asia,Eastern Asia,China,Chengdu,Sichuan,
+1273,Pacific Asia,Eastern Asia,China,Chengjiang,Jiangsu,
+1274,Pacific Asia,Eastern Asia,China,Chenzhou,Hunan,
+1275,Pacific Asia,Eastern Asia,China,Chifeng,Mongolia Interior,
+1276,Pacific Asia,Eastern Asia,China,Chongqing,Chongqing,
+1277,Pacific Asia,Eastern Asia,China,Dalian,Liaoning,
+1278,Pacific Asia,Eastern Asia,China,Daqing,Heilongjiang,
+1279,Pacific Asia,Eastern Asia,China,Datong,Anhui,
+1280,Pacific Asia,Eastern Asia,China,Datong,Shanxi,
+1281,Pacific Asia,Eastern Asia,China,Deyang,Sichuan,
+1282,Pacific Asia,Eastern Asia,China,Dongguan,Guangdong,
+1283,Pacific Asia,Eastern Asia,China,Donghai,Guangdong,
+1284,Pacific Asia,Eastern Asia,China,Ezhou,Hubei,
+1285,Pacific Asia,Eastern Asia,China,Fengcheng,Liaoning,
+1286,Pacific Asia,Eastern Asia,China,Foshan,Guangdong,
+1287,Pacific Asia,Eastern Asia,China,Fushun,Liaoning,
+1288,Pacific Asia,Eastern Asia,China,Fuzhou,Fujian,
+1289,Pacific Asia,Eastern Asia,China,Gaomi,Shandong,
+1290,Pacific Asia,Eastern Asia,China,Gaoyou,Jiangsu,
+1291,Pacific Asia,Eastern Asia,China,Gongzhuling,Jilin,
+1292,Pacific Asia,Eastern Asia,China,Guangshui,Hubei,
+1293,Pacific Asia,Eastern Asia,China,Guangzhou,Guangdong,
+1294,Pacific Asia,Eastern Asia,China,Guilin,Guangxi,
+1295,Pacific Asia,Eastern Asia,China,Guiping,Guangxi,
+1296,Pacific Asia,Eastern Asia,China,Guiyang,Guizhou,
+1297,Pacific Asia,Eastern Asia,China,Haikou,Hainan,
+1298,Pacific Asia,Eastern Asia,China,Hailin,Heilongjiang,
+1299,Pacific Asia,Eastern Asia,China,Handan,Hebei,
+1300,Pacific Asia,Eastern Asia,China,Hangu,Tianjin,
+1301,Pacific Asia,Eastern Asia,China,Hangzhou,Zhejiang,
+1302,Pacific Asia,Eastern Asia,China,Harbin,Heilongjiang,
+1303,Pacific Asia,Eastern Asia,China,Hebi,Henan,
+1304,Pacific Asia,Eastern Asia,China,Hefei,Anhui,
+1305,Pacific Asia,Eastern Asia,China,Hengyang,Hunan,
+1306,Pacific Asia,Eastern Asia,China,Heyuan,Guangdong,
+1307,Pacific Asia,Eastern Asia,China,Heze,Shandong,
+1308,Pacific Asia,Eastern Asia,China,Hohhot,Mongolia Interior,
+1309,Pacific Asia,Eastern Asia,China,Huadian,Jilin,
+1310,Pacific Asia,Eastern Asia,China,Huaibei,Anhui,
+1311,Pacific Asia,Eastern Asia,China,Huaihua,Hunan,
+1312,Pacific Asia,Eastern Asia,China,Huainan,Anhui,
+1313,Pacific Asia,Eastern Asia,China,Huaiyin,Jiangsu,
+1314,Pacific Asia,Eastern Asia,China,Huangshan,Anhui,
+1315,Pacific Asia,Eastern Asia,China,Huangshi,Hubei,
+1316,Pacific Asia,Eastern Asia,China,Huizhou,Guangdong,
+1317,Pacific Asia,Eastern Asia,China,Huzhou,Zhejiang,
+1318,Pacific Asia,Eastern Asia,China,Jiamusi,Heilongjiang,
+1319,Pacific Asia,Eastern Asia,China,Jiangdu,Jiangsu,
+1320,Pacific Asia,Eastern Asia,China,Jiangmen,Guangdong,
+1321,Pacific Asia,Eastern Asia,China,Jiangyan,Jiangsu,
+1322,Pacific Asia,Eastern Asia,China,Jiangyou,Sichuan,
+1323,Pacific Asia,Eastern Asia,China,Jiaohe,Jilin,
+1324,Pacific Asia,Eastern Asia,China,Jiaozuo,Henan,
+1325,Pacific Asia,Eastern Asia,China,Jiaxing,Zhejiang,
+1326,Pacific Asia,Eastern Asia,China,Jieshou,Anhui,
+1327,Pacific Asia,Eastern Asia,China,Jieyang,Guangdong,
+1328,Pacific Asia,Eastern Asia,China,Jilin,Jilin,
+1329,Pacific Asia,Eastern Asia,China,Jinan,Shandong,
+1330,Pacific Asia,Eastern Asia,China,Jincheng,Shanxi,
+1331,Pacific Asia,Eastern Asia,China,Jingdezhen,Jiangxi,
+1332,Pacific Asia,Eastern Asia,China,Jingmen,Hubei,
+1333,Pacific Asia,Eastern Asia,China,Jinhua,Zhejiang,
+1334,Pacific Asia,Eastern Asia,China,Jining,Mongolia Interior,
+1335,Pacific Asia,Eastern Asia,China,Jining,Shandong,
+1336,Pacific Asia,Eastern Asia,China,Jinjiang,Fujian,
+1337,Pacific Asia,Eastern Asia,China,Jiutai,Jilin,
+1338,Pacific Asia,Eastern Asia,China,Jixi,Heilongjiang,
+1339,Pacific Asia,Eastern Asia,China,Kaifeng,Henan,
+1340,Pacific Asia,Eastern Asia,China,Kaiyuan,Liaoning,
+1341,Pacific Asia,Eastern Asia,China,Kaiyuan,Yunnan,
+1342,Pacific Asia,Eastern Asia,China,Korla,Xinjiang Uygur,
+1343,Pacific Asia,Eastern Asia,China,Kunming,Yunnan,
+1344,Pacific Asia,Eastern Asia,China,Laiyang,Shandong,
+1345,Pacific Asia,Eastern Asia,China,Langfang,Hebei,
+1346,Pacific Asia,Eastern Asia,China,Lanxi,Zhejiang,
+1347,Pacific Asia,Eastern Asia,China,Lanzhou,Gansu,
+1348,Pacific Asia,Eastern Asia,China,Laohekou,Hubei,
+1349,Pacific Asia,Eastern Asia,China,Leshan,Sichuan,
+1350,Pacific Asia,Eastern Asia,China,Lianyuan,Hunan,
+1351,Pacific Asia,Eastern Asia,China,Lianzhou,Guangdong,
+1352,Pacific Asia,Eastern Asia,China,Lianzhou,Guangxi,
+1353,Pacific Asia,Eastern Asia,China,Liaocheng,Shandong,
+1354,Pacific Asia,Eastern Asia,China,Liaoyang,Liaoning,
+1355,Pacific Asia,Eastern Asia,China,Liaoyuan,Jilin,
+1356,Pacific Asia,Eastern Asia,China,Licheng,Guangdong,
+1357,Pacific Asia,Eastern Asia,China,Licheng,Jiangsu,
+1358,Pacific Asia,Eastern Asia,China,Linhai,Zhejiang,
+1359,Pacific Asia,Eastern Asia,China,Linyi,Shandong,
+1360,Pacific Asia,Eastern Asia,China,Liuyang,Hunan,
+1361,Pacific Asia,Eastern Asia,China,Loudi,Hunan,
+1362,Pacific Asia,Eastern Asia,China,Luohe,Henan,
+1363,Pacific Asia,Eastern Asia,China,Luoyang,Fujian,
+1364,Pacific Asia,Eastern Asia,China,Luoyang,Guangdong,
+1365,Pacific Asia,Eastern Asia,China,Luoyang,Henan,
+1366,Pacific Asia,Eastern Asia,China,Macheng,Hubei,
+1367,Pacific Asia,Eastern Asia,China,Meizhou,Guangdong,
+1368,Pacific Asia,Eastern Asia,China,Mianyang,Sichuan,
+1369,Pacific Asia,Eastern Asia,China,Mudanjiang,Heilongjiang,
+1370,Pacific Asia,Eastern Asia,China,Nanchang,Jiangxi,
+1371,Pacific Asia,Eastern Asia,China,Nanchong,Sichuan,
+1372,Pacific Asia,Eastern Asia,China,Nanning,Guangxi,
+1373,Pacific Asia,Eastern Asia,China,Nantong,Jiangsu,
+1374,Pacific Asia,Eastern Asia,China,Nanyang,Henan,
+1375,Pacific Asia,Eastern Asia,China,Neijiang,Sichuan,
+1376,Pacific Asia,Eastern Asia,China,Ningbo,Zhejiang,
+1377,Pacific Asia,Eastern Asia,China,Ninghai,Shandong,
+1378,Pacific Asia,Eastern Asia,China,Ninghai,Zhejiang,
+1379,Pacific Asia,Eastern Asia,China,Penglai,Shandong,
+1380,Pacific Asia,Eastern Asia,China,Pingdingshan,Henan,
+1381,Pacific Asia,Eastern Asia,China,Pingnan,Guangxi,
+1382,Pacific Asia,Eastern Asia,China,Pingxiang,Jiangxi,
+1383,Pacific Asia,Eastern Asia,China,Puyang,Henan,
+1384,Pacific Asia,Eastern Asia,China,Qidong,Jiangsu,
+1385,Pacific Asia,Eastern Asia,China,Qingdao,Shandong,
+1386,Pacific Asia,Eastern Asia,China,Qiqihar,Heilongjiang,
+1387,Pacific Asia,Eastern Asia,China,Qitaihe,Heilongjiang,
+1388,Pacific Asia,Eastern Asia,China,Quanzhou,Fujian,
+1389,Pacific Asia,Eastern Asia,China,Renqiu,Hebei,
+1390,Pacific Asia,Eastern Asia,China,Rizhao,Shandong,
+1391,Pacific Asia,Eastern Asia,China,Sanming,Fujian,
+1392,Pacific Asia,Eastern Asia,China,Sanya,Hainan,
+1393,Pacific Asia,Eastern Asia,China,Shangqiu,Henan,
+1394,Pacific Asia,Eastern Asia,China,Shangyu,Zhejiang,
+1395,Pacific Asia,Eastern Asia,China,Shangzhi,Heilongjiang,
+1396,Pacific Asia,Eastern Asia,China,Shantou,Guangdong,
+1397,Pacific Asia,Eastern Asia,China,Shanwei,Guangdong,
+1398,Pacific Asia,Eastern Asia,China,Shaoxing,Zhejiang,
+1399,Pacific Asia,Eastern Asia,China,Shashi,Hubei,
+1400,Pacific Asia,Eastern Asia,China,Shenyang,Liaoning,
+1401,Pacific Asia,Eastern Asia,China,Shenzhen,Guangdong,
+1402,Pacific Asia,Eastern Asia,China,Shihezi,Xinjiang Uygur,
+1403,Pacific Asia,Eastern Asia,China,Shijiazhuang,Hebei,
+1404,Pacific Asia,Eastern Asia,China,Shizuishan,Ningxia Hui,
+1405,Pacific Asia,Eastern Asia,China,Shouguang,Shandong,
+1406,Pacific Asia,Eastern Asia,China,Shuangcheng,Heilongjiang,
+1407,Pacific Asia,Eastern Asia,China,Shuangyashan,Heilongjiang,
+1408,Pacific Asia,Eastern Asia,China,Shulan,Jilin,
+1409,Pacific Asia,Eastern Asia,China,Siping,Jilin,
+1410,Pacific Asia,Eastern Asia,China,Suihua,Heilongjiang,
+1411,Pacific Asia,Eastern Asia,China,Suining,Sichuan,
+1412,Pacific Asia,Eastern Asia,China,Suizhou,Hubei,
+1413,Pacific Asia,Eastern Asia,China,Suzhou,Anhui,
+1414,Pacific Asia,Eastern Asia,China,Suzhou,Gansu,
+1415,Pacific Asia,Eastern Asia,China,Suzhou,Jiangsu,
+1416,Pacific Asia,Eastern Asia,China,Taixing,Jiangsu,
+1417,Pacific Asia,Eastern Asia,China,Taiyuan,Shanxi,
+1418,Pacific Asia,Eastern Asia,China,Taizhou,Jiangsu,
+1419,Pacific Asia,Eastern Asia,China,Tanggu,Tianjin,
+1420,Pacific Asia,Eastern Asia,China,Tangshan,Hebei,
+1421,Pacific Asia,Eastern Asia,China,Tengzhou,Shandong,
+1422,Pacific Asia,Eastern Asia,China,Tianjin,Tianjin,
+1423,Pacific Asia,Eastern Asia,China,Tieling,Liaoning,
+1424,Pacific Asia,Eastern Asia,China,Tongchuan,Shaanxi,
+1425,Pacific Asia,Eastern Asia,China,Tongchuan,Sichuan,
+1426,Pacific Asia,Eastern Asia,China,Tongliao,Mongolia Interior,
+1427,Pacific Asia,Eastern Asia,China,Tongling,Anhui,
+1428,Pacific Asia,Eastern Asia,China,Wafangdian,Liaoning,
+1429,Pacific Asia,Eastern Asia,China,Weifang,Shandong,
+1430,Pacific Asia,Eastern Asia,China,Weihai,Shandong,
+1431,Pacific Asia,Eastern Asia,China,Wendeng,Shandong,
+1432,Pacific Asia,Eastern Asia,China,Wenling,Zhejiang,
+1433,Pacific Asia,Eastern Asia,China,Wenzhou,Zhejiang,
+1434,Pacific Asia,Eastern Asia,China,Wuchang,Heilongjiang,
+1435,Pacific Asia,Eastern Asia,China,Wuchuan,Guangdong,
+1436,Pacific Asia,Eastern Asia,China,Wuhai,Mongolia Interior,
+1437,Pacific Asia,Eastern Asia,China,Wuhan,Hubei,
+1438,Pacific Asia,Eastern Asia,China,Wuxi,Hunan,
+1439,Pacific Asia,Eastern Asia,China,Wuxi,Jiangsu,
+1440,Pacific Asia,Eastern Asia,China,Wuzhou,Guangxi,
+1441,Pacific Asia,Eastern Asia,China,Xi'an,Shaanxi,
+1442,Pacific Asia,Eastern Asia,China,Xiamen,Fujian,
+1443,Pacific Asia,Eastern Asia,China,Xiangfan,Hubei,
+1444,Pacific Asia,Eastern Asia,China,Xiangtan,Hunan,
+1445,Pacific Asia,Eastern Asia,China,Xianning,Hubei,
+1446,Pacific Asia,Eastern Asia,China,Xiantao,Hubei,
+1447,Pacific Asia,Eastern Asia,China,Xianyang,Shaanxi,
+1448,Pacific Asia,Eastern Asia,China,Xiaogan,Hubei,
+1449,Pacific Asia,Eastern Asia,China,Xichang,Sichuan,
+1450,Pacific Asia,Eastern Asia,China,Xinghua,Jiangsu,
+1451,Pacific Asia,Eastern Asia,China,Xingtai,Hebei,
+1452,Pacific Asia,Eastern Asia,China,Xining,Qinghai,
+1453,Pacific Asia,Eastern Asia,China,Xinshi,Hubei,
+1454,Pacific Asia,Eastern Asia,China,Xintai,Shandong,
+1455,Pacific Asia,Eastern Asia,China,Xinxiang,Henan,
+1456,Pacific Asia,Eastern Asia,China,Xinyi,Guangdong,
+1457,Pacific Asia,Eastern Asia,China,Xinzhou,Hubei,
+1458,Pacific Asia,Eastern Asia,China,Xinzhou,Shanxi,
+1459,Pacific Asia,Eastern Asia,China,Xuanhua,Hebei,
+1460,Pacific Asia,Eastern Asia,China,Xuzhou,Jiangsu,
+1461,Pacific Asia,Eastern Asia,China,Yancheng,Jiangsu,
+1462,Pacific Asia,Eastern Asia,China,Yangjiang,Guangdong,
+1463,Pacific Asia,Eastern Asia,China,Yangquan,Shanxi,
+1464,Pacific Asia,Eastern Asia,China,Yangzhou,Jiangsu,
+1465,Pacific Asia,Eastern Asia,China,Yanji,Jilin,
+1466,Pacific Asia,Eastern Asia,China,Yantai,Shandong,
+1467,Pacific Asia,Eastern Asia,China,Yibin,Sichuan,
+1468,Pacific Asia,Eastern Asia,China,Yicheng,Hubei,
+1469,Pacific Asia,Eastern Asia,China,Yichun,Heilongjiang,
+1470,Pacific Asia,Eastern Asia,China,Yichun,Jiangxi,
+1471,Pacific Asia,Eastern Asia,China,Yingcheng,Hubei,
+1472,Pacific Asia,Eastern Asia,China,Yiwu,Zhejiang,
+1473,Pacific Asia,Eastern Asia,China,Yiyang,Hunan,
+1474,Pacific Asia,Eastern Asia,China,Yongchuan,Chongqing,
+1475,Pacific Asia,Eastern Asia,China,Yuanjiang,Hunan,
+1476,Pacific Asia,Eastern Asia,China,Yuci,Shanxi,
+1477,Pacific Asia,Eastern Asia,China,Yueyang,Hunan,
+1478,Pacific Asia,Eastern Asia,China,Yulin,Shaanxi,
+1479,Pacific Asia,Eastern Asia,China,Yuncheng,Shanxi,
+1480,Pacific Asia,Eastern Asia,China,Yunyang,Henan,
+1481,Pacific Asia,Eastern Asia,China,Yushu,Jilin,
+1482,Pacific Asia,Eastern Asia,China,Yuyao,Zhejiang,
+1483,Pacific Asia,Eastern Asia,China,Zaoyang,Hubei,
+1484,Pacific Asia,Eastern Asia,China,Zaozhuang,Shandong,
+1485,Pacific Asia,Eastern Asia,China,Zhangjiakou,Hebei,
+1486,Pacific Asia,Eastern Asia,China,Zhangzhou,Fujian,
+1487,Pacific Asia,Eastern Asia,China,Zhanjiang,Guangdong,
+1488,Pacific Asia,Eastern Asia,China,Zhaoqing,Guangdong,
+1489,Pacific Asia,Eastern Asia,China,Zhaoyuan,Heilongjiang,
+1490,Pacific Asia,Eastern Asia,China,Zhengzhou,Henan,
+1491,Pacific Asia,Eastern Asia,China,Zhenjiang,Jiangsu,
+1492,Pacific Asia,Eastern Asia,China,Zhongxiang,Hubei,
+1493,Pacific Asia,Eastern Asia,China,Zhoukou,Henan,
+1494,Pacific Asia,Eastern Asia,China,Zhuhai,Guangdong,
+1495,Pacific Asia,Eastern Asia,China,Zhumadian,Henan,
+1496,Pacific Asia,Eastern Asia,China,Zhuzhou,Hunan,
+1497,Pacific Asia,Eastern Asia,China,Zigong,Sichuan,
+1498,Pacific Asia,Eastern Asia,China,Zunyi,Guizhou,
+1499,Pacific Asia,Eastern Asia,Corea del Sur,Aew?l-li,Jeju,
+1500,Pacific Asia,Eastern Asia,Corea del Sur,Anyang,Gyeonggi,
+1501,Pacific Asia,Eastern Asia,Corea del Sur,Bucheon,Gyeonggi,
+1502,Pacific Asia,Eastern Asia,Corea del Sur,Busan,Busan,
+1503,Pacific Asia,Eastern Asia,Corea del Sur,Changwon,Gyeongsangnam,
+1504,Pacific Asia,Eastern Asia,Corea del Sur,Cheonan,Chungcheong del Sur,
+1505,Pacific Asia,Eastern Asia,Corea del Sur,Daegu,Daegu,
+1506,Pacific Asia,Eastern Asia,Corea del Sur,Daejeon,Daejeon,
+1507,Pacific Asia,Eastern Asia,Corea del Sur,Goyang,Gyeonggi,
+1508,Pacific Asia,Eastern Asia,Corea del Sur,Kwangju,Gyeonggi,
+1509,Pacific Asia,Eastern Asia,Corea del Sur,Suwon,Gyeonggi,
+1510,Pacific Asia,Eastern Asia,Corea del Sur,Ulsan,Ulsan,
+1511,Pacific Asia,Eastern Asia,Hong Kong,Kowloon,Hong Kong,
+1512,Pacific Asia,Oceania,Australia,Adelaide,Australia del Sur,
+1513,Pacific Asia,Oceania,Australia,Albany,Australia Occidental,
+1514,Pacific Asia,Oceania,Australia,Albury,Nueva Gales del Sur,
+1515,Pacific Asia,Oceania,Australia,Alice Springs,Territorio del Norte,
+1516,Pacific Asia,Oceania,Australia,Armidale,Nueva Gales del Sur,
+1517,Pacific Asia,Oceania,Australia,Ballarat,Victoria,
+1518,Pacific Asia,Oceania,Australia,Bendigo,Victoria,
+1519,Pacific Asia,Oceania,Australia,Brisbane,Queensland,
+1520,Pacific Asia,Oceania,Australia,Broken Hill,Nueva Gales del Sur,
+1521,Pacific Asia,Oceania,Australia,Bunbury,Australia Occidental,
+1522,Pacific Asia,Oceania,Australia,Bundaberg,Queensland,
+1523,Pacific Asia,Oceania,Australia,Burnie,Tasmania,
+1524,Pacific Asia,Oceania,Australia,Cairns,Queensland,
+1525,Pacific Asia,Oceania,Australia,Caloundra,Queensland,
+1526,Pacific Asia,Oceania,Australia,Canberra,Territorio de la Capital Australiana,
+1527,Pacific Asia,Oceania,Australia,Cessnock,Nueva Gales del Sur,
+1528,Pacific Asia,Oceania,Australia,Coffs Harbour,Nueva Gales del Sur,
+1529,Pacific Asia,Oceania,Australia,Darwin,Territorio del Norte,
+1530,Pacific Asia,Oceania,Australia,Devonport,Tasmania,
+1531,Pacific Asia,Oceania,Australia,Dubbo,Nueva Gales del Sur,
+1532,Pacific Asia,Oceania,Australia,Echuca,Victoria,
+1533,Pacific Asia,Oceania,Australia,Forster,Nueva Gales del Sur,
+1534,Pacific Asia,Oceania,Australia,Gawler,Australia del Sur,
+1535,Pacific Asia,Oceania,Australia,Geelong,Victoria,
+1536,Pacific Asia,Oceania,Australia,Geraldton,Australia Occidental,
+1537,Pacific Asia,Oceania,Australia,Gladstone,Queensland,
+1538,Pacific Asia,Oceania,Australia,Gold Coast,Queensland,
+1539,Pacific Asia,Oceania,Australia,Goulburn,Nueva Gales del Sur,
+1540,Pacific Asia,Oceania,Australia,Griffith,Nueva Gales del Sur,
+1541,Pacific Asia,Oceania,Australia,Hobart,Tasmania,
+1542,Pacific Asia,Oceania,Australia,Katoomba,Nueva Gales del Sur,
+1543,Pacific Asia,Oceania,Australia,Kwinana,Australia Occidental,
+1544,Pacific Asia,Oceania,Australia,Launceston,Tasmania,
+1545,Pacific Asia,Oceania,Australia,Lismore,Nueva Gales del Sur,
+1546,Pacific Asia,Oceania,Australia,Mackay,Queensland,
+1547,Pacific Asia,Oceania,Australia,Mandurah,Australia Occidental,
+1548,Pacific Asia,Oceania,Australia,Maryborough,Queensland,
+1549,Pacific Asia,Oceania,Australia,Melbourne,Victoria,
+1550,Pacific Asia,Oceania,Australia,Melton,Victoria,
+1551,Pacific Asia,Oceania,Australia,Mildura,Victoria,
+1552,Pacific Asia,Oceania,Australia,Mount Gambier,Australia del Sur,
+1553,Pacific Asia,Oceania,Australia,Mount Isa,Queensland,
+1554,Pacific Asia,Oceania,Australia,Murray Bridge,Australia del Sur,
+1555,Pacific Asia,Oceania,Australia,Newcastle,Nueva Gales del Sur,
+1556,Pacific Asia,Oceania,Australia,Nowra,Nueva Gales del Sur,
+1557,Pacific Asia,Oceania,Australia,Orange,Nueva Gales del Sur,
+1558,Pacific Asia,Oceania,Australia,Palmerston,Territorio del Norte,
+1559,Pacific Asia,Oceania,Australia,Perth,Australia Occidental,
+1560,Pacific Asia,Oceania,Australia,Port Macquarie,Nueva Gales del Sur,
+1561,Pacific Asia,Oceania,Australia,Queanbeyan,Nueva Gales del Sur,
+1562,Pacific Asia,Oceania,Australia,Rockhampton,Queensland,
+1563,Pacific Asia,Oceania,Australia,Sunbury,Victoria,
+1564,Pacific Asia,Oceania,Australia,Sydney,Nueva Gales del Sur,
+1565,Pacific Asia,Oceania,Australia,Tamworth,Nueva Gales del Sur,
+1566,Pacific Asia,Oceania,Australia,Toowoomba,Queensland,
+1567,Pacific Asia,Oceania,Australia,Torquay,Queensland,
+1568,Pacific Asia,Oceania,Australia,Townsville,Queensland,
+1569,Pacific Asia,Oceania,Australia,Traralgon,Victoria,
+1570,Pacific Asia,Oceania,Australia,Wagga Wagga,Nueva Gales del Sur,
+1571,Pacific Asia,Oceania,Australia,Warrnambool,Victoria,
+1572,Pacific Asia,Oceania,Australia,Whyalla,Australia del Sur,
+1573,Pacific Asia,Oceania,Australia,Wodonga,Victoria,
+1574,Pacific Asia,Oceania,Australia,Wollongong,Nueva Gales del Sur,
+1575,Pacific Asia,Oceania,Nueva Zelanda,Auckland,Auckland,
+1576,Pacific Asia,Oceania,Nueva Zelanda,Blenheim,Marlborough,
+1577,Pacific Asia,Oceania,Nueva Zelanda,Cambridge,Waikato,
+1578,Pacific Asia,Oceania,Nueva Zelanda,Christchurch,Canterbury,
+1579,Pacific Asia,Oceania,Nueva Zelanda,Dunedin,Otago,
+1580,Pacific Asia,Oceania,Nueva Zelanda,Gisborne,Gisborne,
+1581,Pacific Asia,Oceania,Nueva Zelanda,Hamilton,Waikato,
+1582,Pacific Asia,Oceania,Nueva Zelanda,Hastings,Hawke's Bay,
+1583,Pacific Asia,Oceania,Nueva Zelanda,Invercargill,Southland,
+1584,Pacific Asia,Oceania,Nueva Zelanda,Levin,Manawatu-Wanganui,
+1585,Pacific Asia,Oceania,Nueva Zelanda,Lower Hutt,Wellington,
+1586,Pacific Asia,Oceania,Nueva Zelanda,Manukau City,Auckland,
+1587,Pacific Asia,Oceania,Nueva Zelanda,Masterton,Wellington,
+1588,Pacific Asia,Oceania,Nueva Zelanda,Napier,Hawke's Bay,
+1589,Pacific Asia,Oceania,Nueva Zelanda,Nelson,Nelson,
+1590,Pacific Asia,Oceania,Nueva Zelanda,New Plymouth,Taranaki,
+1591,Pacific Asia,Oceania,Nueva Zelanda,Palmerston North,Manawatu-Wanganui,
+1592,Pacific Asia,Oceania,Nueva Zelanda,Papakura,Auckland,
+1593,Pacific Asia,Oceania,Nueva Zelanda,Paraparaumu,Wellington,
+1594,Pacific Asia,Oceania,Nueva Zelanda,Porirua,Wellington,
+1595,Pacific Asia,Oceania,Nueva Zelanda,Rotorua,Bay of Plenty,
+1596,Pacific Asia,Oceania,Nueva Zelanda,Taupo,Waikato,
+1597,Pacific Asia,Oceania,Nueva Zelanda,Tauranga,Bay of Plenty,
+1598,Pacific Asia,Oceania,Nueva Zelanda,Timaru,Canterbury,
+1599,Pacific Asia,Oceania,Nueva Zelanda,Upper Hutt,Wellington,
+1600,Pacific Asia,Oceania,Nueva Zelanda,Waitakere,Auckland,
+1601,Pacific Asia,Oceania,Nueva Zelanda,Wellington,Wellington,
+1602,Pacific Asia,Oceania,Nueva Zelanda,Whakatane,Bay of Plenty,
+1603,Pacific Asia,Oceania,Nueva Zelanda,Whangarei,Northland,
+1604,Pacific Asia,South Asia,India,Agra,Uttar Pradesh,
+1605,Pacific Asia,South Asia,India,Akola,Maharashtra,
+1606,Pacific Asia,South Asia,India,Aligarh,Uttar Pradesh,
+1607,Pacific Asia,South Asia,India,Allahabad,Uttar Pradesh,
+1608,Pacific Asia,South Asia,India,Ambattur,Tamil Nadu,
+1609,Pacific Asia,South Asia,India,Amravati,Maharashtra,
+1610,Pacific Asia,South Asia,India,Amritsar,Punyab,
+1611,Pacific Asia,South Asia,India,Anantapur,Andhra Pradesh,
+1612,Pacific Asia,South Asia,India,Asansol,Bengala Occidental,
+1613,Pacific Asia,South Asia,India,Aurangabad,Bihar,
+1614,Pacific Asia,South Asia,India,Aurangabad,Maharashtra,
+1615,Pacific Asia,South Asia,India,Avadi,Tamil Nadu,
+1616,Pacific Asia,South Asia,India,Bangalore,Karnataka,
+1617,Pacific Asia,South Asia,India,Baranagar,Bengala Occidental,
+1618,Pacific Asia,South Asia,India,Barasat,Bengala Occidental,
+1619,Pacific Asia,South Asia,India,Barddhaman,Bengala Occidental,
+1620,Pacific Asia,South Asia,India,Bareilly,Uttar Pradesh,
+1621,Pacific Asia,South Asia,India,Belgaum,Karnataka,
+1622,Pacific Asia,South Asia,India,Bellary,Karnataka,
+1623,Pacific Asia,South Asia,India,Bhatinda,Punyab,
+1624,Pacific Asia,South Asia,India,Bhatpara,Bengala Occidental,
+1625,Pacific Asia,South Asia,India,Bhavnagar,Guyarat,
+1626,Pacific Asia,South Asia,India,Bhilai,Chhattisgarh,
+1627,Pacific Asia,South Asia,India,Bhiwandi,Maharashtra,
+1628,Pacific Asia,South Asia,India,Bhopal,Madhya Pradesh,
+1629,Pacific Asia,South Asia,India,Bhubaneswar,Odisha,
+1630,Pacific Asia,South Asia,India,Bihar Sharif,Bihar,
+1631,Pacific Asia,South Asia,India,Bijapur,Karnataka,
+1632,Pacific Asia,South Asia,India,Bilaspur,Uttar Pradesh,
+1633,Pacific Asia,South Asia,India,Bokaro,Jharkhand,
+1634,Pacific Asia,South Asia,India,Brahmapur,Odisha,
+1635,Pacific Asia,South Asia,India,Chandigarh,Chandigarh,
+1636,Pacific Asia,South Asia,India,Chennai,Tamil Nadu,
+1637,Pacific Asia,South Asia,India,Coimbatore,Tamil Nadu,
+1638,Pacific Asia,South Asia,India,Cuttack,Odisha,
+1639,Pacific Asia,South Asia,India,Darbhanga,Bihar,
+1640,Pacific Asia,South Asia,India,Dehra Dun,Uttarakhand,
+1641,Pacific Asia,South Asia,India,Delhi,Delhi,
+1642,Pacific Asia,South Asia,India,Dewas,Madhya Pradesh,
+1643,Pacific Asia,South Asia,India,Dhule,Maharashtra,
+1644,Pacific Asia,South Asia,India,Durg,Chhattisgarh,
+1645,Pacific Asia,South Asia,India,Durgapur,Bengala Occidental,
+1646,Pacific Asia,South Asia,India,Durgapur,Maharashtra,
+1647,Pacific Asia,South Asia,India,Etawah,Uttar Pradesh,
+1648,Pacific Asia,South Asia,India,Faridabad,Haryana,
+1649,Pacific Asia,South Asia,India,Firozabad,Uttar Pradesh,
+1650,Pacific Asia,South Asia,India,Gaya,Bihar,
+1651,Pacific Asia,South Asia,India,Ghaziabad,Uttar Pradesh,
+1652,Pacific Asia,South Asia,India,Gorakhpur,Haryana,
+1653,Pacific Asia,South Asia,India,Gorakhpur,Uttar Pradesh,
+1654,Pacific Asia,South Asia,India,Gulbarga,Karnataka,
+1655,Pacific Asia,South Asia,India,Guntur,Andhra Pradesh,
+1656,Pacific Asia,South Asia,India,Guwahati,Assam,
+1657,Pacific Asia,South Asia,India,Gwalior,Madhya Pradesh,
+1658,Pacific Asia,South Asia,India,Hapur,Uttar Pradesh,
+1659,Pacific Asia,South Asia,India,Hisar,Haryana,
+1660,Pacific Asia,South Asia,India,Hubli,Karnataka,
+1661,Pacific Asia,South Asia,India,Hyderabad,Telangana,
+1662,Pacific Asia,South Asia,India,Ichalkaranji,Maharashtra,
+1663,Pacific Asia,South Asia,India,Imphal,Manipur,
+1664,Pacific Asia,South Asia,India,Indore,Madhya Pradesh,
+1665,Pacific Asia,South Asia,India,Jabalpur,Madhya Pradesh,
+1666,Pacific Asia,South Asia,India,Jalna,Maharashtra,
+1667,Pacific Asia,South Asia,India,Jammu,Jammu y Cachemira,
+1668,Pacific Asia,South Asia,India,Jamnagar,Guyarat,
+1669,Pacific Asia,South Asia,India,Jamshedpur,Jharkhand,
+1670,Pacific Asia,South Asia,India,Jhansi,Uttar Pradesh,
+1671,Pacific Asia,South Asia,India,Jodhpur,Guyarat,
+1672,Pacific Asia,South Asia,India,Kakinada,Andhra Pradesh,
+1673,Pacific Asia,South Asia,India,Kalyan,Maharashtra,
+1674,Pacific Asia,South Asia,India,Kamarhati,Bengala Occidental,
+1675,Pacific Asia,South Asia,India,Kanpur,Uttar Pradesh,
+1676,Pacific Asia,South Asia,India,Karimnagar,Telangana,
+1677,Pacific Asia,South Asia,India,Karnal,Haryana,
+1678,Pacific Asia,South Asia,India,Kochi,Kerala,
+1679,Pacific Asia,South Asia,India,Kolhapur,Maharashtra,
+1680,Pacific Asia,South Asia,India,Kollam,Kerala,
+1681,Pacific Asia,South Asia,India,Korba,Chhattisgarh,
+1682,Pacific Asia,South Asia,India,Kota,Chhattisgarh,
+1683,Pacific Asia,South Asia,India,Kozhikode,Kerala,
+1684,Pacific Asia,South Asia,India,Kukatpalli,Telangana,
+1685,Pacific Asia,South Asia,India,Kulti,Bengala Occidental,
+1686,Pacific Asia,South Asia,India,Latur,Maharashtra,
+1687,Pacific Asia,South Asia,India,Lucknow,Uttar Pradesh,
+1688,Pacific Asia,South Asia,India,Ludhiana,Punyab,
+1689,Pacific Asia,South Asia,India,Madurai,Tamil Nadu,
+1690,Pacific Asia,South Asia,India,Malegaon,Maharashtra,
+1691,Pacific Asia,South Asia,India,Mangalore,Karnataka,
+1692,Pacific Asia,South Asia,India,Mathura,Uttar Pradesh,
+1693,Pacific Asia,South Asia,India,Mau,Madhya Pradesh,
+1694,Pacific Asia,South Asia,India,Mau,Uttar Pradesh,
+1695,Pacific Asia,South Asia,India,Meerut,Uttar Pradesh,
+1696,Pacific Asia,South Asia,India,Mirzapur,Uttar Pradesh,
+1697,Pacific Asia,South Asia,India,Moradabad,Uttar Pradesh,
+1698,Pacific Asia,South Asia,India,Mumbai,Maharashtra,
+1699,Pacific Asia,South Asia,India,Muzaffarpur,Bihar,
+1700,Pacific Asia,South Asia,India,Mysore,Karnataka,
+1701,Pacific Asia,South Asia,India,Nagercoil,Tamil Nadu,
+1702,Pacific Asia,South Asia,India,Nagpur,Maharashtra,
+1703,Pacific Asia,South Asia,India,Naihati,Bengala Occidental,
+1704,Pacific Asia,South Asia,India,Nasik,Maharashtra,
+1705,Pacific Asia,South Asia,India,Nellore,Andhra Pradesh,
+1706,Pacific Asia,South Asia,India,New Delhi,Delhi,
+1707,Pacific Asia,South Asia,India,Nizamabad,Telangana,
+1708,Pacific Asia,South Asia,India,Panihati,Bengala Occidental,
+1709,Pacific Asia,South Asia,India,Panipat,Haryana,
+1710,Pacific Asia,South Asia,India,Parbhani,Maharashtra,
+1711,Pacific Asia,South Asia,India,Patiala,Punyab,
+1712,Pacific Asia,South Asia,India,Patna,Bihar,
+1713,Pacific Asia,South Asia,India,Pimpri,Maharashtra,
+1714,Pacific Asia,South Asia,India,Puducherry,Puducherry,
+1715,Pacific Asia,South Asia,India,Pune,Maharashtra,
+1716,Pacific Asia,South Asia,India,Raipur,Chhattisgarh,
+1717,Pacific Asia,South Asia,India,Raipur,Uttarakhand,
+1718,Pacific Asia,South Asia,India,Rajkot,Guyarat,
+1719,Pacific Asia,South Asia,India,Ranchi,Jharkhand,
+1720,Pacific Asia,South Asia,India,Ratlam,Madhya Pradesh,
+1721,Pacific Asia,South Asia,India,Rohtak,Haryana,
+1722,Pacific Asia,South Asia,India,Saharanpur,Uttar Pradesh,
+1723,Pacific Asia,South Asia,India,Salem,Tamil Nadu,
+1724,Pacific Asia,South Asia,India,Sangli,Maharashtra,
+1725,Pacific Asia,South Asia,India,Satna,Madhya Pradesh,
+1726,Pacific Asia,South Asia,India,Shahjahanpur,Uttar Pradesh,
+1727,Pacific Asia,South Asia,India,Shimoga,Karnataka,
+1728,Pacific Asia,South Asia,India,Solapur,Maharashtra,
+1729,Pacific Asia,South Asia,India,Sonipat,Haryana,
+1730,Pacific Asia,South Asia,India,Srinagar,Jammu y Cachemira,
+1731,Pacific Asia,South Asia,India,Srinagar,Uttarakhand,
+1732,Pacific Asia,South Asia,India,Surat,Guyarat,
+1733,Pacific Asia,South Asia,India,Thane,Maharashtra,
+1734,Pacific Asia,South Asia,India,Thanjavur,Tamil Nadu,
+1735,Pacific Asia,South Asia,India,Thiruvananthapuram,Kerala,
+1736,Pacific Asia,South Asia,India,Tiruchchirappalli,Tamil Nadu,
+1737,Pacific Asia,South Asia,India,Tirunelveli,Tamil Nadu,
+1738,Pacific Asia,South Asia,India,Tirupati,Andhra Pradesh,
+1739,Pacific Asia,South Asia,India,Tiruppur,Tamil Nadu,
+1740,Pacific Asia,South Asia,India,Tumkur,Karnataka,
+1741,Pacific Asia,South Asia,India,Udaipur,Tripura,
+1742,Pacific Asia,South Asia,India,Ujjain,Madhya Pradesh,
+1743,Pacific Asia,South Asia,India,Ulhasnagar,Maharashtra,
+1744,Pacific Asia,South Asia,India,Vadodara,Guyarat,
+1745,Pacific Asia,South Asia,India,Varanasi,Uttar Pradesh,
+1746,Pacific Asia,South Asia,India,Vijayawada,Andhra Pradesh,
+1747,Pacific Asia,South Asia,India,Visakhapatnam,Andhra Pradesh,
+1748,Pacific Asia,South Asia,India,Warangal,Telangana,
+1749,Pacific Asia,South Asia,Nepal,Kathmandu,Central,
+1750,Pacific Asia,South Asia,Sri Lanka,Colombo,Occidental,
+1751,Pacific Asia,Southeast Asia,Camboya,Nom Pen,Nom Pen,
+1752,Pacific Asia,Southeast Asia,Filipinas,Bacolod City,Visayas Occidental,
+1753,Pacific Asia,Southeast Asia,Filipinas,Baguio City,Cordillera,
+1754,Pacific Asia,Southeast Asia,Filipinas,Caloocan,Capital Nacional,
+1755,Pacific Asia,Southeast Asia,Filipinas,Las Pinas,Capital Nacional,
+1756,Pacific Asia,Southeast Asia,Filipinas,Makati,Capital Nacional,
+1757,Pacific Asia,Southeast Asia,Filipinas,Manila,Capital Nacional,
+1758,Pacific Asia,Southeast Asia,Filipinas,Marikina,Capital Nacional,
+1759,Pacific Asia,Southeast Asia,Filipinas,Pasig,Capital Nacional,
+1760,Pacific Asia,Southeast Asia,Filipinas,Valencia,Mindanao Septentrional,
+1761,Pacific Asia,Southeast Asia,Filipinas,Valenzuela,Capital Nacional,
+1762,Pacific Asia,Southeast Asia,Indonesia,Ambon,Maluku,
+1763,Pacific Asia,Southeast Asia,Indonesia,Balikpapan,Kalimantan Oriental,
+1764,Pacific Asia,Southeast Asia,Indonesia,Banda Aceh,Aceh,
+1765,Pacific Asia,Southeast Asia,Indonesia,Bandung,Java Occidental,
+1766,Pacific Asia,Southeast Asia,Indonesia,Banjarmasin,Borneo Meridional,
+1767,Pacific Asia,Southeast Asia,Indonesia,Bekasi,Java Occidental,
+1768,Pacific Asia,Southeast Asia,Indonesia,Bengkulu,Bengkulu,
+1769,Pacific Asia,Southeast Asia,Indonesia,Binjai,Sumatra Septentrional,
+1770,Pacific Asia,Southeast Asia,Indonesia,Bogor,Java Occidental,
+1771,Pacific Asia,Southeast Asia,Indonesia,Cirebon,Java Occidental,
+1772,Pacific Asia,Southeast Asia,Indonesia,Denpasar,Bali,
+1773,Pacific Asia,Southeast Asia,Indonesia,Depok,Java Occidental,
+1774,Pacific Asia,Southeast Asia,Indonesia,Depok,Yogyakarta,
+1775,Pacific Asia,Southeast Asia,Indonesia,Dumai,Riau,
+1776,Pacific Asia,Southeast Asia,Indonesia,Jambi,Jambi,
+1777,Pacific Asia,Southeast Asia,Indonesia,Jayapura,Papua,
+1778,Pacific Asia,Southeast Asia,Indonesia,Jember,Java Oriental,
+1779,Pacific Asia,Southeast Asia,Indonesia,Kediri,Java Oriental,
+1780,Pacific Asia,Southeast Asia,Indonesia,Kupang,Nusa Tenggara Oriental,
+1781,Pacific Asia,Southeast Asia,Indonesia,Malang,Java Oriental,
+1782,Pacific Asia,Southeast Asia,Indonesia,Mataram,Nusatenggara Occidental,
+1783,Pacific Asia,Southeast Asia,Indonesia,Medan,Sumatra Septentrional,
+1784,Pacific Asia,Southeast Asia,Indonesia,Padang,Sumatra Occidental,
+1785,Pacific Asia,Southeast Asia,Indonesia,Palembang,Sumatra Meridional,
+1786,Pacific Asia,Southeast Asia,Indonesia,Pekalongan,Java Central,
+1787,Pacific Asia,Southeast Asia,Indonesia,Pekanbaru,Riau,
+1788,Pacific Asia,Southeast Asia,Indonesia,Pematangsiantar,Sumatra Septentrional,
+1789,Pacific Asia,Southeast Asia,Indonesia,Pontianak,Borneo Occidental,
+1790,Pacific Asia,Southeast Asia,Indonesia,Probolinggo,Java Oriental,
+1791,Pacific Asia,Southeast Asia,Indonesia,Purwokerto,Java Central,
+1792,Pacific Asia,Southeast Asia,Indonesia,Samarinda,Kalimantan Oriental,
+1793,Pacific Asia,Southeast Asia,Indonesia,Semarang,Java Central,
+1794,Pacific Asia,Southeast Asia,Indonesia,Sukabumi,Java Occidental,
+1795,Pacific Asia,Southeast Asia,Indonesia,Surabaya,Java Oriental,
+1796,Pacific Asia,Southeast Asia,Indonesia,Surakarta,Java Central,
+1797,Pacific Asia,Southeast Asia,Indonesia,Tangerang,Java Occidental,
+1798,Pacific Asia,Southeast Asia,Indonesia,Tasikmalaya,Java Occidental,
+1799,Pacific Asia,Southeast Asia,Indonesia,Tegal,Java Central,
+1800,Pacific Asia,Southeast Asia,Indonesia,Yakarta,Yakarta,
+1801,Pacific Asia,Southeast Asia,Indonesia,Yogyakarta,Yogyakarta,
+1802,Pacific Asia,Southeast Asia,Malasia,Ipoh,Perak,
+1803,Pacific Asia,Southeast Asia,Malasia,Kota Kinabalu,Sabah,
+1804,Pacific Asia,Southeast Asia,Malasia,Kuala Lumpur,Kuala Lumpur,
+1805,Pacific Asia,Southeast Asia,Malasia,Kuala Terengganu,Trengganu,
+1806,Pacific Asia,Southeast Asia,Malasia,Kuantan,Pahang,
+1807,Pacific Asia,Southeast Asia,Malasia,Kuching,Sarawak,
+1808,Pacific Asia,Southeast Asia,Malasia,Sandakan,Sabah,
+1809,Pacific Asia,Southeast Asia,Malasia,Seremban,Negeri Sembilan,
+1810,Pacific Asia,Southeast Asia,Malasia,Shah Alam,Selangor,
+1811,Pacific Asia,Southeast Asia,Malasia,Taiping,Perak,
+1812,Pacific Asia,Southeast Asia,Malasia,Tawau,Sabah,
+1813,Pacific Asia,Southeast Asia,Singapur,Singapur,Singapur,
+1814,Pacific Asia,Southeast Asia,Tailandia,Bangkok,Bangkok,
+1815,Pacific Asia,Southeast Asia,Tailandia,Nakhon Ratchasima,Nakhon Ratchasima,
+1816,Pacific Asia,Southeast Asia,Vietnam,Can Tho,T?nh C?n Th?,
+1817,Pacific Asia,Southeast Asia,Vietnam,Ho Chi Minh City,Ciudad Ho Chi Minh,
+1818,Pacific Asia,West Asia,Armenia,Vanadzor,Lori,
+1819,Pacific Asia,West Asia,Georgia,K'ut'aisi,Imericia,
+1820,Pacific Asia,West Asia,Georgia,Tiflis,Tiflis,
+1821,Pacific Asia,West Asia,Irak,Ad Diwaniyah,Cadisia,
+1822,Pacific Asia,West Asia,Irak,Al Amarah,Mesena,
+1823,Pacific Asia,West Asia,Irak,Al Hillah,Babilonia,
+1824,Pacific Asia,West Asia,Irak,An Nasiriyah,Di Car,
+1825,Pacific Asia,West Asia,Irak,Arbil,Arbil,
+1826,Pacific Asia,West Asia,Irak,Bagdad,Bagdad,
+1827,Pacific Asia,West Asia,Irak,Baqubah,Diala,
+1828,Pacific Asia,West Asia,Irak,Basra,Basora,
+1829,Pacific Asia,West Asia,Irak,Karbala,Karbala,
+1830,Pacific Asia,West Asia,Irak,Samarra,Saladino,
+1831,Pacific Asia,West Asia,Israel,Ashdod,Meridional,
+1832,Pacific Asia,West Asia,Israel,Ashqelon,Meridional,
+1833,Pacific Asia,West Asia,Israel,Be'er Sheva,Meridional,
+1834,Pacific Asia,West Asia,Israel,Bene Beraq,Tel Aviv,
+1835,Pacific Asia,West Asia,Israel,Hadera,Haifa,
+1836,Pacific Asia,West Asia,Israel,Haifa,Haifa,
+1837,Pacific Asia,West Asia,Israel,Hod HaSharon,Central,
+1838,Pacific Asia,West Asia,Israel,Holon,Tel Aviv,
+1839,Pacific Asia,West Asia,Israel,Ramat Aviv,Tel Aviv,
+1840,Pacific Asia,West Asia,Israel,Ramat Gan,Tel Aviv,
+1841,Pacific Asia,West Asia,Israel,Tel Aviv,Tel Aviv,
+1842,Pacific Asia,West Asia,Jordania,Irbid,Irbid,
+1843,Pacific Asia,West Asia,Kuwait,Kuwait City,Al Asimah,
+1844,Pacific Asia,West Asia,Qatar,Doha,Doha,
+1845,Pacific Asia,West Asia,Siria,Ar Raqa,Ar Raqa,
+1846,Pacific Asia,West Asia,Siria,Dayr az Zawr,Dayr az Zawr,
+1847,Pacific Asia,West Asia,Siria,Homs,Hims,
+1848,Pacific Asia,West Asia,Yemen,Al Hudayda,Al Hudayda,
+1849,Pacific Asia,West Asia,Yemen,Ibb,Ibb,
+1850,Pacific Asia,West Asia,Yemen,Taizz,Taiz,
+1851,USCA,Canada,Canada,Brampton,Ontario,
+1852,USCA,Canada,Canada,Brantford,Ontario,
+1853,USCA,Canada,Canada,Burlington,Ontario,
+1854,USCA,Canada,Canada,Calgary,Alberta,
+1855,USCA,Canada,Canada,Dartmouth,Nueva Escocia,
+1856,USCA,Canada,Canada,Edmonton,Alberta,
+1857,USCA,Canada,Canada,Gatineau,Quebec,
+1858,USCA,Canada,Canada,Guelph,Ontario,
+1859,USCA,Canada,Canada,Halifax,Nueva Escocia,
+1860,USCA,Canada,Canada,Hamilton,Ontario,
+1861,USCA,Canada,Canada,Kingston,Ontario,
+1862,USCA,Canada,Canada,Kitchener,Ontario,
+1863,USCA,Canada,Canada,Laval,Quebec,
+1864,USCA,Canada,Canada,London,Ontario,
+1865,USCA,Canada,Canada,Longueuil,Quebec,
+1866,USCA,Canada,Canada,Markham,Ontario,
+1867,USCA,Canada,Canada,Mississauga,Ontario,
+1868,USCA,Canada,Canada,North York,Ontario,
+1869,USCA,Canada,Canada,Oakville,Ontario,
+1870,USCA,Canada,Canada,Oshawa,Ontario,
+1871,USCA,Canada,Canada,Ottawa,Ontario,
+1872,USCA,Canada,Canada,Peterborough,Ontario,
+1873,USCA,Canada,Canada,Pickering,Ontario,
+1874,USCA,Canada,Canada,Quebec,Quebec,
+1875,USCA,Canada,Canada,Regina,Saskatchewan,
+1876,USCA,Canada,Canada,Richmond Hill,Ontario,
+1877,USCA,Canada,Canada,Saint-Laurent,Quebec,
+1878,USCA,Canada,Canada,Saskatoon,Saskatchewan,
+1879,USCA,Canada,Canada,St. Catharines,Ontario,
+1880,USCA,Canada,Canada,St. John's,Terranova,
+1881,USCA,Canada,Canada,Toronto,Ontario,
+1882,USCA,Canada,Canada,Vaughan,Ontario,
+1883,USCA,Canada,Canada,Waterloo,Ontario,
+1884,USCA,Canada,Canada,Whitby,Ontario,
+1885,USCA,Canada,Canada,Windsor,Ontario,
+1886,USCA,Canada,Canada,Winnipeg,Manitoba,
+1887,USCA,East of USA,Estados Unidos,Akron,Ohio,44312.0
+1888,USCA,East of USA,Estados Unidos,Allentown,Pensilvania,18103.0
+1889,USCA,East of USA,Estados Unidos,Altoona,Pensilvania,16602.0
+1890,USCA,East of USA,Estados Unidos,Andover,Massachusetts,1810.0
+1891,USCA,East of USA,Estados Unidos,Atlantic City,Nueva Jersey,8401.0
+1892,USCA,East of USA,Estados Unidos,Auburn,Nueva York,13021.0
+1893,USCA,East of USA,Estados Unidos,Baltimore,Maryland,21215.0
+1894,USCA,East of USA,Estados Unidos,Bangor,Maine,4401.0
+1895,USCA,East of USA,Estados Unidos,Bayonne,Nueva Jersey,7002.0
+1896,USCA,East of USA,Estados Unidos,Belleville,Nueva Jersey,7109.0
+1897,USCA,East of USA,Estados Unidos,Bethlehem,Pensilvania,18018.0
+1898,USCA,East of USA,Estados Unidos,Beverly,Massachusetts,1915.0
+1899,USCA,East of USA,Estados Unidos,Bowling Green,Ohio,43402.0
+1900,USCA,East of USA,Estados Unidos,Bridgeton,Nueva Jersey,8302.0
+1901,USCA,East of USA,Estados Unidos,Bristol,Connecticut,6010.0
+1902,USCA,East of USA,Estados Unidos,Buffalo,Nueva York,14215.0
+1903,USCA,East of USA,Estados Unidos,Burlington,Vermont,5408.0
+1904,USCA,East of USA,Estados Unidos,Cambridge,Massachusetts,2138.0
+1905,USCA,East of USA,Estados Unidos,Chester,Pensilvania,19013.0
+1906,USCA,East of USA,Estados Unidos,Cincinnati,Ohio,45231.0
+1907,USCA,East of USA,Estados Unidos,Cleveland,Ohio,44105.0
+1908,USCA,East of USA,Estados Unidos,Clifton,Nueva Jersey,7011.0
+1909,USCA,East of USA,Estados Unidos,Clinton,Maryland,20735.0
+1910,USCA,East of USA,Estados Unidos,Columbia,Maryland,21044.0
+1911,USCA,East of USA,Estados Unidos,Columbus,Ohio,43229.0
+1912,USCA,East of USA,Estados Unidos,Concord,Nuevo Hampshire,3301.0
+1913,USCA,East of USA,Estados Unidos,Cranston,Rhode Island,2920.0
+1914,USCA,East of USA,Estados Unidos,Cuyahoga Falls,Ohio,44221.0
+1915,USCA,East of USA,Estados Unidos,Dover,Delaware,19901.0
+1916,USCA,East of USA,Estados Unidos,Dover,Nuevo Hampshire,3820.0
+1917,USCA,East of USA,Estados Unidos,East Orange,Nueva Jersey,7017.0
+1918,USCA,East of USA,Estados Unidos,Elyria,Ohio,44035.0
+1919,USCA,East of USA,Estados Unidos,Everett,Massachusetts,2149.0
+1920,USCA,East of USA,Estados Unidos,Fairfield,Connecticut,6824.0
+1921,USCA,East of USA,Estados Unidos,Fairfield,Ohio,45014.0
+1922,USCA,East of USA,Estados Unidos,Franklin,Massachusetts,2038.0
+1923,USCA,East of USA,Estados Unidos,Freeport,Nueva York,11520.0
+1924,USCA,East of USA,Estados Unidos,Gaithersburg,Maryland,20877.0
+1925,USCA,East of USA,Estados Unidos,Grove City,Ohio,43123.0
+1926,USCA,East of USA,Estados Unidos,Hackensack,Nueva Jersey,7601.0
+1927,USCA,East of USA,Estados Unidos,Hamilton,Ohio,45011.0
+1928,USCA,East of USA,Estados Unidos,Hempstead,Nueva York,11550.0
+1929,USCA,East of USA,Estados Unidos,Holyoke,Massachusetts,1040.0
+1930,USCA,East of USA,Estados Unidos,Jamestown,Nueva York,14701.0
+1931,USCA,East of USA,Estados Unidos,Kent,Ohio,44240.0
+1932,USCA,East of USA,Estados Unidos,Lakewood,Nueva Jersey,8701.0
+1933,USCA,East of USA,Estados Unidos,Lakewood,Ohio,44107.0
+1934,USCA,East of USA,Estados Unidos,Lancaster,Ohio,43130.0
+1935,USCA,East of USA,Estados Unidos,Lancaster,Pensilvania,17602.0
+1936,USCA,East of USA,Estados Unidos,Laurel,Maryland,20707.0
+1937,USCA,East of USA,Estados Unidos,Lawrence,Massachusetts,1841.0
+1938,USCA,East of USA,Estados Unidos,Leominster,Massachusetts,1453.0
+1939,USCA,East of USA,Estados Unidos,Lewiston,Maine,4240.0
+1940,USCA,East of USA,Estados Unidos,Linden,Nueva Jersey,7036.0
+1941,USCA,East of USA,Estados Unidos,Lindenhurst,Nueva York,11757.0
+1942,USCA,East of USA,Estados Unidos,Long Beach,Nueva York,11561.0
+1943,USCA,East of USA,Estados Unidos,Lorain,Ohio,44052.0
+1944,USCA,East of USA,Estados Unidos,Lowell,Massachusetts,1852.0
+1945,USCA,East of USA,Estados Unidos,Malden,Massachusetts,2148.0
+1946,USCA,East of USA,Estados Unidos,Manchester,Connecticut,6040.0
+1947,USCA,East of USA,Estados Unidos,Marion,Ohio,43302.0
+1948,USCA,East of USA,Estados Unidos,Marlborough,Massachusetts,1752.0
+1949,USCA,East of USA,Estados Unidos,Mason,Ohio,45040.0
+1950,USCA,East of USA,Estados Unidos,Medina,Ohio,44256.0
+1951,USCA,East of USA,Estados Unidos,Mentor,Ohio,44060.0
+1952,USCA,East of USA,Estados Unidos,Meriden,Connecticut,6450.0
+1953,USCA,East of USA,Estados Unidos,Middletown,Connecticut,6457.0
+1954,USCA,East of USA,Estados Unidos,Milford,Connecticut,6460.0
+1955,USCA,East of USA,Estados Unidos,Morristown,Nueva Jersey,7960.0
+1956,USCA,East of USA,Estados Unidos,Mount Vernon,Nueva York,10550.0
+1957,USCA,East of USA,Estados Unidos,Nashua,Nuevo Hampshire,3060.0
+1958,USCA,East of USA,Estados Unidos,New Bedford,Massachusetts,2740.0
+1959,USCA,East of USA,Estados Unidos,New Brunswick,Nueva Jersey,8901.0
+1960,USCA,East of USA,Estados Unidos,New Rochelle,Nueva York,10801.0
+1961,USCA,East of USA,Estados Unidos,New York City,Nueva York,10009.0
+1962,USCA,East of USA,Estados Unidos,New York City,Nueva York,10011.0
+1963,USCA,East of USA,Estados Unidos,New York City,Nueva York,10024.0
+1964,USCA,East of USA,Estados Unidos,New York City,Nueva York,10035.0
+1965,USCA,East of USA,Estados Unidos,Newark,Delaware,19711.0
+1966,USCA,East of USA,Estados Unidos,Newark,Ohio,43055.0
+1967,USCA,East of USA,Estados Unidos,Niagara Falls,Nueva York,14304.0
+1968,USCA,East of USA,Estados Unidos,Norwich,Connecticut,6360.0
+1969,USCA,East of USA,Estados Unidos,Oceanside,Nueva York,11572.0
+1970,USCA,East of USA,Estados Unidos,Orange,Nueva Jersey,7050.0
+1971,USCA,East of USA,Estados Unidos,Parma,Ohio,44134.0
+1972,USCA,East of USA,Estados Unidos,Passaic,Nueva Jersey,7055.0
+1973,USCA,East of USA,Estados Unidos,Paterson,Nueva Jersey,7501.0
+1974,USCA,East of USA,Estados Unidos,Perth Amboy,Nueva Jersey,8861.0
+1975,USCA,East of USA,Estados Unidos,Philadelphia,Pensilvania,19120.0
+1976,USCA,East of USA,Estados Unidos,Philadelphia,Pensilvania,19134.0
+1977,USCA,East of USA,Estados Unidos,Philadelphia,Pensilvania,19140.0
+1978,USCA,East of USA,Estados Unidos,Philadelphia,Pensilvania,19143.0
+1979,USCA,East of USA,Estados Unidos,Plainfield,Nueva Jersey,7060.0
+1980,USCA,East of USA,Estados Unidos,Providence,Rhode Island,2908.0
+1981,USCA,East of USA,Estados Unidos,Quincy,Massachusetts,2169.0
+1982,USCA,East of USA,Estados Unidos,Reading,Pensilvania,19601.0
+1983,USCA,East of USA,Estados Unidos,Revere,Massachusetts,2151.0
+1984,USCA,East of USA,Estados Unidos,Rochester,Nueva York,14609.0
+1985,USCA,East of USA,Estados Unidos,Rockville,Maryland,20852.0
+1986,USCA,East of USA,Estados Unidos,Rome,Nueva York,13440.0
+1987,USCA,East of USA,Estados Unidos,Shelton,Connecticut,6484.0
+1988,USCA,East of USA,Estados Unidos,Springfield,Ohio,45503.0
+1989,USCA,East of USA,Estados Unidos,Toledo,Ohio,43615.0
+1990,USCA,East of USA,Estados Unidos,Troy,Nueva York,12180.0
+1991,USCA,East of USA,Estados Unidos,Troy,Ohio,45373.0
+1992,USCA,East of USA,Estados Unidos,Utica,Nueva York,13501.0
+1993,USCA,East of USA,Estados Unidos,Vineland,Nueva Jersey,8360.0
+1994,USCA,East of USA,Estados Unidos,Warwick,Rhode Island,2886.0
+1995,USCA,East of USA,Estados Unidos,Washington,Distrito de Columbia,20016.0
+1996,USCA,East of USA,Estados Unidos,Waterbury,Connecticut,6708.0
+1997,USCA,East of USA,Estados Unidos,Watertown,Nueva York,13601.0
+1998,USCA,East of USA,Estados Unidos,Westfield,Nueva Jersey,7090.0
+1999,USCA,East of USA,Estados Unidos,Wheeling,Virginia Occidental,26003.0
+2000,USCA,East of USA,Estados Unidos,Wilmington,Delaware,19805.0
+2001,USCA,East of USA,Estados Unidos,Woonsocket,Rhode Island,2895.0
+2002,USCA,East of USA,Estados Unidos,Yonkers,Nueva York,10701.0
+2003,USCA,East of USA,Estados Unidos,York,Pensilvania,17403.0
+2004,USCA,South of  USA,Estados Unidos,Alexandria,Virginia,22304.0
+2005,USCA,South of  USA,Estados Unidos,Apopka,Florida,32712.0
+2006,USCA,South of  USA,Estados Unidos,Arlington,Virginia,22204.0
+2007,USCA,South of  USA,Estados Unidos,Asheville,Carolina del Norte,28806.0
+2008,USCA,South of  USA,Estados Unidos,Athens,Georgia,30605.0
+2009,USCA,South of  USA,Estados Unidos,Atlanta,Georgia,30318.0
+2010,USCA,South of  USA,Estados Unidos,Auburn,Alabama,36830.0
+2011,USCA,South of  USA,Estados Unidos,Boca Raton,Florida,33433.0
+2012,USCA,South of  USA,Estados Unidos,Bossier City,Luisiana,71111.0
+2013,USCA,South of  USA,Estados Unidos,Bowling Green,Kentucky,42104.0
+2014,USCA,South of  USA,Estados Unidos,Boynton Beach,Florida,33437.0
+2015,USCA,South of  USA,Estados Unidos,Bristol,Tennessee,37620.0
+2016,USCA,South of  USA,Estados Unidos,Burlington,Carolina del Norte,27217.0
+2017,USCA,South of  USA,Estados Unidos,Cary,Carolina del Norte,27511.0
+2018,USCA,South of  USA,Estados Unidos,Charlotte,Carolina del Norte,28205.0
+2019,USCA,South of  USA,Estados Unidos,Charlottesville,Virginia,22901.0
+2020,USCA,South of  USA,Estados Unidos,Chattanooga,Tennessee,37421.0
+2021,USCA,South of  USA,Estados Unidos,Chesapeake,Virginia,23320.0
+2022,USCA,South of  USA,Estados Unidos,Clarksville,Tennessee,37042.0
+2023,USCA,South of  USA,Estados Unidos,Columbia,Carolina del Sur,29203.0
+2024,USCA,South of  USA,Estados Unidos,Columbia,Tennessee,38401.0
+2025,USCA,South of  USA,Estados Unidos,Columbus,Georgia,31907.0
+2026,USCA,South of  USA,Estados Unidos,Concord,Carolina del Norte,28027.0
+2027,USCA,South of  USA,Estados Unidos,Conway,Arkansas,72032.0
+2028,USCA,South of  USA,Estados Unidos,Coral Springs,Florida,33065.0
+2029,USCA,South of  USA,Estados Unidos,Daytona Beach,Florida,32114.0
+2030,USCA,South of  USA,Estados Unidos,Decatur,Alabama,35601.0
+2031,USCA,South of  USA,Estados Unidos,Delray Beach,Florida,33445.0
+2032,USCA,South of  USA,Estados Unidos,Deltona,Florida,32725.0
+2033,USCA,South of  USA,Estados Unidos,Durham,Carolina del Norte,27707.0
+2034,USCA,South of  USA,Estados Unidos,East Point,Georgia,30344.0
+2035,USCA,South of  USA,Estados Unidos,Fayetteville,Arkansas,72701.0
+2036,USCA,South of  USA,Estados Unidos,Fayetteville,Carolina del Norte,28314.0
+2037,USCA,South of  USA,Estados Unidos,Florence,Alabama,35630.0
+2038,USCA,South of  USA,Estados Unidos,Florence,Carolina del Sur,29501.0
+2039,USCA,South of  USA,Estados Unidos,Florence,Kentucky,41042.0
+2040,USCA,South of  USA,Estados Unidos,Fort Lauderdale,Florida,33311.0
+2041,USCA,South of  USA,Estados Unidos,Franklin,Tennessee,37064.0
+2042,USCA,South of  USA,Estados Unidos,Gastonia,Carolina del Norte,28052.0
+2043,USCA,South of  USA,Estados Unidos,Georgetown,Kentucky,40324.0
+2044,USCA,South of  USA,Estados Unidos,Greensboro,Carolina del Norte,27405.0
+2045,USCA,South of  USA,Estados Unidos,Greenville,Carolina del Norte,27834.0
+2046,USCA,South of  USA,Estados Unidos,Gulfport,Misisipi,39503.0
+2047,USCA,South of  USA,Estados Unidos,Hampton,Virginia,23666.0
+2048,USCA,South of  USA,Estados Unidos,Harrisonburg,Virginia,22801.0
+2049,USCA,South of  USA,Estados Unidos,Hattiesburg,Misisipi,39401.0
+2050,USCA,South of  USA,Estados Unidos,Henderson,Kentucky,42420.0
+2051,USCA,South of  USA,Estados Unidos,Hendersonville,Tennessee,37075.0
+2052,USCA,South of  USA,Estados Unidos,Hialeah,Florida,33012.0
+2053,USCA,South of  USA,Estados Unidos,Hickory,Carolina del Norte,28601.0
+2054,USCA,South of  USA,Estados Unidos,Hollywood,Florida,33021.0
+2055,USCA,South of  USA,Estados Unidos,Homestead,Florida,33030.0
+2056,USCA,South of  USA,Estados Unidos,Hoover,Alabama,35244.0
+2057,USCA,South of  USA,Estados Unidos,Hot Springs,Arkansas,71901.0
+2058,USCA,South of  USA,Estados Unidos,Huntsville,Alabama,35810.0
+2059,USCA,South of  USA,Estados Unidos,Jackson,Misisipi,39212.0
+2060,USCA,South of  USA,Estados Unidos,Jackson,Tennessee,38301.0
+2061,USCA,South of  USA,Estados Unidos,Jacksonville,Carolina del Norte,28540.0
+2062,USCA,South of  USA,Estados Unidos,Jacksonville,Florida,32216.0
+2063,USCA,South of  USA,Estados Unidos,Johnson City,Tennessee,37604.0
+2064,USCA,South of  USA,Estados Unidos,Jonesboro,Arkansas,72401.0
+2065,USCA,South of  USA,Estados Unidos,Jupiter,Florida,33458.0
+2066,USCA,South of  USA,Estados Unidos,Kenner,Luisiana,70065.0
+2067,USCA,South of  USA,Estados Unidos,Kissimmee,Florida,34741.0
+2068,USCA,South of  USA,Estados Unidos,Knoxville,Tennessee,37918.0
+2069,USCA,South of  USA,Estados Unidos,Lafayette,Luisiana,70506.0
+2070,USCA,South of  USA,Estados Unidos,Lake Charles,Luisiana,70601.0
+2071,USCA,South of  USA,Estados Unidos,Lakeland,Florida,33801.0
+2072,USCA,South of  USA,Estados Unidos,Little Rock,Arkansas,72209.0
+2073,USCA,South of  USA,Estados Unidos,Louisville,Kentucky,40214.0
+2074,USCA,South of  USA,Estados Unidos,Macon,Georgia,31204.0
+2075,USCA,South of  USA,Estados Unidos,Margate,Florida,33063.0
+2076,USCA,South of  USA,Estados Unidos,Marietta,Georgia,30062.0
+2077,USCA,South of  USA,Estados Unidos,Memphis,Tennessee,38109.0
+2078,USCA,South of  USA,Estados Unidos,Miami,Florida,33142.0
+2079,USCA,South of  USA,Estados Unidos,Miami,Florida,33178.0
+2080,USCA,South of  USA,Estados Unidos,Miami,Florida,33180.0
+2081,USCA,South of  USA,Estados Unidos,Miramar,Florida,33023.0
+2082,USCA,South of  USA,Estados Unidos,Mobile,Alabama,36608.0
+2083,USCA,South of  USA,Estados Unidos,Monroe,Carolina del Norte,28110.0
+2084,USCA,South of  USA,Estados Unidos,Monroe,Luisiana,71203.0
+2085,USCA,South of  USA,Estados Unidos,Montgomery,Alabama,36116.0
+2086,USCA,South of  USA,Estados Unidos,Mount Pleasant,Carolina del Sur,29464.0
+2087,USCA,South of  USA,Estados Unidos,Murfreesboro,Tennessee,37130.0
+2088,USCA,South of  USA,Estados Unidos,Murray,Kentucky,42071.0
+2089,USCA,South of  USA,Estados Unidos,Nashville,Tennessee,37211.0
+2090,USCA,South of  USA,Estados Unidos,Newport News,Virginia,23602.0
+2091,USCA,South of  USA,Estados Unidos,North Charleston,Carolina del Sur,29406.0
+2092,USCA,South of  USA,Estados Unidos,North Miami,Florida,33161.0
+2093,USCA,South of  USA,Estados Unidos,Orlando,Florida,32839.0
+2094,USCA,South of  USA,Estados Unidos,Ormond Beach,Florida,32174.0
+2095,USCA,South of  USA,Estados Unidos,Owensboro,Kentucky,42301.0
+2096,USCA,South of  USA,Estados Unidos,Palm Coast,Florida,32137.0
+2097,USCA,South of  USA,Estados Unidos,Pembroke Pines,Florida,33024.0
+2098,USCA,South of  USA,Estados Unidos,Pensacola,Florida,32503.0
+2099,USCA,South of  USA,Estados Unidos,Pine Bluff,Arkansas,71603.0
+2100,USCA,South of  USA,Estados Unidos,Plantation,Florida,33317.0
+2101,USCA,South of  USA,Estados Unidos,Pompano Beach,Florida,33068.0
+2102,USCA,South of  USA,Estados Unidos,Port Saint Lucie,Florida,34952.0
+2103,USCA,South of  USA,Estados Unidos,Raleigh,Carolina del Norte,27604.0
+2104,USCA,South of  USA,Estados Unidos,Richmond,Kentucky,40475.0
+2105,USCA,South of  USA,Estados Unidos,Richmond,Virginia,23223.0
+2106,USCA,South of  USA,Estados Unidos,Rock Hill,Carolina del Sur,29730.0
+2107,USCA,South of  USA,Estados Unidos,Roswell,Georgia,30076.0
+2108,USCA,South of  USA,Estados Unidos,Saint Petersburg,Florida,33710.0
+2109,USCA,South of  USA,Estados Unidos,Salem,Virginia,24153.0
+2110,USCA,South of  USA,Estados Unidos,Sandy Springs,Georgia,30328.0
+2111,USCA,South of  USA,Estados Unidos,Sanford,Florida,32771.0
+2112,USCA,South of  USA,Estados Unidos,Smyrna,Georgia,30080.0
+2113,USCA,South of  USA,Estados Unidos,Smyrna,Tennessee,37167.0
+2114,USCA,South of  USA,Estados Unidos,Southaven,Misisipi,38671.0
+2115,USCA,South of  USA,Estados Unidos,Springdale,Arkansas,72762.0
+2116,USCA,South of  USA,Estados Unidos,Springfield,Virginia,22153.0
+2117,USCA,South of  USA,Estados Unidos,Suffolk,Virginia,23434.0
+2118,USCA,South of  USA,Estados Unidos,Summerville,Carolina del Sur,29483.0
+2119,USCA,South of  USA,Estados Unidos,Tallahassee,Florida,32303.0
+2120,USCA,South of  USA,Estados Unidos,Tamarac,Florida,33319.0
+2121,USCA,South of  USA,Estados Unidos,Tampa,Florida,33614.0
+2122,USCA,South of  USA,Estados Unidos,Texarkana,Arkansas,71854.0
+2123,USCA,South of  USA,Estados Unidos,Thomasville,Carolina del Norte,27360.0
+2124,USCA,South of  USA,Estados Unidos,Tuscaloosa,Alabama,35401.0
+2125,USCA,South of  USA,Estados Unidos,Virginia Beach,Virginia,23464.0
+2126,USCA,South of  USA,Estados Unidos,Warner Robins,Georgia,31088.0
+2127,USCA,South of  USA,Estados Unidos,Waynesboro,Virginia,22980.0
+2128,USCA,South of  USA,Estados Unidos,West Palm Beach,Florida,33407.0
+2129,USCA,South of  USA,Estados Unidos,Wilmington,Carolina del Norte,28403.0
+2130,USCA,South of  USA,Estados Unidos,Wilson,Carolina del Norte,27893.0
+2131,USCA,South of  USA,Estados Unidos,Woodstock,Georgia,30188.0
+2132,USCA,US Center,Estados Unidos,Aberdeen,Dakota del Sur,57401.0
+2133,USCA,US Center,Estados Unidos,Abilene,Texas,79605.0
+2134,USCA,US Center,Estados Unidos,Allen,Texas,75002.0
+2135,USCA,US Center,Estados Unidos,Amarillo,Texas,79109.0
+2136,USCA,US Center,Estados Unidos,Ann Arbor,Michigan,48104.0
+2137,USCA,US Center,Estados Unidos,Apple Valley,Minnesota,55124.0
+2138,USCA,US Center,Estados Unidos,Appleton,Wisconsin,54915.0
+2139,USCA,US Center,Estados Unidos,Arlington,Texas,76017.0
+2140,USCA,US Center,Estados Unidos,Arlington Heights,Illinois,60004.0
+2141,USCA,US Center,Estados Unidos,Aurora,Illinois,60505.0
+2142,USCA,US Center,Estados Unidos,Austin,Texas,78745.0
+2143,USCA,US Center,Estados Unidos,Beaumont,Texas,77705.0
+2144,USCA,US Center,Estados Unidos,Bedford,Texas,76021.0
+2145,USCA,US Center,Estados Unidos,Bloomington,Illinois,61701.0
+2146,USCA,US Center,Estados Unidos,Bloomington,Indiana,47401.0
+2147,USCA,US Center,Estados Unidos,Bolingbrook,Illinois,60440.0
+2148,USCA,US Center,Estados Unidos,Broken Arrow,Oklahoma,74012.0
+2149,USCA,US Center,Estados Unidos,Brownsville,Texas,78521.0
+2150,USCA,US Center,Estados Unidos,Bryan,Texas,77803.0
+2151,USCA,US Center,Estados Unidos,Buffalo Grove,Illinois,60089.0
+2152,USCA,US Center,Estados Unidos,Burlington,Iowa,52601.0
+2153,USCA,US Center,Estados Unidos,Canton,Michigan,48187.0
+2154,USCA,US Center,Estados Unidos,Carol Stream,Illinois,60188.0
+2155,USCA,US Center,Estados Unidos,Carrollton,Texas,75007.0
+2156,USCA,US Center,Estados Unidos,Cedar Hill,Texas,75104.0
+2157,USCA,US Center,Estados Unidos,Cedar Rapids,Iowa,52402.0
+2158,USCA,US Center,Estados Unidos,Champaign,Illinois,61821.0
+2159,USCA,US Center,Estados Unidos,Chicago,Illinois,60610.0
+2160,USCA,US Center,Estados Unidos,Chicago,Illinois,60623.0
+2161,USCA,US Center,Estados Unidos,Chicago,Illinois,60653.0
+2162,USCA,US Center,Estados Unidos,College Station,Texas,77840.0
+2163,USCA,US Center,Estados Unidos,Columbia,Misuri,65203.0
+2164,USCA,US Center,Estados Unidos,Columbus,Indiana,47201.0
+2165,USCA,US Center,Estados Unidos,Conroe,Texas,77301.0
+2166,USCA,US Center,Estados Unidos,Coon Rapids,Minnesota,55433.0
+2167,USCA,US Center,Estados Unidos,Coppell,Texas,75019.0
+2168,USCA,US Center,Estados Unidos,Corpus Christi,Texas,78415.0
+2169,USCA,US Center,Estados Unidos,Cottage Grove,Minnesota,55016.0
+2170,USCA,US Center,Estados Unidos,Dallas,Texas,75081.0
+2171,USCA,US Center,Estados Unidos,Dallas,Texas,75217.0
+2172,USCA,US Center,Estados Unidos,Dallas,Texas,75220.0
+2173,USCA,US Center,Estados Unidos,Danville,Illinois,61832.0
+2174,USCA,US Center,Estados Unidos,Dearborn,Michigan,48126.0
+2175,USCA,US Center,Estados Unidos,Dearborn Heights,Michigan,48127.0
+2176,USCA,US Center,Estados Unidos,Decatur,Illinois,62521.0
+2177,USCA,US Center,Estados Unidos,Deer Park,Texas,77536.0
+2178,USCA,US Center,Estados Unidos,Des Moines,Iowa,50315.0
+2179,USCA,US Center,Estados Unidos,Des Plaines,Illinois,60016.0
+2180,USCA,US Center,Estados Unidos,Detroit,Michigan,48205.0
+2181,USCA,US Center,Estados Unidos,Detroit,Michigan,48227.0
+2182,USCA,US Center,Estados Unidos,Detroit,Michigan,48234.0
+2183,USCA,US Center,Estados Unidos,Dubuque,Iowa,52001.0
+2184,USCA,US Center,Estados Unidos,Eagan,Minnesota,55122.0
+2185,USCA,US Center,Estados Unidos,Eau Claire,Wisconsin,54703.0
+2186,USCA,US Center,Estados Unidos,Edinburg,Texas,78539.0
+2187,USCA,US Center,Estados Unidos,Edmond,Oklahoma,73034.0
+2188,USCA,US Center,Estados Unidos,El Paso,Texas,79907.0
+2189,USCA,US Center,Estados Unidos,Elkhart,Indiana,46514.0
+2190,USCA,US Center,Estados Unidos,Elmhurst,Illinois,60126.0
+2191,USCA,US Center,Estados Unidos,Evanston,Illinois,60201.0
+2192,USCA,US Center,Estados Unidos,Fargo,Dakota del Norte,58103.0
+2193,USCA,US Center,Estados Unidos,Fort Worth,Texas,76106.0
+2194,USCA,US Center,Estados Unidos,Franklin,Wisconsin,53132.0
+2195,USCA,US Center,Estados Unidos,Freeport,Illinois,61032.0
+2196,USCA,US Center,Estados Unidos,Fremont,Nebraska,68025.0
+2197,USCA,US Center,Estados Unidos,Frisco,Texas,75034.0
+2198,USCA,US Center,Estados Unidos,Garden City,Kansas,67846.0
+2199,USCA,US Center,Estados Unidos,Garland,Texas,75043.0
+2200,USCA,US Center,Estados Unidos,Gladstone,Misuri,64118.0
+2201,USCA,US Center,Estados Unidos,Glenview,Illinois,60025.0
+2202,USCA,US Center,Estados Unidos,Grand Island,Nebraska,68801.0
+2203,USCA,US Center,Estados Unidos,Grand Prairie,Texas,75051.0
+2204,USCA,US Center,Estados Unidos,Grand Rapids,Michigan,49505.0
+2205,USCA,US Center,Estados Unidos,Grapevine,Texas,76051.0
+2206,USCA,US Center,Estados Unidos,Green Bay,Wisconsin,54302.0
+2207,USCA,US Center,Estados Unidos,Greenwood,Indiana,46142.0
+2208,USCA,US Center,Estados Unidos,Haltom City,Texas,76117.0
+2209,USCA,US Center,Estados Unidos,Harlingen,Texas,78550.0
+2210,USCA,US Center,Estados Unidos,Highland Park,Illinois,60035.0
+2211,USCA,US Center,Estados Unidos,Holland,Michigan,49423.0
+2212,USCA,US Center,Estados Unidos,Houston,Texas,77036.0
+2213,USCA,US Center,Estados Unidos,Houston,Texas,77041.0
+2214,USCA,US Center,Estados Unidos,Houston,Texas,77070.0
+2215,USCA,US Center,Estados Unidos,Houston,Texas,77095.0
+2216,USCA,US Center,Estados Unidos,Huntsville,Texas,77340.0
+2217,USCA,US Center,Estados Unidos,Independence,Misuri,64055.0
+2218,USCA,US Center,Estados Unidos,Indianapolis,Indiana,46203.0
+2219,USCA,US Center,Estados Unidos,Irving,Texas,75061.0
+2220,USCA,US Center,Estados Unidos,Jackson,Michigan,49201.0
+2221,USCA,US Center,Estados Unidos,Kenosha,Wisconsin,53142.0
+2222,USCA,US Center,Estados Unidos,Kirkwood,Misuri,63122.0
+2223,USCA,US Center,Estados Unidos,La Crosse,Wisconsin,54601.0
+2224,USCA,US Center,Estados Unidos,La Porte,Indiana,46350.0
+2225,USCA,US Center,Estados Unidos,La Porte,Texas,77571.0
+2226,USCA,US Center,Estados Unidos,Lafayette,Indiana,47905.0
+2227,USCA,US Center,Estados Unidos,Lakeville,Minnesota,55044.0
+2228,USCA,US Center,Estados Unidos,Lansing,Michigan,48911.0
+2229,USCA,US Center,Estados Unidos,Laredo,Texas,78041.0
+2230,USCA,US Center,Estados Unidos,Lawrence,Indiana,46226.0
+2231,USCA,US Center,Estados Unidos,Lawton,Oklahoma,73505.0
+2232,USCA,US Center,Estados Unidos,League City,Texas,77573.0
+2233,USCA,US Center,Estados Unidos,Lincoln Park,Michigan,48146.0
+2234,USCA,US Center,Estados Unidos,Lubbock,Texas,79424.0
+2235,USCA,US Center,Estados Unidos,Madison,Wisconsin,53711.0
+2236,USCA,US Center,Estados Unidos,Mansfield,Texas,76063.0
+2237,USCA,US Center,Estados Unidos,Maple Grove,Minnesota,55369.0
+2238,USCA,US Center,Estados Unidos,Marion,Iowa,52302.0
+2239,USCA,US Center,Estados Unidos,Mcallen,Texas,78501.0
+2240,USCA,US Center,Estados Unidos,Mesquite,Texas,75150.0
+2241,USCA,US Center,Estados Unidos,Midland,Michigan,48640.0
+2242,USCA,US Center,Estados Unidos,Milwaukee,Wisconsin,53209.0
+2243,USCA,US Center,Estados Unidos,Minneapolis,Minnesota,55407.0
+2244,USCA,US Center,Estados Unidos,Mishawaka,Indiana,46544.0
+2245,USCA,US Center,Estados Unidos,Missouri City,Texas,77489.0
+2246,USCA,US Center,Estados Unidos,Moorhead,Minnesota,56560.0
+2247,USCA,US Center,Estados Unidos,Mount Pleasant,Michigan,48858.0
+2248,USCA,US Center,Estados Unidos,Muskogee,Oklahoma,74403.0
+2249,USCA,US Center,Estados Unidos,Naperville,Illinois,60540.0
+2250,USCA,US Center,Estados Unidos,New Albany,Indiana,47150.0
+2251,USCA,US Center,Estados Unidos,New Castle,Indiana,47362.0
+2252,USCA,US Center,Estados Unidos,Noblesville,Indiana,46060.0
+2253,USCA,US Center,Estados Unidos,Norfolk,Nebraska,68701.0
+2254,USCA,US Center,Estados Unidos,Normal,Illinois,61761.0
+2255,USCA,US Center,Estados Unidos,Norman,Oklahoma,73071.0
+2256,USCA,US Center,Estados Unidos,Oak Park,Illinois,60302.0
+2257,USCA,US Center,Estados Unidos,Oak Park,Michigan,48237.0
+2258,USCA,US Center,Estados Unidos,Odessa,Texas,79762.0
+2259,USCA,US Center,Estados Unidos,Oklahoma City,Oklahoma,73120.0
+2260,USCA,US Center,Estados Unidos,Olathe,Kansas,66062.0
+2261,USCA,US Center,Estados Unidos,Omaha,Nebraska,68104.0
+2262,USCA,US Center,Estados Unidos,Orland Park,Illinois,60462.0
+2263,USCA,US Center,Estados Unidos,Oswego,Illinois,60543.0
+2264,USCA,US Center,Estados Unidos,Overland Park,Kansas,66212.0
+2265,USCA,US Center,Estados Unidos,Park Ridge,Illinois,60068.0
+2266,USCA,US Center,Estados Unidos,Pasadena,Texas,77506.0
+2267,USCA,US Center,Estados Unidos,Pearland,Texas,77581.0
+2268,USCA,US Center,Estados Unidos,Peoria,Illinois,61604.0
+2269,USCA,US Center,Estados Unidos,Pharr,Texas,78577.0
+2270,USCA,US Center,Estados Unidos,Plano,Texas,75023.0
+2271,USCA,US Center,Estados Unidos,Port Arthur,Texas,77642.0
+2272,USCA,US Center,Estados Unidos,Portage,Indiana,46368.0
+2273,USCA,US Center,Estados Unidos,Quincy,Illinois,62301.0
+2274,USCA,US Center,Estados Unidos,Rapid City,Dakota del Sur,57701.0
+2275,USCA,US Center,Estados Unidos,Richardson,Texas,75080.0
+2276,USCA,US Center,Estados Unidos,Richmond,Indiana,47374.0
+2277,USCA,US Center,Estados Unidos,Rochester,Minnesota,55901.0
+2278,USCA,US Center,Estados Unidos,Rochester Hills,Michigan,48307.0
+2279,USCA,US Center,Estados Unidos,Rockford,Illinois,61107.0
+2280,USCA,US Center,Estados Unidos,Romeoville,Illinois,60441.0
+2281,USCA,US Center,Estados Unidos,Roseville,Michigan,48066.0
+2282,USCA,US Center,Estados Unidos,Roseville,Minnesota,55113.0
+2283,USCA,US Center,Estados Unidos,Round Rock,Texas,78664.0
+2284,USCA,US Center,Estados Unidos,Royal Oak,Michigan,48073.0
+2285,USCA,US Center,Estados Unidos,Saginaw,Michigan,48601.0
+2286,USCA,US Center,Estados Unidos,Saint Charles,Illinois,60174.0
+2287,USCA,US Center,Estados Unidos,Saint Charles,Misuri,63301.0
+2288,USCA,US Center,Estados Unidos,Saint Cloud,Minnesota,56301.0
+2289,USCA,US Center,Estados Unidos,Saint Louis,Misuri,63116.0
+2290,USCA,US Center,Estados Unidos,Saint Paul,Minnesota,55106.0
+2291,USCA,US Center,Estados Unidos,Saint Peters,Misuri,63376.0
+2292,USCA,US Center,Estados Unidos,San Angelo,Texas,76903.0
+2293,USCA,US Center,Estados Unidos,San Antonio,Texas,78207.0
+2294,USCA,US Center,Estados Unidos,San Marcos,Texas,78666.0
+2295,USCA,US Center,Estados Unidos,Sheboygan,Wisconsin,53081.0
+2296,USCA,US Center,Estados Unidos,Sioux Falls,Dakota del Sur,57103.0
+2297,USCA,US Center,Estados Unidos,Skokie,Illinois,60076.0
+2298,USCA,US Center,Estados Unidos,South Bend,Indiana,46614.0
+2299,USCA,US Center,Estados Unidos,Springfield,Misuri,65807.0
+2300,USCA,US Center,Estados Unidos,Sterling Heights,Michigan,48310.0
+2301,USCA,US Center,Estados Unidos,Superior,Wisconsin,54880.0
+2302,USCA,US Center,Estados Unidos,Taylor,Michigan,48180.0
+2303,USCA,US Center,Estados Unidos,Texas City,Texas,77590.0
+2304,USCA,US Center,Estados Unidos,The Colony,Texas,75056.0
+2305,USCA,US Center,Estados Unidos,Tinley Park,Illinois,60477.0
+2306,USCA,US Center,Estados Unidos,Trenton,Michigan,48183.0
+2307,USCA,US Center,Estados Unidos,Tulsa,Oklahoma,74133.0
+2308,USCA,US Center,Estados Unidos,Tyler,Texas,75701.0
+2309,USCA,US Center,Estados Unidos,Urbandale,Iowa,50322.0
+2310,USCA,US Center,Estados Unidos,Waco,Texas,76706.0
+2311,USCA,US Center,Estados Unidos,Waterloo,Iowa,50701.0
+2312,USCA,US Center,Estados Unidos,Waukesha,Wisconsin,53186.0
+2313,USCA,US Center,Estados Unidos,Wausau,Wisconsin,54401.0
+2314,USCA,US Center,Estados Unidos,West Allis,Wisconsin,53214.0
+2315,USCA,US Center,Estados Unidos,Westland,Michigan,48185.0
+2316,USCA,US Center,Estados Unidos,Wheeling,Illinois,60090.0
+2317,USCA,US Center,Estados Unidos,Wichita,Kansas,67212.0
+2318,USCA,US Center,Estados Unidos,Woodbury,Minnesota,55125.0
+2319,USCA,US Center,Estados Unidos,Woodstock,Illinois,60098.0
+2320,USCA,West of USA,Estados Unidos,Anaheim,California,92804.0
+2321,USCA,West of USA,Estados Unidos,Antioch,California,94509.0
+2322,USCA,West of USA,Estados Unidos,Apple Valley,California,92307.0
+2323,USCA,West of USA,Estados Unidos,Arvada,Colorado,80004.0
+2324,USCA,West of USA,Estados Unidos,Auburn,Washington,98002.0
+2325,USCA,West of USA,Estados Unidos,Aurora,Colorado,80013.0
+2326,USCA,West of USA,Estados Unidos,Avondale,Arizona,85323.0
+2327,USCA,West of USA,Estados Unidos,Bakersfield,California,93309.0
+2328,USCA,West of USA,Estados Unidos,Bellevue,Washington,98006.0
+2329,USCA,West of USA,Estados Unidos,Bellingham,Washington,98226.0
+2330,USCA,West of USA,Estados Unidos,Billings,Montana,59102.0
+2331,USCA,West of USA,Estados Unidos,Boise,Idaho,83704.0
+2332,USCA,West of USA,Estados Unidos,Bozeman,Montana,59715.0
+2333,USCA,West of USA,Estados Unidos,Brentwood,California,94513.0
+2334,USCA,West of USA,Estados Unidos,Broomfield,Colorado,80020.0
+2335,USCA,West of USA,Estados Unidos,Bullhead City,Arizona,86442.0
+2336,USCA,West of USA,Estados Unidos,Burbank,California,91505.0
+2337,USCA,West of USA,Estados Unidos,Caldwell,Idaho,83605.0
+2338,USCA,West of USA,Estados Unidos,Camarillo,California,93010.0
+2339,USCA,West of USA,Estados Unidos,Chandler,Arizona,85224.0
+2340,USCA,West of USA,Estados Unidos,Chico,California,95928.0
+2341,USCA,West of USA,Estados Unidos,Chula Vista,California,91911.0
+2342,USCA,West of USA,Estados Unidos,Citrus Heights,California,95610.0
+2343,USCA,West of USA,Estados Unidos,Coachella,California,92236.0
+2344,USCA,West of USA,Estados Unidos,Colorado Springs,Colorado,80906.0
+2345,USCA,West of USA,Estados Unidos,Commerce City,Colorado,80022.0
+2346,USCA,West of USA,Estados Unidos,Concord,California,94521.0
+2347,USCA,West of USA,Estados Unidos,Costa Mesa,California,92627.0
+2348,USCA,West of USA,Estados Unidos,Covington,Washington,98042.0
+2349,USCA,West of USA,Estados Unidos,Danville,California,94526.0
+2350,USCA,West of USA,Estados Unidos,Davis,California,95616.0
+2351,USCA,West of USA,Estados Unidos,Denver,Colorado,80219.0
+2352,USCA,West of USA,Estados Unidos,Des Moines,Washington,98198.0
+2353,USCA,West of USA,Estados Unidos,Draper,Utah,84020.0
+2354,USCA,West of USA,Estados Unidos,Edmonds,Washington,98026.0
+2355,USCA,West of USA,Estados Unidos,El Cajon,California,92020.0
+2356,USCA,West of USA,Estados Unidos,Encinitas,California,92024.0
+2357,USCA,West of USA,Estados Unidos,Englewood,Colorado,80112.0
+2358,USCA,West of USA,Estados Unidos,Escondido,California,92025.0
+2359,USCA,West of USA,Estados Unidos,Everett,Washington,98208.0
+2360,USCA,West of USA,Estados Unidos,Fairfield,California,94533.0
+2361,USCA,West of USA,Estados Unidos,Fort Collins,Colorado,80525.0
+2362,USCA,West of USA,Estados Unidos,Fresno,California,93727.0
+2363,USCA,West of USA,Estados Unidos,Gilbert,Arizona,85234.0
+2364,USCA,West of USA,Estados Unidos,Glendale,Arizona,85301.0
+2365,USCA,West of USA,Estados Unidos,Great Falls,Montana,59405.0
+2366,USCA,West of USA,Estados Unidos,Helena,Montana,59601.0
+2367,USCA,West of USA,Estados Unidos,Henderson,Nevada,89015.0
+2368,USCA,West of USA,Estados Unidos,Hesperia,California,92345.0
+2369,USCA,West of USA,Estados Unidos,Huntington Beach,California,92646.0
+2370,USCA,West of USA,Estados Unidos,Inglewood,California,90301.0
+2371,USCA,West of USA,Estados Unidos,Kent,Washington,98031.0
+2372,USCA,West of USA,Estados Unidos,La Mesa,California,91941.0
+2373,USCA,West of USA,Estados Unidos,Laguna Niguel,California,92677.0
+2374,USCA,West of USA,Estados Unidos,Lake Elsinore,California,92530.0
+2375,USCA,West of USA,Estados Unidos,Lake Forest,California,92630.0
+2376,USCA,West of USA,Estados Unidos,Lakewood,California,90712.0
+2377,USCA,West of USA,Estados Unidos,Lancaster,California,93534.0
+2378,USCA,West of USA,Estados Unidos,Las Vegas,Nevada,89115.0
+2379,USCA,West of USA,Estados Unidos,Layton,Utah,84041.0
+2380,USCA,West of USA,Estados Unidos,Lehi,Utah,84043.0
+2381,USCA,West of USA,Estados Unidos,Lodi,California,95240.0
+2382,USCA,West of USA,Estados Unidos,Logan,Utah,84321.0
+2383,USCA,West of USA,Estados Unidos,Long Beach,California,90805.0
+2384,USCA,West of USA,Estados Unidos,Longmont,Colorado,80501.0
+2385,USCA,West of USA,Estados Unidos,Longview,Washington,98632.0
+2386,USCA,West of USA,Estados Unidos,Los Angeles,California,90004.0
+2387,USCA,West of USA,Estados Unidos,Los Angeles,California,90008.0
+2388,USCA,West of USA,Estados Unidos,Los Angeles,California,90032.0
+2389,USCA,West of USA,Estados Unidos,Los Angeles,California,90036.0
+2390,USCA,West of USA,Estados Unidos,Los Angeles,California,90045.0
+2391,USCA,West of USA,Estados Unidos,Los Angeles,California,90049.0
+2392,USCA,West of USA,Estados Unidos,Louisville,Colorado,80027.0
+2393,USCA,West of USA,Estados Unidos,Loveland,Colorado,80538.0
+2394,USCA,West of USA,Estados Unidos,Manteca,California,95336.0
+2395,USCA,West of USA,Estados Unidos,Marysville,Washington,98270.0
+2396,USCA,West of USA,Estados Unidos,Meridian,Idaho,83642.0
+2397,USCA,West of USA,Estados Unidos,Mesa,Arizona,85204.0
+2398,USCA,West of USA,Estados Unidos,Mission Viejo,California,92691.0
+2399,USCA,West of USA,Estados Unidos,Missoula,Montana,59801.0
+2400,USCA,West of USA,Estados Unidos,Modesto,California,95351.0
+2401,USCA,West of USA,Estados Unidos,Montebello,California,90640.0
+2402,USCA,West of USA,Estados Unidos,Moreno Valley,California,92553.0
+2403,USCA,West of USA,Estados Unidos,Morgan Hill,California,95037.0
+2404,USCA,West of USA,Estados Unidos,Murray,Utah,84107.0
+2405,USCA,West of USA,Estados Unidos,Murrieta,California,92563.0
+2406,USCA,West of USA,Estados Unidos,North Las Vegas,Nevada,89031.0
+2407,USCA,West of USA,Estados Unidos,Oakland,California,94601.0
+2408,USCA,West of USA,Estados Unidos,Oceanside,California,92054.0
+2409,USCA,West of USA,Estados Unidos,Olympia,Washington,98502.0
+2410,USCA,West of USA,Estados Unidos,Ontario,California,91761.0
+2411,USCA,West of USA,Estados Unidos,Orem,Utah,84057.0
+2412,USCA,West of USA,Estados Unidos,Oxnard,California,93030.0
+2413,USCA,West of USA,Estados Unidos,Parker,Colorado,80134.0
+2414,USCA,West of USA,Estados Unidos,Pasadena,California,91104.0
+2415,USCA,West of USA,Estados Unidos,Pasco,Washington,99301.0
+2416,USCA,West of USA,Estados Unidos,Peoria,Arizona,85345.0
+2417,USCA,West of USA,Estados Unidos,Phoenix,Arizona,85023.0
+2418,USCA,West of USA,Estados Unidos,Pico Rivera,California,90660.0
+2419,USCA,West of USA,Estados Unidos,Pleasant Grove,Utah,84062.0
+2420,USCA,West of USA,Estados Unidos,Pocatello,Idaho,83201.0
+2421,USCA,West of USA,Estados Unidos,Pomona,California,91767.0
+2422,USCA,West of USA,Estados Unidos,Provo,Utah,84604.0
+2423,USCA,West of USA,Estados Unidos,Pueblo,Colorado,81001.0
+2424,USCA,West of USA,Estados Unidos,Rancho Cucamonga,California,91730.0
+2425,USCA,West of USA,Estados Unidos,Redding,California,96003.0
+2426,USCA,West of USA,Estados Unidos,Redlands,California,92374.0
+2427,USCA,West of USA,Estados Unidos,Redmond,Washington,98052.0
+2428,USCA,West of USA,Estados Unidos,Redondo Beach,California,90278.0
+2429,USCA,West of USA,Estados Unidos,Redwood City,California,94061.0
+2430,USCA,West of USA,Estados Unidos,Reno,Nevada,89502.0
+2431,USCA,West of USA,Estados Unidos,Renton,Washington,98059.0
+2432,USCA,West of USA,Estados Unidos,Riverside,California,92503.0
+2433,USCA,West of USA,Estados Unidos,Roseville,California,95661.0
+2434,USCA,West of USA,Estados Unidos,Sacramento,California,95823.0
+2435,USCA,West of USA,Estados Unidos,Salinas,California,93905.0
+2436,USCA,West of USA,Estados Unidos,Salt Lake City,Utah,84106.0
+2437,USCA,West of USA,Estados Unidos,San Bernardino,California,92404.0
+2438,USCA,West of USA,Estados Unidos,San Clemente,California,92672.0
+2439,USCA,West of USA,Estados Unidos,San Diego,California,92024.0
+2440,USCA,West of USA,Estados Unidos,San Diego,California,92037.0
+2441,USCA,West of USA,Estados Unidos,San Diego,California,92105.0
+2442,USCA,West of USA,Estados Unidos,San Francisco,California,94109.0
+2443,USCA,West of USA,Estados Unidos,San Francisco,California,94110.0
+2444,USCA,West of USA,Estados Unidos,San Francisco,California,94122.0
+2445,USCA,West of USA,Estados Unidos,San Gabriel,California,91776.0
+2446,USCA,West of USA,Estados Unidos,San Jose,California,95123.0
+2447,USCA,West of USA,Estados Unidos,San Luis Obispo,California,93405.0
+2448,USCA,West of USA,Estados Unidos,San Mateo,California,94403.0
+2449,USCA,West of USA,Estados Unidos,Santa Ana,California,92704.0
+2450,USCA,West of USA,Estados Unidos,Santa Barbara,California,93101.0
+2451,USCA,West of USA,Estados Unidos,Santa Clara,California,95051.0
+2452,USCA,West of USA,Estados Unidos,Santa Maria,California,93454.0
+2453,USCA,West of USA,Estados Unidos,Scottsdale,Arizona,85254.0
+2454,USCA,West of USA,Estados Unidos,Seattle,Washington,98103.0
+2455,USCA,West of USA,Estados Unidos,Seattle,Washington,98105.0
+2456,USCA,West of USA,Estados Unidos,Seattle,Washington,98115.0
+2457,USCA,West of USA,Estados Unidos,Sierra Vista,Arizona,85635.0
+2458,USCA,West of USA,Estados Unidos,Sparks,Nevada,89431.0
+2459,USCA,West of USA,Estados Unidos,Spokane,Washington,99207.0
+2460,USCA,West of USA,Estados Unidos,Stockton,California,95207.0
+2461,USCA,West of USA,Estados Unidos,Sunnyvale,California,94086.0
+2462,USCA,West of USA,Estados Unidos,Temecula,California,92592.0
+2463,USCA,West of USA,Estados Unidos,Tempe,Arizona,85281.0
+2464,USCA,West of USA,Estados Unidos,Thornton,Colorado,80229.0
+2465,USCA,West of USA,Estados Unidos,Thousand Oaks,California,91360.0
+2466,USCA,West of USA,Estados Unidos,Torrance,California,90503.0
+2467,USCA,West of USA,Estados Unidos,Tucson,Arizona,85705.0
+2468,USCA,West of USA,Estados Unidos,Twin Falls,Idaho,83301.0
+2469,USCA,West of USA,Estados Unidos,Vallejo,California,94591.0
+2470,USCA,West of USA,Estados Unidos,Vancouver,Washington,98661.0
+2471,USCA,West of USA,Estados Unidos,Visalia,California,93277.0
+2472,USCA,West of USA,Estados Unidos,West Jordan,Utah,84084.0
+2473,USCA,West of USA,Estados Unidos,Westminster,California,92683.0
+2474,USCA,West of USA,Estados Unidos,Whittier,California,90604.0
+2475,USCA,West of USA,Estados Unidos,Woodland,California,95695.0
+2476,USCA,West of USA,Estados Unidos,Yucaipa,California,92399.0
+2477,USCA,West of USA,Estados Unidos,Yuma,Arizona,85364.0

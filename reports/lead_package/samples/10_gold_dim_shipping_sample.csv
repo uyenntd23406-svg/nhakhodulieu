@@ -1,0 +1,65 @@
+﻿shipping_key,shipping_mode,delivery_status,order_status
+1,First Class,Late delivery,CLOSED
+2,First Class,Late delivery,COMPLETE
+3,First Class,Late delivery,ON_HOLD
+4,First Class,Late delivery,PAYMENT_REVIEW
+5,First Class,Late delivery,PENDING
+6,First Class,Late delivery,PENDING_PAYMENT
+7,First Class,Late delivery,PROCESSING
+8,First Class,Shipping canceled,CANCELED
+9,First Class,Shipping canceled,SUSPECTED_FRAUD
+10,Same Day,Late delivery,CLOSED
+11,Same Day,Late delivery,COMPLETE
+12,Same Day,Late delivery,ON_HOLD
+13,Same Day,Late delivery,PAYMENT_REVIEW
+14,Same Day,Late delivery,PENDING
+15,Same Day,Late delivery,PENDING_PAYMENT
+16,Same Day,Late delivery,PROCESSING
+17,Same Day,Shipping canceled,CANCELED
+18,Same Day,Shipping canceled,SUSPECTED_FRAUD
+19,Same Day,Shipping on time,CLOSED
+20,Same Day,Shipping on time,COMPLETE
+21,Same Day,Shipping on time,ON_HOLD
+22,Same Day,Shipping on time,PAYMENT_REVIEW
+23,Same Day,Shipping on time,PENDING
+24,Same Day,Shipping on time,PENDING_PAYMENT
+25,Same Day,Shipping on time,PROCESSING
+26,Second Class,Late delivery,CLOSED
+27,Second Class,Late delivery,COMPLETE
+28,Second Class,Late delivery,ON_HOLD
+29,Second Class,Late delivery,PAYMENT_REVIEW
+30,Second Class,Late delivery,PENDING
+31,Second Class,Late delivery,PENDING_PAYMENT
+32,Second Class,Late delivery,PROCESSING
+33,Second Class,Shipping canceled,CANCELED
+34,Second Class,Shipping canceled,SUSPECTED_FRAUD
+35,Second Class,Shipping on time,CLOSED
+36,Second Class,Shipping on time,COMPLETE
+37,Second Class,Shipping on time,ON_HOLD
+38,Second Class,Shipping on time,PAYMENT_REVIEW
+39,Second Class,Shipping on time,PENDING
+40,Second Class,Shipping on time,PENDING_PAYMENT
+41,Second Class,Shipping on time,PROCESSING
+42,Standard Class,Advance shipping,CLOSED
+43,Standard Class,Advance shipping,COMPLETE
+44,Standard Class,Advance shipping,ON_HOLD
+45,Standard Class,Advance shipping,PAYMENT_REVIEW
+46,Standard Class,Advance shipping,PENDING
+47,Standard Class,Advance shipping,PENDING_PAYMENT
+48,Standard Class,Advance shipping,PROCESSING
+49,Standard Class,Late delivery,CLOSED
+50,Standard Class,Late delivery,COMPLETE
+51,Standard Class,Late delivery,ON_HOLD
+52,Standard Class,Late delivery,PAYMENT_REVIEW
+53,Standard Class,Late delivery,PENDING
+54,Standard Class,Late delivery,PENDING_PAYMENT
+55,Standard Class,Late delivery,PROCESSING
+56,Standard Class,Shipping canceled,CANCELED
+57,Standard Class,Shipping canceled,SUSPECTED_FRAUD
+58,Standard Class,Shipping on time,CLOSED
+59,Standard Class,Shipping on time,COMPLETE
+60,Standard Class,Shipping on time,ON_HOLD
+61,Standard Class,Shipping on time,PAYMENT_REVIEW
+62,Standard Class,Shipping on time,PENDING
+63,Standard Class,Shipping on time,PENDING_PAYMENT
+64,Standard Class,Shipping on time,PROCESSING

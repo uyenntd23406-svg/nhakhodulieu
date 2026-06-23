@@ -1,0 +1,33 @@
+﻿name: dataco_warehouse
+version: "1.0.0"
+config-version: 2
+
+profile: dataco_warehouse
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  dataco_warehouse:
+    staging:
+      +materialized: view
+      +schema: silver
+    intermediate:
+      +materialized: view
+      +schema: silver
+    marts:
+      +materialized: table
+      +schema: gold
+      dimensions:
+        +materialized: table
+        +schema: gold
+      facts:
+        +materialized: table
+        +schema: gold
+      analytics:
+        +materialized: table
+        +schema: gold

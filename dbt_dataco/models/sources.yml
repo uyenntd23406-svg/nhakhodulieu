@@ -1,0 +1,22 @@
+﻿version: 2
+
+sources:
+  - name: bronze
+    description: "Bronze Layer sau ingestion và validation từ DataCo Supply Chain Dataset."
+    schema: bronze
+    tables:
+      - name: orders_raw
+        description: "Bảng giao dịch thô đã được ingest vào DuckDB. Grain là một order item transaction."
+        columns:
+          - name: order_item_id
+            description: "Mã định danh dòng sản phẩm trong đơn hàng."
+          - name: order_id
+            description: "Mã định danh đơn hàng."
+          - name: late_delivery_risk
+            description: "Nhãn rủi ro giao hàng trễ: 1 = trễ, 0 = không trễ."
+          - name: market
+            description: "Thị trường kinh doanh."
+          - name: shipping_mode
+            description: "Phương thức vận chuyển."
+          - name: delivery_status
+            description: "Trạng thái giao hàng."

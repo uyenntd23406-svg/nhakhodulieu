@@ -1,0 +1,101 @@
+﻿order_item_id,order_id,market,order_region,order_country,customer_segment,department_name,category_name,product_name,shipping_mode,order_status,quantity,sales_amount,discount_amount,discount_rate,product_unit_price,profit_ratio,days_for_shipment_scheduled,order_month,order_day,order_day_of_week,target_late_delivery_risk
+78632,31464,USCA,US Center,Estados Unidos,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PENDING,2,98.37999725,21.60000038,0.180000007,59.99000168,0.449999988,2,4,4,1,1
+79221,31704,USCA,West of USA,Estados Unidos,Corporate,Outdoors,Electronics,Bridgestone e6 Straight Distance NFL Carolina,Second Class,PENDING,2,63.97999954,0.0,0.0,31.98999977,0.479999989,2,4,7,4,1
+83248,33326,USCA,East of USA,Estados Unidos,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,2,113.9800034,6.0,0.050000001,59.99000168,0.090000004,2,5,1,0,0
+85261,34152,USCA,US Center,Estados Unidos,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PROCESSING,2,79.98000336,0.0,0.0,39.99000168,0.349999994,2,5,13,5,1
+95755,38367,USCA,US Center,Estados Unidos,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PROCESSING,2,78.37999725,1.600000024,0.02,39.99000168,0.469999999,2,7,14,4,1
+84126,33708,USCA,West of USA,Estados Unidos,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PROCESSING,2,78.37999725,1.600000024,0.02,39.99000168,0.129999995,2,5,7,6,1
+101174,40551,USCA,US Center,Estados Unidos,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PROCESSING,2,67.18000031,12.80000019,0.159999996,39.99000168,0.090000004,2,8,14,0,0
+80430,32163,USCA,South of  USA,Estados Unidos,Corporate,Golf,Girls' Apparel,TYR Boys' Team Digi Jammer,Second Class,PROCESSING,2,63.97999954,16.0,0.200000003,39.99000168,0.469999999,2,4,14,4,1
+103263,41371,Africa,North Africa,Sudán,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,CANCELED,3,144.0,6.0,0.039999999,50.0,0.360000014,2,8,26,5,0
+116081,46426,Africa,Southern Africa,SudAfrica,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PENDING,3,156.5700073,23.39999962,0.129999995,59.99000168,0.389999986,2,11,8,2,0
+121989,48776,Africa,Central Africa,República Democrática del Congo,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PENDING,3,152.9700012,27.0,0.150000006,59.99000168,0.109999999,2,12,13,2,0
+108092,43271,Africa,Southern Africa,SudAfrica,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,178.1699982,1.799999952,0.01,59.99000168,0.5,2,9,23,5,0
+123869,49568,Africa,North Africa,Egipto,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,156.5700073,23.39999962,0.129999995,59.99000168,0.100000001,2,12,24,6,1
+123744,49511,Africa,North Africa,Marruecos,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,152.9700012,27.0,0.150000006,59.99000168,0.479999989,2,12,23,5,0
+111653,44710,Africa,West Africa,Benín,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PROCESSING,3,145.5,4.5,0.029999999,50.0,0.300000012,2,10,14,5,1
+108095,43271,Africa,Southern Africa,SudAfrica,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PROCESSING,3,111.5699997,8.399999619,0.07,39.99000168,0.340000004,2,9,23,5,0
+36256,14496,Europe,Western Europe,Alemania,Corporate,Golf,Girls' Apparel,adidas Youth Germany Black/Red Away Match Soc,Second Class,CANCELED,3,189.0,21.0,0.100000001,70.0,0.25999999,2,7,31,5,0
+170397,68153,Europe,Western Europe,Francia,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PENDING,3,299.9700012,0.0,0.0,99.98999786,-2.549999952,2,9,21,4,1
+157229,62880,Europe,Northern Europe,Reino Unido,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PENDING,3,290.9700012,9.0,0.029999999,99.98999786,0.349999994,2,7,6,4,1
+48059,19233,Europe,Northern Europe,Irlanda,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PENDING,3,287.9700012,12.0,0.039999999,99.98999786,0.109999999,2,10,8,4,1
+39110,15642,Europe,Western Europe,Alemania,Corporate,Footwear,Fitness Accessories,Under Armour Hustle Storm Medium Duffle Bag,Second Class,PENDING,3,92.37000275,12.60000038,0.119999997,34.99000168,0.079999998,2,8,17,1,1
+42153,16869,Europe,Western Europe,Francia,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PENDING,3,174.5700073,5.400000095,0.029999999,59.99000168,0.449999988,2,9,4,5,1
+39111,15642,Europe,Western Europe,Alemania,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PENDING,3,156.5700073,23.39999962,0.129999995,59.99000168,0.340000004,2,8,17,1,1
+41738,16703,Europe,Western Europe,Francia,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PENDING,3,149.3800049,30.59000015,0.170000002,59.99000168,0.5,2,9,1,2,1
+171575,68629,Europe,Western Europe,Francia,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PENDING,3,147.5800018,32.38999939,0.180000007,59.99000168,0.280000001,2,9,28,4,1
+156602,62638,Europe,Western Europe,Francia,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PENDING,3,130.5,19.5,0.129999995,50.0,0.360000014,2,7,3,1,1
+171128,68445,Europe,Western Europe,Alemania,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PENDING,3,89.98000336,29.98999977,0.25,39.99000168,0.349999994,2,9,26,2,1
+120174,48058,Europe,Eastern Europe,Bulgaria,Corporate,Outdoors,Golf Balls,Hirzl Women's Soffft Flex Golf Glove,Second Class,PENDING,3,44.25999832,9.710000038,0.180000007,17.98999977,0.289999992,2,12,2,5,1
+25971,10371,Europe,Western Europe,Austria,Corporate,Fitness,Baseball & Softball,adidas Men's F10 Messi TRX FG Soccer Cleat,Second Class,PROCESSING,3,170.0700073,9.899999619,0.059999999,59.99000168,0.479999989,2,6,1,1,0
+50333,20139,Europe,Western Europe,Francia,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PROCESSING,3,269.9700012,30.0,0.100000001,99.98999786,0.200000003,2,10,21,3,1
+107434,43009,Europe,Eastern Europe,Moldavia,Corporate,Footwear,Electronics,Under Armour Kids' Mercenary Slide,Second Class,PROCESSING,3,70.52999878,13.43999958,0.159999996,27.98999977,0.289999992,2,9,19,1,1
+169114,67642,Europe,Southern Europe,Italia,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PROCESSING,3,245.9799957,53.99000168,0.180000007,99.98999786,0.090000004,2,9,14,4,1
+27711,11069,Europe,Western Europe,Alemania,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PROCESSING,3,224.9799957,74.98999786,0.25,99.98999786,0.340000004,2,6,11,4,1
+167409,66968,Europe,Western Europe,Francia,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,167.3699951,12.60000038,0.07,59.99000168,-0.189999998,2,9,4,1,1
+167406,66968,Europe,Western Europe,Francia,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,163.7700043,16.20000076,0.090000004,59.99000168,0.090000004,2,9,4,1,1
+36448,14572,Europe,Western Europe,Austria,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,156.5700073,23.39999962,0.129999995,59.99000168,-1.649999976,2,8,1,6,1
+168084,67250,Europe,Western Europe,Países Bajos,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PROCESSING,3,148.5,1.5,0.01,50.0,0.090000004,2,9,8,5,1
+157189,62863,Europe,Western Europe,Francia,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PROCESSING,3,107.9700012,12.0,0.100000001,39.99000168,0.059999999,2,7,6,4,1
+157188,62863,Europe,Western Europe,Francia,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PROCESSING,3,105.5699997,14.39999962,0.119999997,39.99000168,-0.07,2,7,6,4,1
+42404,16963,Europe,Western Europe,Alemania,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PROCESSING,3,124.5,25.5,0.170000002,50.0,-1.600000024,2,9,5,6,1
+130096,52067,LATAM,Central America,Nicaragua,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,CANCELED,3,272.9700012,27.0,0.090000004,99.98999786,0.129999995,2,1,30,1,0
+20482,8199,LATAM,Central America,Nicaragua,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,CANCELED,3,158.3699951,21.60000038,0.119999997,59.99000168,0.479999989,2,4,30,4,0
+18426,7360,LATAM,Central America,El Salvador,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,CANCELED,3,150.0,0.0,0.0,50.0,0.360000014,2,4,18,6,0
+16976,6788,LATAM,Central America,Honduras,Corporate,Fitness,Baseball & Softball,adidas Men's F10 Messi TRX FG Soccer Cleat,Second Class,PENDING,3,152.9700012,27.0,0.150000006,59.99000168,0.25999999,2,4,10,5,1
+150178,59999,LATAM,Central America,México,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PENDING,3,296.9700012,3.0,0.01,99.98999786,0.059999999,2,5,25,4,1
+15612,6235,LATAM,Central America,Panamá,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PENDING,3,290.9700012,9.0,0.029999999,99.98999786,-0.230000004,2,4,2,4,1
+153247,61260,LATAM,Central America,El Salvador,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PENDING,3,254.9700012,45.0,0.150000006,99.98999786,0.039999999,2,6,13,2,1
+11159,4459,LATAM,Central America,México,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PENDING,3,251.9700012,48.0,0.159999996,99.98999786,0.419999987,2,3,7,6,1
+1106,451,LATAM,Central America,México,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PENDING,3,172.7700043,7.199999809,0.039999999,59.99000168,0.100000001,2,1,7,3,0
+16350,6538,LATAM,South America,Brasil,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PENDING,3,156.5700073,23.39999962,0.129999995,59.99000168,-0.039999999,2,4,6,1,1
+3028,1218,LATAM,South America,Chile,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PENDING,3,152.9700012,27.0,0.150000006,59.99000168,0.090000004,2,1,18,0,1
+3027,1218,LATAM,South America,Chile,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PENDING,3,151.1699982,28.79999924,0.159999996,59.99000168,-0.140000001,2,1,18,0,1
+6581,2621,LATAM,Central America,Guatemala,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PENDING,3,147.0,3.0,0.02,50.0,0.330000013,2,2,8,0,0
+141955,56758,LATAM,Caribbean,Cuba,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PENDING,3,116.3700027,3.599999905,0.029999999,39.99000168,-0.730000019,2,4,8,6,1
+144968,57943,LATAM,Caribbean,Cuba,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PENDING,3,145.5,4.5,0.029999999,50.0,-0.029999999,2,4,25,2,1
+132519,53025,LATAM,Central America,Nicaragua,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PENDING,3,124.5,25.5,0.170000002,50.0,0.449999988,2,2,13,1,1
+145073,57982,LATAM,Central America,Panamá,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PENDING,3,98.37999725,21.59000015,0.180000007,39.99000168,0.469999999,2,4,26,3,1
+5989,2397,LATAM,Central America,Nicaragua,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PENDING,3,112.5,37.5,0.25,50.0,0.460000008,2,2,4,3,1
+140040,56012,LATAM,Central America,Honduras,Corporate,Outdoors,Accessories,Team Golf New England Patriots Putter Grip,Second Class,PENDING,3,71.22000122,3.75,0.050000001,24.98999977,0.090000004,2,3,28,2,1
+133030,53236,LATAM,South America,Brasil,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,179.9700012,0.0,0.0,59.99000168,0.479999989,2,2,16,4,0
+18745,7474,LATAM,Central America,Guatemala,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,178.1699982,1.799999952,0.01,59.99000168,0.49000001,2,4,20,1,1
+153848,61522,LATAM,South America,Brasil,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,170.9700012,9.0,0.050000001,59.99000168,0.289999992,2,6,17,6,1
+147126,58777,LATAM,Central America,México,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,161.9700012,18.0,0.100000001,59.99000168,-0.180000007,2,5,7,0,1
+22342,8955,LATAM,Central America,Guatemala,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,161.9700012,18.0,0.100000001,59.99000168,0.349999994,2,5,11,1,1
+20026,8012,LATAM,Central America,Honduras,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,156.5700073,23.39999962,0.129999995,59.99000168,-0.699999988,2,4,27,1,1
+134670,53862,LATAM,Central America,Nicaragua,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,152.9700012,27.0,0.150000006,59.99000168,-1.5,2,2,25,6,1
+143099,57209,LATAM,South America,Brasil,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,152.9700012,27.0,0.150000006,59.99000168,0.49000001,2,4,15,6,1
+146463,58518,LATAM,Central America,Guatemala,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PROCESSING,3,148.5,1.5,0.01,50.0,0.039999999,2,5,4,4,1
+4934,1973,LATAM,Caribbean,Haití,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PROCESSING,3,142.5,7.5,0.050000001,50.0,0.25999999,2,1,29,4,1
+2597,1042,LATAM,Central America,México,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PROCESSING,3,139.5,10.5,0.07,50.0,0.330000013,2,1,16,5,1
+131997,52800,LATAM,Central America,Honduras,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PROCESSING,3,136.5,13.5,0.090000004,50.0,0.349999994,2,2,9,4,1
+22345,8955,LATAM,Central America,Guatemala,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PROCESSING,3,107.9700012,12.0,0.100000001,39.99000168,0.300000012,2,5,11,1,1
+17448,6964,LATAM,Caribbean,Cuba,Corporate,Golf,Shop By Sport,Columbia Men's PFG Anchor Tough T-Shirt,Second Class,PROCESSING,3,78.30000305,11.69999981,0.129999995,30.0,0.360000014,2,4,12,0,1
+146697,58612,LATAM,Central America,Honduras,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PROCESSING,3,130.5,19.5,0.129999995,50.0,0.460000008,2,5,5,5,1
+140109,56038,LATAM,Central America,Panamá,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PROCESSING,3,127.5,22.5,0.150000006,50.0,0.370000005,2,3,29,3,1
+1076,433,LATAM,Central America,Honduras,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PROCESSING,3,127.5,22.5,0.150000006,50.0,-0.209999993,2,1,7,3,1
+7343,2945,LATAM,Central America,Nicaragua,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,SUSPECTED_FRAUD,3,248.9799957,50.99000168,0.170000002,99.98999786,0.449999988,2,2,12,4,0
+151282,60456,LATAM,Caribbean,Trinidad y Tobago,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,SUSPECTED_FRAUD,3,167.3699951,12.60000038,0.07,59.99000168,0.300000012,2,6,1,4,0
+22680,9096,LATAM,South America,Brasil,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,SUSPECTED_FRAUD,3,130.5,19.5,0.129999995,50.0,0.25999999,2,5,13,3,0
+69762,27867,Pacific Asia,Southeast Asia,Filipinas,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,CANCELED,3,156.5700073,23.39999962,0.129999995,59.99000168,0.330000013,2,2,11,4,0
+114439,45782,Pacific Asia,West Asia,Irak,Corporate,Outdoors,Electronics,Titleist Pro V1x High Numbers Golf Balls,Second Class,CANCELED,3,126.6900024,17.28000069,0.119999997,47.99000168,0.310000002,2,10,30,0,0
+65027,25979,Pacific Asia,South Asia,India,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PENDING,3,299.9700012,0.0,0.0,99.98999786,0.029999999,2,1,15,5,1
+71041,28390,Pacific Asia,South Asia,India,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PENDING,3,296.9700012,3.0,0.01,99.98999786,-2.549999952,2,2,19,5,1
+73370,29326,Pacific Asia,South Asia,India,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PENDING,3,293.9700012,6.0,0.02,99.98999786,0.340000004,2,3,4,5,0
+118002,47212,Pacific Asia,South Asia,Irán,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PENDING,3,174.5700073,5.400000095,0.029999999,59.99000168,0.230000004,2,11,20,0,1
+66853,26696,Pacific Asia,Southeast Asia,Indonesia,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PENDING,3,100.7699966,19.20000076,0.159999996,39.99000168,0.360000014,2,1,25,1,0
+124141,49662,Pacific Asia,West Asia,Arabia Saudí,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PENDING,3,112.5,37.5,0.25,50.0,0.360000014,2,12,25,0,1
+105604,42296,Pacific Asia,South Asia,Irán,Corporate,Outdoors,Golf Balls,Glove It Women's Imperial Golf Glove,Second Class,PENDING,3,56.66999817,3.299999952,0.059999999,19.98999977,0.419999987,2,9,9,5,0
+106138,42517,Pacific Asia,West Asia,Arabia Saudí,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PROCESSING,3,263.9700012,36.0,0.119999997,99.98999786,0.49000001,2,9,12,1,1
+71294,28486,Pacific Asia,South Asia,India,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PROCESSING,3,245.9799957,53.99000168,0.180000007,99.98999786,-0.050000001,2,2,20,6,0
+58933,23560,Pacific Asia,Southeast Asia,Vietnam,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,170.0700073,9.899999619,0.059999999,59.99000168,0.02,2,12,10,4,1
+107695,43106,Pacific Asia,South Asia,Irán,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,156.5700073,23.39999962,0.129999995,59.99000168,0.239999995,2,9,21,3,0
+63283,25253,Pacific Asia,Eastern Asia,China,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,152.9700012,27.0,0.150000006,59.99000168,0.039999999,2,1,4,1,1
+75796,30324,Pacific Asia,Oceania,Australia,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,152.9700012,27.0,0.150000006,59.99000168,0.189999998,2,3,18,5,1
+59764,23875,Pacific Asia,South Asia,India,Corporate,Apparel,Cleats,Perfect Fitness Perfect Rip Deck,Second Class,PROCESSING,3,147.5800018,32.38999939,0.180000007,59.99000168,0.469999999,2,12,15,2,1
+117322,46945,Pacific Asia,West Asia,Israel,Corporate,Golf,Shop By Sport,Under Armour Girls' Toddler Spine Surge Runni,Second Class,PROCESSING,3,101.9700012,18.0,0.150000006,39.99000168,-0.649999976,2,11,16,3,1
+64647,25826,Pacific Asia,Southeast Asia,Myanmar (Birmania),Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,PROCESSING,3,123.0,27.0,0.180000007,50.0,-0.800000012,2,1,12,2,0
+67471,26934,Pacific Asia,Eastern Asia,Japón,Corporate,Golf,Women's Apparel,Nike Men's Dri-FIT Victory Golf Polo,Second Class,SUSPECTED_FRAUD,3,127.5,22.5,0.150000006,50.0,0.189999998,2,1,29,5,0
+88055,35261,USCA,East of USA,Estados Unidos,Corporate,Footwear,Boxing & MMA,Under Armour Women's Micro G Skulpt Running S,Second Class,PENDING,3,164.9100037,0.0,0.0,54.97000122,0.389999986,2,5,29,0,0
+90574,36275,USCA,East of USA,Estados Unidos,Corporate,Footwear,Cardio Equipment,Nike Men's Free 5.0+ Running Shoe,Second Class,PENDING,3,284.9700012,15.0,0.050000001,99.98999786,0.349999994,2,6,13,1,1

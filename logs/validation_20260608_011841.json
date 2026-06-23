@@ -1,0 +1,103 @@
+{
+    "timestamp": "2026-06-08T01:18:41.872778",
+    "status": "PASS",
+    "total_rules": 19,
+    "passed_rules": 19,
+    "details": [
+        {
+            "rule": "expect_column_to_exist",
+            "column": "late_delivery_risk",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_not_be_null",
+            "column": "late_delivery_risk",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_be_in_set",
+            "column": "late_delivery_risk",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_not_be_null",
+            "column": "order_id",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_not_be_null",
+            "column": "order_item_id",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_be_unique",
+            "column": "order_item_id",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_not_be_null",
+            "column": "market",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_be_in_set",
+            "column": "market",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_not_be_null",
+            "column": "shipping_mode",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_be_in_set",
+            "column": "shipping_mode",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_not_be_null",
+            "column": "delivery_status",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_be_in_set",
+            "column": "delivery_status",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_not_be_null",
+            "column": "customer_segment",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_be_in_set",
+            "column": "customer_segment",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_not_be_null",
+            "column": "sales_per_customer",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_be_between",
+            "column": "sales_per_customer",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_be_between",
+            "column": "days_for_shipping_(real)",
+            "success": true
+        },
+        {
+            "rule": "expect_column_values_to_be_between",
+            "column": "days_for_shipment_(scheduled)",
+            "success": true
+        },
+        {
+            "rule": "expect_table_row_count_to_be_between",
+            "column": "table_level",
+            "success": true
+        }
+    ]
+}
