@@ -1279,12 +1279,16 @@ with tab7:
             st.rerun()
         st.markdown("</div>", unsafe_allow_html=True)
 
+    # ==============================================================================
+# ĐOẠN CODE ĐÃ ĐƯỢC SỬA LẠI (Thay thế từ dòng "with chat_col:" đến hết Tab 7)
+# ==============================================================================
+
     with chat_col:
         if st.session_state.get("chatbot_last_error") in ("rate_limit", "timeout", "server"):
             err_map = {
-                "rate_limit": ( "Rate limit — đã retry 2 lần. Vui lòng đợi vài giây."),
-                "timeout": ( "Timeout — kết nối chậm. Hãy thử lại."),
-                "server": ( "Lỗi máy chủ Groq. Dịch vụ có thể đang bận."),
+                "rate_limit": ("Rate limit — đã retry 2 lần. Vui lòng đợi vài giây."),
+                "timeout": ("Timeout — kết nối chậm. Hãy thử lại."),
+                "server": ("Lỗi máy chủ Groq. Dịch vụ có thể đang bận."),
             }
             icon, msg = err_map.get(st.session_state["chatbot_last_error"], ("", "Lỗi không xác định."))
             retry_col1, retry_col2 = st.columns([4, 1])
@@ -1349,25 +1353,29 @@ with tab7:
                 st.markdown('</div>', unsafe_allow_html=True)
 
         typing_placeholder = st.empty()
-        prefill = st.session_state.pop("chatbot_input_prefill", "")
-        user_input = st.chat_input(
-            placeholder="Ví dụ: Tại sao First Class có tỷ lệ trễ cao? Cần làm gì?",
-        )
-        if prefill:
-            user_input = prefill
 
-        if user_input:
-            if not active_key:
-                st.warning(" Vui lòng nhập **Groq API Key** ở cột bên phải hoặc cấu hình `GROQ_API_KEY` trong `.env`.")
-            else:
-                now_str = datetime.now().strftime("%H:%M")
-                
-                st.session_state["chatbot_messages"].append({
-                    "role": "user",
-                    "content": user_input,
-                    "timestamp": now_str
-                })
-                st.rerun()
+    # ─────────────────────────────────────────────────────────────
+    #  Đoạn này được đưa ra ngoài cùng (ngang hàng với 'with chat_col:')
+    # ─────────────────────────────────────────────────────────────
+    prefill = st.session_state.pop("chatbot_input_prefill", "")
+    user_input = st.chat_input(
+        placeholder="Ví dụ: Tại sao First Class có tỷ lệ trễ cao? Cần làm gì?",
+    )
+    if prefill:
+        user_input = prefill
+
+    if user_input:
+        if not active_key:
+            st.warning(" Vui lòng nhập **Groq API Key** ở cột bên phải hoặc cấu hình `GROQ_API_KEY` trong `.env`.")
+        else:
+            now_str = datetime.now().strftime("%H:%M")
+            
+            st.session_state["chatbot_messages"].append({
+                "role": "user",
+                "content": user_input,
+                "timestamp": now_str
+            })
+            st.rerun()
 
     # Xử lý sau khi Streamlit nhận diện trạng thái vừa thêm tin nhắn mới của User
     if st.session_state["chatbot_messages"] and st.session_state["chatbot_messages"][-1]["role"] == "user":
@@ -1415,23 +1423,3 @@ with tab7:
                 st.rerun()
 
     st.markdown('<hr class="dash-hr">', unsafe_allow_html=True)
-
-    st.markdown("""
-    <div style='background:#faf5ff;border:1px solid #e9d5ff;border-radius:12px;padding:18px 22px'>
-      <div style='font-size:0.78rem;color:#4a6077;line-height:2'>
-        <b style='color:#7c3aed;font-size:0.85rem'> Kiến trúc tích hợp GenAI — v2.0</b><br>
-        <b>Luồng:</b> Gold Layer (MotherDuck) → Context Builder → System Prompt → Groq API → Retry Handler → Response Parser → Follow-up Extractor<br>
-        <b>Model:</b> <code>llama-3.3-70b-versatile</code> · Temp: 0.4 · Max tokens: 1024 · Retry: 2 lần tự động<br>
-        <b>Bảo mật:</b> Dữ liệu tổng hợp theo phiên, API key được mã hoá cục bộ (file <code>.env</code>) không lưu trữ trên cloud chung.
-      </div>
-    </div>""", unsafe_allow_html=True)
-
-# ─────────────────────────────────────────────────────────────
-# FOOTER
-# ─────────────────────────────────────────────────────────────
-st.markdown(f"""
-<div class="dash-footer">
-  DataCo Logistics Intelligence Enterprise Dashboard • Hệ thống hỗ trợ quyết định vận hành toàn cầu<br>
-  Phát triển dựa trên DuckDB & MotherDuck Cloud • © {datetime.now().year} DataCo Global Inc. Tất cả quyền được bảo lưu.
-</div>
-""", unsafe_allow_html=True)
