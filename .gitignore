@@ -1,9 +1,28 @@
-﻿.env
+﻿# Secrets — NEVER commit these
+.streamlit/secrets.toml
+.env
 *.env
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+venv/
 .venv/
-dbt_dataco/target/
-dbt_dataco/dbt_packages/
+env/
+
+# Data & warehouse
+warehouse/
+data/
+*.duckdb
+*.parquet
+*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
 .DS_Store
-_archive_debug_*/
+Thumbs.db
