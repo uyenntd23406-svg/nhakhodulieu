@@ -8,6 +8,7 @@ import plotly.graph_objects as go
 import os
 import json
 import requests
+import math
 from dotenv import load_dotenv
 from datetime import datetime
 
@@ -75,7 +76,7 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 .sec-title   { font-size:1.1rem; font-weight:700; color:#0b1425; margin-bottom:20px; }
 
 /* ── KPI cards ── */
-.kpi-card { background:#fff; border-radius:14px; padding:22px 24px 18px; border:1px solid #dde6f0; position:relative; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,.06); }
+.kpi-card { background:#fff; border-radius:14px; padding:18px 18px 16px; border:1px solid #dde6f0; position:relative; overflow:hidden; box-shadow:0 2px 8px rgba(15,23,42,.05); min-height:132px; display:flex; flex-direction:column; justify-content:space-between; margin-bottom:12px; }
 .kpi-card::before { content:""; position:absolute; top:0; left:0; right:0; height:4px; }
 .kc-blue::before   { background:linear-gradient(90deg,#1a6fdc,#38b2f6); }
 .kc-purple::before { background:linear-gradient(90deg,#7c3aed,#a78bfa); }
@@ -86,6 +87,13 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 .kpi-eyebrow { font-size:0.7rem; color:#8a9fb0; text-transform:uppercase; letter-spacing:.08em; font-weight:600; margin-bottom:6px; }
 .kpi-value   { font-size:1.9rem; font-weight:800; color:#0b1425; line-height:1.2; margin-bottom:6px; }
 .kpi-sub     { font-size:0.75rem; color:#9aabbc; }
+.kpi-carousel-controls { display:flex; align-items:center; justify-content:center; gap:16px; margin-top:14px; }
+.kpi-carousel-btn { background:#fff; border:1px solid #d6d9e6; border-radius:12px; min-width:38px; min-height:38px; padding:0 0.75rem; font-size:1.1rem; color:#1f2937; cursor:pointer; box-shadow:0 2px 6px rgba(15,23,42,.08); transition: all .18s ease; }
+.kpi-carousel-btn:hover { background:#f8fafc; transform: translateY(-1px); }
+.kpi-carousel-dots { display:flex; gap:8px; }
+.kpi-carousel-dot { width:10px; height:10px; border-radius:50%; background:#cbd5e1; border:1px solid transparent; }
+.kpi-carousel-dot.active { background:#1e40af; border-color:#1e40af; }
+.kpi-carousel-btn:focus { outline:none; box-shadow:0 0 0 3px rgba(59,130,246,.18); }
 
 .badge       { display:inline-block; padding:2px 10px; border-radius:999px; font-size:0.7rem; font-weight:700; }
 .bg-green  { background:#dcfce7; color:#15803d; }
@@ -211,9 +219,9 @@ if not TOKEN:
     st.stop()
 
 # ─────────────────────────────────────────────────────────────
-# 4. DATA LOADING
+# 4. DATA LOADING  (CHỈ ĐỌC TỪ TẦNG GOLD / MART — không đụng silver/bronze)
 # ─────────────────────────────────────────────────────────────
-@st.cache_data(ttl=600, show_spinner="⏳ Đang tải dữ liệu từ Gold Layer (MotherDuck)…")
+@st.cache_data(ttl=600, show_spinner="Đang tải dữ liệu từ Gold Layer (MotherDuck)…")
 def load_all_data():
     try:
         con = duckdb.connect()
@@ -259,7 +267,7 @@ def load_all_data():
         df_ex["order_date"] = pd.to_datetime(df_ex["order_year_month"] + "-01")
 
         df_ml = con.execute(f"""
-            SELECT market, order_region, order_country, customer_segment,
+            SELECT order_id, order_item_id, market, order_region, order_country, customer_segment,
                    department_name, category_name, shipping_mode, order_status,
                    quantity, sales_amount, discount_rate, product_unit_price,
                    profit_ratio, days_for_shipment_scheduled,
@@ -285,6 +293,7 @@ with st.sidebar:
     st.markdown("<small style='color:#2a4860'>Gold Layer · Kimball · ML Ready</small>", unsafe_allow_html=True)
     st.markdown("---")
 
+    ml_count = len(df_ml)
     markets = ["Tất cả"] + sorted(df_dp["market"].dropna().unique().tolist())
     sel_market = st.selectbox("Thị trường", markets)
 
@@ -298,15 +307,18 @@ with st.sidebar:
     segs = ["Tất cả"] + sorted(df_sp["customer_segment"].dropna().unique().tolist())
     sel_seg = st.selectbox("Phân khúc khách hàng", segs)
 
+    if not (isinstance(date_range, tuple) and len(date_range) == 2):
+        st.caption("⚠️ Hãy chọn đủ **2 mốc** (từ ngày → đến ngày) để áp dụng lọc thời gian.")
+
     st.markdown("---")
-    st.markdown("""
+    st.markdown(f"""
     <div style='font-size:0.72rem; color:#3a5878; line-height:1.9'>
     <b style='color:#4a7898'>Nguồn dữ liệu</b><br>
     MotherDuck Cloud · DuckDB<br>
     dbt Core PASS=64<br>
-    180,519 bản ghi<br>
+    {len(df_dp):,} bản ghi mart delivery<br>
     5 thị trường · 5 marts<br>
-    <span style='color:#6d28d9'>XGBoost AUC=80.29%</span>
+    <span style='color:#6d28d9'>ML mart rows: {ml_count:,}</span>
     </div>
     """, unsafe_allow_html=True)
 
@@ -315,7 +327,7 @@ with st.sidebar:
 # ─────────────────────────────────────────────────────────────
 def filt(df, date_col="order_date", market_col="market", mode_col=None, seg_col=None):
     d = df.copy()
-    if len(date_range) == 2:
+    if isinstance(date_range, tuple) and len(date_range) == 2:
         s, e = pd.to_datetime(date_range[0]), pd.to_datetime(date_range[1])
         d = d[(d[date_col] >= s) & (d[date_col] <= e)]
     if sel_market != "Tất cả" and market_col in d.columns:
@@ -334,10 +346,43 @@ if sel_market != "Tất cả":
     ml = ml[ml["market"] == sel_market]
 if sel_mode != "Tất cả":
     ml = ml[ml["shipping_mode"] == sel_mode]
+if sel_seg != "Tất cả":
+    ml = ml[ml["customer_segment"] == sel_seg]
+
+if "order_id" in ml.columns and not ml.empty:
+    ml = (
+        ml.groupby("order_id", dropna=False, as_index=False)
+          .agg(
+              order_item_id=("order_item_id", "first"),
+              market=("market", "first"),
+              order_region=("order_region", "first"),
+              order_country=("order_country", "first"),
+              customer_segment=("customer_segment", "first"),
+              department_name=("department_name", "first"),
+              category_name=("category_name", "first"),
+              shipping_mode=("shipping_mode", "first"),
+              order_status=("order_status", "first"),
+              quantity=("quantity", "sum"),
+              sales_amount=("sales_amount", "sum"),
+              discount_rate=("discount_rate", "mean"),
+              product_unit_price=("product_unit_price", "first"),
+              profit_ratio=("profit_ratio", "mean"),
+              days_for_shipment_scheduled=("days_for_shipment_scheduled", "mean"),
+              order_month=("order_month", "first"),
+              order_day=("order_day", "first"),
+              order_day_of_week=("order_day_of_week", "first"),
+              target_late_delivery_risk=("target_late_delivery_risk", "max"),
+          )
+    )
+else:
+    ml = ml.copy()
 
 # ─────────────────────────────────────────────────────────────
 # 7. KPI COMPUTATION
 # ─────────────────────────────────────────────────────────────
+if "target_late_delivery_risk" in ml.columns:
+    ml["target_late_delivery_risk"] = ml["target_late_delivery_risk"].astype(float).fillna(0.0)
+
 def safe_sum(df, col, default=0):
     return df[col].sum() if not df.empty and col in df.columns else default
 
@@ -354,6 +399,61 @@ avg_ship_var  = ex["avg_shipping_variance"].mean() if not ex.empty else 0
 ml_total      = len(ml)
 ml_risk_count = ml["target_late_delivery_risk"].sum() if not ml.empty else 0
 ml_risk_rate  = ml["target_late_delivery_risk"].mean() if not ml.empty else 0
+ml_model_score = None
+
+risk_feature_rows = []
+if not ml.empty:
+    overall_risk = ml_risk_rate
+    for feature in ["customer_segment", "shipping_mode", "department_name", "category_name", "order_month", "order_day_of_week"]:
+        if feature in ml.columns:
+            summary = ml.groupby(feature, as_index=False)["target_late_delivery_risk"].mean()
+            if not summary.empty:
+                risk_gap = float(summary["target_late_delivery_risk"].max() - overall_risk)
+                risk_feature_rows.append({
+                    "feature": feature,
+                    "risk_gap": risk_gap,
+                    "risk_rate": float(summary["target_late_delivery_risk"].mean()),
+                })
+
+risk_feature_df = pd.DataFrame(risk_feature_rows).sort_values("risk_gap", ascending=False).head(8) if risk_feature_rows else pd.DataFrame(columns=["feature", "risk_gap", "risk_rate"])
+
+shipping_summary = (
+    dp.groupby("shipping_mode", as_index=False)["late_delivery_rate"].mean().sort_values("late_delivery_rate", ascending=False)
+    if not dp.empty else pd.DataFrame(columns=["shipping_mode", "late_delivery_rate"])
+)
+top_shipping_mode = shipping_summary["shipping_mode"].iloc[0] if not shipping_summary.empty else "N/A"
+top_shipping_rate = float(shipping_summary["late_delivery_rate"].iloc[0]) if not shipping_summary.empty else 0.0
+
+if not sp.empty and "customer_segment" in sp.columns:
+    seg_summary = (
+        sp.groupby("customer_segment", as_index=False).apply(
+            lambda x: pd.Series({
+                "profit_margin": x["total_profit"].sum() / x["total_sales"].sum() if x["total_sales"].sum() > 0 else 0,
+                "avg_discount": x["avg_discount_rate"].mean(),
+                "total_sales": x["total_sales"].sum(),
+            })
+        ).reset_index(drop=True)
+    )
+else:
+    seg_summary = pd.DataFrame(columns=["customer_segment", "profit_margin", "avg_discount", "total_sales"])
+
+if not seg_summary.empty and "customer_segment" in seg_summary.columns:
+    top_margin_segment = seg_summary.sort_values("profit_margin", ascending=False).iloc[0]["customer_segment"]
+    top_discount_segment = seg_summary.sort_values("avg_discount", ascending=False).iloc[0]["customer_segment"]
+else:
+    top_margin_segment = "N/A"
+    top_discount_segment = "N/A"
+
+market_summary = (
+    ex.groupby("market", as_index=False).agg(total_sales=("total_sales","sum"), late_rate=("late_delivery_rate","mean"))
+    if not ex.empty else pd.DataFrame(columns=["market", "total_sales", "late_rate"])
+)
+if not market_summary.empty:
+    top_revenue_market = market_summary.sort_values("total_sales", ascending=False).iloc[0]["market"]
+    lowest_late_market = market_summary.sort_values("late_rate", ascending=True).iloc[0]["market"]
+else:
+    top_revenue_market = "N/A"
+    lowest_late_market = "N/A"
 
 def fmt_M(v):
     if v >= 1e6: return f"${v/1e6:.2f}M"
@@ -366,10 +466,55 @@ late_lbl = "Cao" if avg_late > 0.55 else ("TB" if avg_late > 0.40 else "Tốt")
 var_cls  = "bg-amber" if avg_ship_var > 0 else "bg-green"
 var_lbl  = f"+{avg_ship_var:.1f}d" if avg_ship_var > 0 else f"{avg_ship_var:.1f}d"
 
+overview_row = df_kpi.iloc[0] if not df_kpi.empty else None
+
+def get_overview_value(col, default=0.0):
+    # Return the raw value from the mart row when present; do not compute or
+    # fall back to other data sources. If the mart does not provide the
+    # column, return None so the UI can indicate missing data explicitly.
+    if overview_row is None or col not in overview_row.index:
+        return None
+    return overview_row[col] if pd.notna(overview_row[col]) else None
+
+# The dashboard must display the KPI values exactly as they exist in the
+# mart `mart_supply_chain_kpi`. Do not calculate or substitute values from
+# other marts. If the mart does not contain the column, show "N/A".
+# NOTE: kiểm tra lại tên cột "avg_shipping_days_real" / "avg_shipping_days_scheduled"
+# so với dbt schema thật của mart_supply_chain_kpi — mart_delivery_performance dùng
+# thứ tự "avg_real_shipping_days" / "avg_scheduled_shipping_days" (ngược lại). Nếu
+# schema thật khác tên này, 2 dòng KPI tương ứng sẽ hiển thị "N/A".
+requested_cols = [
+    ("total_orders", "Tổng đơn hàng", "Đơn hàng tổng thể", "kc-blue", lambda v: f"{int(v):,.0f}"),
+    ("total_order_items", "Tổng dòng đơn hàng", "Số mục hàng trong đơn", "kc-purple", lambda v: f"{int(v):,.0f}"),
+    ("total_customers", "Khách hàng", "Khách hàng hoạt động", "kc-green", lambda v: f"{int(v):,.0f}"),
+    ("total_products", "Sản phẩm", "Sản phẩm có trong mart", "kc-amber", lambda v: f"{int(v):,.0f}"),
+    ("total_sales", "Doanh thu", "Tổng doanh thu", "kc-red", lambda v: fmt_M(v)),
+    ("total_profit", "Lợi nhuận", "Tổng lợi nhuận", "kc-violet", lambda v: fmt_M(v)),
+    ("total_cost", "Chi phí", "Tổng chi phí vận hành", "kc-blue", lambda v: fmt_M(v)),
+    ("profit_margin", "Profit margin", "Tỷ suất lợi nhuận", "kc-green", lambda v: pct(v)),
+    ("late_order_items", "Mục hàng trễ", "Số mục hàng giao trễ", "kc-amber", lambda v: f"{int(v):,.0f}"),
+    ("late_delivery_rate", "Late rate", "Tỷ lệ đơn hàng trễ", "kc-red", lambda v: pct(v)),
+    ("avg_shipping_days_real", "Ngày giao thực tế", "Thời gian vận chuyển thực tế", "kc-purple", lambda v: f"{v:.2f} ngày"),
+    ("avg_shipping_days_scheduled", "Ngày giao cam kết", "SLA dự kiến", "kc-blue", lambda v: f"{v:.2f} ngày"),
+    ("avg_shipping_variance", "Ship variance", "Độ lệch so với lịch", "kc-violet", lambda v: f"{v:.2f}d"),
+]
+
+overview_metrics = []
+for col, label, subtitle, cls, formatter in requested_cols:
+    val = get_overview_value(col)
+    if val is None:
+        display_val = "N/A"
+    else:
+        try:
+            display_val = formatter(val)
+        except Exception:
+            display_val = str(val)
+    overview_metrics.append((label, display_val, subtitle, cls))
+
 # ─────────────────────────────────────────────────────────────
 # 8. PLOTLY THEME – TẤT CẢ CHỮ MÀU ĐEN (#000000)
 # ─────────────────────────────────────────────────────────────
-BASE_MARGIN = dict(l=10, r=10, t=48, b=12)
+BASE_MARGIN = dict(l=10, r=10, t=64, b=14)
 BASE = dict(
     paper_bgcolor="rgba(0,0,0,0)",
     plot_bgcolor="rgba(0,0,0,0)",
@@ -399,8 +544,8 @@ st.markdown(f"""
     <span class="ph-badge">5 thị trường</span>
     <span class="ph-badge">dbt PASS=64</span>
     <span class="ph-badge">Cloud Synced</span>
-    <span class="ph-badge ml">XGBoost ROC-AUC 80.29%</span>
-    <span class="ph-badge ml">SHAP Explainable AI</span>
+    <span class="ph-badge ml">ML risk rate: {pct(ml_risk_rate)}</span>
+    <span class="ph-badge ml">Gold mart: {ml_total:,} orders</span>
   </div>
 </div>
 """, unsafe_allow_html=True)
@@ -408,32 +553,43 @@ st.markdown(f"""
 # ─────────────────────────────────────────────────────────────
 # 10. KPI ROW
 # ─────────────────────────────────────────────────────────────
-st.markdown('<p class="sec-eyebrow">mart_supply_chain_kpi · mart_executive_summary</p>'
-            '<p class="sec-title">Chỉ số hiệu suất tổng quan</p>', unsafe_allow_html=True)
+st.markdown('<p class="sec-eyebrow">mart_supply_chain_kpi · Gold Layer</p>'
+            '<p class="sec-title">Chỉ số tổng quan từ tầng mart_supply_chain_kpi</p>', unsafe_allow_html=True)
+st.caption("Tất cả chỉ số dưới đây được lấy trực tiếp từ mart_supply_chain_kpi để đảm bảo tính nhất quán với tầng gold.")
 
-c1, c2, c3, c4, c5, c6 = st.columns(6, gap="small")
-kpi_defs = [
-    (c1,"kc-blue",  "Tổng doanh thu",    fmt_M(total_sales),   f"Lợi nhuận: {fmt_M(total_profit)}"),
-    (c2,"kc-purple","Tổng đơn hàng",      f"{total_orders:,.0f}",f"Khách hàng: {total_cust:,.0f}"),
-    (c3,"kc-green", "Profit Margin",       pct(profit_margin),   f"Chi phí: {fmt_M(total_cost)}"),
-    (c4,"kc-amber", "Tỷ lệ giao trễ",
-         f'<span style="font-size:1.6rem;font-weight:800">{pct(avg_late)}</span> <span class="badge {late_cls}">{late_lbl}</span>',
-         "Mục tiêu: < 40%"),
-    (c5,"kc-red",   "Ship Variance",
-         f'<span style="font-size:1.6rem;font-weight:800">{avg_ship_var:+.2f}d</span> <span class="badge {var_cls}">{var_lbl}</span>',
-         f"Avg: {avg_ship_days:.1f} ngày"),
-    (c6,"kc-violet","ML Risk Rate",
-         f'<span style="font-size:1.6rem;font-weight:800">{pct(ml_risk_rate)}</span> <span class="badge bg-purple">ML</span>',
-         f"{ml_risk_count:,.0f}/{ml_total:,.0f} đơn có rủi ro"),
-]
-for col, cls, label, val, sub in kpi_defs:
-    with col:
+slide_size = 3
+slide_count = max(1, math.ceil(len(overview_metrics) / slide_size))
+if 'kpi_slide' not in st.session_state:
+    st.session_state.kpi_slide = 0
+
+current_slide = st.session_state.kpi_slide % slide_count
+slide_metrics = overview_metrics[current_slide * slide_size:(current_slide + 1) * slide_size]
+
+cols = st.columns(3, gap="small")
+for idx, (label, value, sub, cls) in enumerate(slide_metrics):
+    with cols[idx]:
         st.markdown(f"""
         <div class="kpi-card {cls}">
           <div class="kpi-eyebrow">{label}</div>
-          <div class="kpi-value">{val}</div>
+          <div class="kpi-value">{value}</div>
           <div class="kpi-sub">{sub}</div>
         </div>""", unsafe_allow_html=True)
+
+ctrl_col1, ctrl_col2, ctrl_col3 = st.columns([1, 6, 1], gap="small")
+with ctrl_col1:
+    if st.button("←", key="kpi_prev", help="Chuyển sang slide trước", use_container_width=True):
+        st.session_state.kpi_slide = (st.session_state.kpi_slide - 1) % slide_count
+        st.rerun()
+with ctrl_col3:
+    if st.button("→", key="kpi_next", help="Chuyển sang slide tiếp theo", use_container_width=True):
+        st.session_state.kpi_slide = (st.session_state.kpi_slide + 1) % slide_count
+        st.rerun()
+with ctrl_col2:
+    dot_html = "".join(
+        f'<span class="kpi-carousel-dot {"active" if i == current_slide else ""}" title="Slide {i + 1}"></span>'
+        for i in range(slide_count)
+    )
+    st.markdown(f"<div class='kpi-carousel-controls'><div class='kpi-carousel-dots'>{dot_html}</div></div>", unsafe_allow_html=True)
 
 st.markdown('<hr class="dash-hr">', unsafe_allow_html=True)
 
@@ -447,7 +603,7 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
     "Executive Summary",
     "ML và Dự báo Rủi ro",
     "Insights và Khuyến nghị",
-    " AI Chatbot",
+    "Chatbot",
 ])
 
 # ══════════════════════════════════════════════════════════════
@@ -469,7 +625,7 @@ with tab1:
             fig.update_traces(line_width=2.5, marker_size=6)
             fig.add_hline(y=0.55, line_dash="dot", line_color="#dc2626",
                           annotation_text="Ngưỡng cảnh báo 55%", annotation_position="right")
-            fig.update_layout(BASE, title=TITLE("Xu hướng tỷ lệ giao trễ theo tháng"),
+            fig.update_layout(**BASE, title=TITLE("Xu hướng tỷ lệ giao trễ theo tháng"),
                               hovermode="x unified", xaxis=XBASE, yaxis={**YBASE,"tickformat":".0%"},
                               height=400)
             st.plotly_chart(fig, use_container_width=True)
@@ -487,7 +643,7 @@ with tab1:
             ))
             fig.add_hline(y=0.55, line_dash="dot", line_color="#dc2626",
                           annotation_text="Ngưỡng 55%", annotation_position="right")
-            fig.update_layout(BASE, title=TITLE("Tỷ lệ trễ theo phương thức vận chuyển"),
+            fig.update_layout(**BASE, title=TITLE("Tỷ lệ trễ theo phương thức vận chuyển"),
                               xaxis=XBASE, yaxis={**YBASE,"tickformat":".0%","range":[0,1.15]},
                               height=400)
             st.plotly_chart(fig, use_container_width=True)
@@ -513,7 +669,7 @@ with tab1:
                 textinfo="percent+label",
                 hovertemplate="<b>%{label}</b><br>%{value:,} đơn — %{percent}<extra></extra>",
             ))
-            fig.update_layout(BASE, title=TITLE("Phân bổ trạng thái giao hàng"), showlegend=False, height=380)
+            fig.update_layout(**BASE, title=TITLE("Phân bổ trạng thái giao hàng"), showlegend=False, height=380)
             st.plotly_chart(fig, use_container_width=True)
 
         with col_r2:
@@ -528,7 +684,7 @@ with tab1:
                 hovertemplate="Market: <b>%{y}</b><br>Mode: <b>%{x}</b><br>Late rate: %{z:.1%}<extra></extra>",
                 colorbar=dict(tickformat=".0%", thickness=14, title="Trễ"),
             ))
-            fig.update_layout(BASE, title=TITLE("Bản đồ nhiệt: Tỷ lệ trễ × Market × Shipping Mode"),
+            fig.update_layout(**BASE, title=TITLE("Bản đồ nhiệt: Tỷ lệ trễ × Market × Shipping Mode"),
                               xaxis=XBASE, yaxis={**YBASE,"showgrid":False}, height=380)
             st.plotly_chart(fig, use_container_width=True)
 
@@ -556,7 +712,7 @@ with tab1:
                                            for r,s in zip(df_sla["avg_real"],df_sla["avg_sched"])],
                              opacity=0.4, yaxis="y2",
                              hovertemplate="<b>%{x}</b><br>Lệch: %{y:+.2f} ngày<extra></extra>"))
-        fig.update_layout(BASE, title=TITLE("Số ngày giao hàng thực tế vs cam kết SLA (cột = độ lệch)"),
+        fig.update_layout(**BASE, title=TITLE("Số ngày giao hàng thực tế vs cam kết SLA (cột = độ lệch)"),
                           xaxis=XBASE,
                           yaxis={**YBASE,"title":"Ngày"},
                           yaxis2=dict(overlaying="y",side="right",showgrid=False,
@@ -576,7 +732,7 @@ with tab1:
             avg_var=("avg_shipping_variance","mean"),
         )
         df_sla_tbl["SLA Status"] = df_sla_tbl["late_rate"].apply(
-            lambda x: "🔴 Nguy hiểm" if x>0.75 else ("🟡 Cần cải thiện" if x>0.50 else "🟢 Ổn định"))
+            lambda x: "Nguy hiểm" if x>0.75 else ("Cần cải thiện" if x>0.50 else "Ổn định"))
         df_sla_tbl["late_rate"] = df_sla_tbl["late_rate"].map("{:.1%}".format)
         df_sla_tbl["avg_real"]  = df_sla_tbl["avg_real"].map("{:.2f}".format)
         df_sla_tbl["avg_sched"] = df_sla_tbl["avg_sched"].map("{:.2f}".format)
@@ -624,8 +780,15 @@ with tab2:
                                  text=[f"{v:.1%}" for v in df_seg["avg_discount"]],
                                  textposition="outside",
                                  textfont=dict(size=12, color="#000000")))
-            fig.update_layout(BASE, title=TITLE("Profit Margin vs Discount Rate theo Customer Segment"),
-                              xaxis=XBASE, yaxis={**YBASE,"tickformat":".0%"}, barmode="group", height=400)
+            # FIX: đặt range y động có khoảng đệm để label "outside" không bị cắt
+            max_seg_val = max(
+                float(df_seg["profit_margin"].max()) if not df_seg.empty else 0.1,
+                float(df_seg["avg_discount"].max()) if not df_seg.empty else 0.1,
+            )
+            fig.update_layout(**BASE, title=TITLE("Profit Margin vs Discount Rate theo Customer Segment"),
+                              xaxis=XBASE,
+                              yaxis={**YBASE,"tickformat":".0%","range":[0, max(max_seg_val*1.35, 0.1)]},
+                              barmode="group", height=400)
             st.plotly_chart(fig, use_container_width=True)
 
         st.markdown('<hr class="dash-hr">', unsafe_allow_html=True)
@@ -678,7 +841,7 @@ with tab2:
         fig.add_trace(go.Bar(y=df_prod["product_name"], x=df_prod["total_profit"],
                              name="Lợi nhuận", orientation="h", marker_color="#059669",
                              hovertemplate="<b>%{y}</b><br>Lợi nhuận: $%{x:,.0f}<extra></extra>"))
-        fig.update_layout(BASE, title=TITLE("Top 15 sản phẩm theo doanh thu"), barmode="overlay",
+        fig.update_layout(**BASE, title=TITLE("Top 15 sản phẩm theo doanh thu"), barmode="overlay",
                           xaxis={**XBASE,"tickprefix":"$","tickformat":",.0f"},
                           yaxis={**YBASE,"showgrid":False}, height=480)
         st.plotly_chart(fig, use_container_width=True)
@@ -702,7 +865,7 @@ with tab3:
                 textinfo="percent+label",
                 hovertemplate="<b>%{label}</b><br>$%{value:,.0f}<br>%{percent}<extra></extra>",
             ))
-            fig.update_layout(BASE, title=TITLE("Tỷ trọng doanh thu theo thị trường"), height=400)
+            fig.update_layout(**BASE, title=TITLE("Tỷ trọng doanh thu theo thị trường"), height=400)
             st.plotly_chart(fig, use_container_width=True)
 
         with col_r:
@@ -722,8 +885,15 @@ with tab3:
                                  text=[f"{v:.1%}" for v in df_radar["profit_margin"]],
                                  textposition="outside",
                                  textfont=dict(size=12, color="#000000")))
+            # FIX: range y động có khoảng đệm để label "outside" không bị cắt
+            max_radar_val = max(
+                float(df_radar["late_rate"].max()) if not df_radar.empty else 0.1,
+                float(df_radar["profit_margin"].max()) if not df_radar.empty else 0.1,
+            )
             fig.update_layout(**BASE, title=TITLE("Late Rate vs Profit Margin theo thị trường"),
-                              xaxis=XBASE, yaxis={**YBASE,"tickformat":".0%"}, barmode="group", height=400)
+                              xaxis=XBASE,
+                              yaxis={**YBASE,"tickformat":".0%","range":[0, max(max_radar_val*1.35, 0.1)]},
+                              barmode="group", height=400)
             st.plotly_chart(fig, use_container_width=True)
 
         st.markdown('<hr class="dash-hr">', unsafe_allow_html=True)
@@ -745,7 +915,7 @@ with tab3:
         )
         df_tbl["profit_margin"] = df_tbl["total_profit"]/df_tbl["total_sales"]
         df_tbl["SLA Status"]    = df_tbl["late_rate"].apply(
-            lambda x: "🔴 Cao" if x>0.58 else ("🟡 TB" if x>0.50 else "🟢 Tốt"))
+            lambda x: "Cao" if x>0.58 else ("TB" if x>0.50 else "Tốt"))
         df_tbl["total_sales"]   = df_tbl["total_sales"].map("${:,.0f}".format)
         df_tbl["total_profit"]  = df_tbl["total_profit"].map("${:,.0f}".format)
         df_tbl["profit_margin"] = df_tbl["profit_margin"].map("{:.1%}".format)
@@ -762,7 +932,7 @@ with tab4:
         st.warning(" Không có dữ liệu.")
     else:
         st.markdown('<p class="sec-eyebrow">mart_executive_summary · business_health_flag · delivery_risk_level</p>'
-                    '<p class="sec-title">Tổng hợp điều hành — Monthly KPI Scorecard</p>', unsafe_allow_html=True)
+                    '<p class="sec-title">Tổng hợp điều hành — Bảng chỉ số KPI theo tháng</p>', unsafe_allow_html=True)
 
         df_rev = ex.groupby("order_year_month", as_index=False).agg(
             total_sales=("total_sales","sum"),
@@ -794,7 +964,7 @@ with tab4:
                                  name="Ship Variance (ngày)", marker_color="rgba(217,119,6,.3)", yaxis="y2"))
             fig.add_hline(y=0.55, line_dash="dot", line_color="#dc2626",
                           annotation_text="Ngưỡng 55%", annotation_position="right", yref="y")
-            fig.update_layout(BASE, title=TITLE("Late Rate & Shipping Variance theo tháng"),
+            fig.update_layout(**BASE, title=TITLE("Late Rate & Shipping Variance theo tháng"),
                               xaxis=XBASE,
                               yaxis=dict(showgrid=True,gridcolor="#edf1f7",tickformat=".0%",title="Late Rate"),
                               yaxis2=dict(overlaying="y",side="right",showgrid=False,title="Variance (ngày)"),
@@ -823,7 +993,7 @@ with tab4:
         ).sort_values("order_year_month", ascending=False).head(24)
         df_score["margin"] = df_score["profit"]/df_score["sales"]
         df_score["Tình trạng"] = df_score.apply(
-            lambda r: "🔴 Rủi ro" if r["late"]>0.58 else ("🟡 Cần theo dõi" if r["late"]>0.50 else "🟢 Ổn định"), axis=1)
+            lambda r: "Rủi ro" if r["late"]>0.58 else ("Cần theo dõi" if r["late"]>0.50 else "Ổn định"), axis=1)
         df_score["sales"]  = df_score["sales"].map("${:,.0f}".format)
         df_score["profit"] = df_score["profit"].map("${:,.0f}".format)
         df_score["margin"] = df_score["margin"].map("{:.1%}".format)
@@ -836,26 +1006,26 @@ with tab4:
 # TAB 5 ─ ML & PREDICTIVE ANALYTICS
 # ══════════════════════════════════════════════════════════════
 with tab5:
-    st.markdown('<p class="sec-eyebrow">mart_ml_delivery_risk_features · XGBoost · SHAP · Section 3.5 & 4.3</p>'
+    st.markdown('<p class="sec-eyebrow">mart_ml_delivery_risk_features · Gold Layer</p>'
                 '<p class="sec-title">Machine Learning — Dự báo rủi ro giao hàng trễ</p>', unsafe_allow_html=True)
 
-    st.markdown("""
+    st.markdown(f"""
     <div style='background:#f0f4f9;border:1px solid #dde6f0;border-radius:12px;padding:18px 22px;margin-bottom:28px;'>
         <div style='display:flex;gap:24px;flex-wrap:wrap;align-items:center;'>
-            <div><span style='font-weight:700;font-size:1.2rem;color:#0b1425;'>XGBoost Classifier</span>
-                  <span style='background:#6d28d9;color:#fff;padding:2px 12px;border-radius:999px;font-size:0.7rem;font-weight:700;margin-left:8px;'>AUC 80.29%</span></div>
-            <div style='color:#4a6077;font-size:0.85rem;'>Dự báo rủi ro giao hàng trễ từ dữ liệu đơn hàng</div>
-            <span class='badge bg-blue'>ML-Ops Ready</span>
+            <div><span style='font-weight:700;font-size:1.2rem;color:#0b1425;'>Gold Mart ML Features</span>
+                  <span style='background:#6d28d9;color:#fff;padding:2px 12px;border-radius:999px;font-size:0.7rem;font-weight:700;margin-left:8px;'>Orders: {ml_total:,}</span></div>
+            <div style='color:#4a6077;font-size:0.85rem;'>Dự báo rủi ro giao hàng trễ từ dữ liệu đơn hàng trong mart_ml_delivery_risk_features</div>
+            <span class='badge bg-blue'>From mart data</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
-    col_m1, col_m2, col_m3, col_m4 = st.columns(4, gap="medium")
+    col_m1, col_m2, col_m3 = st.columns(3, gap="medium")
     with col_m1:
         st.markdown(f"""
         <div class="ml-metric">
             <div class="ml-metric-val" style='color:#7c3aed;'>{ml_total:,.0f}</div>
-            <div class="ml-metric-label">Tổng số mẫu</div>
+            <div class="ml-metric-label">Tổng số đơn hàng</div>
             <div class="ml-metric-desc">Đơn hàng có đủ feature</div>
         </div>
         """, unsafe_allow_html=True)
@@ -875,92 +1045,128 @@ with tab5:
             <div class="ml-metric-desc">Không có rủi ro trễ</div>
         </div>
         """, unsafe_allow_html=True)
-    with col_m4:
-        st.markdown(f"""
-        <div class="ml-metric">
-            <div class="ml-metric-val" style='color:#d97706;'>80.29%</div>
-            <div class="ml-metric-label">ROC-AUC Score</div>
-            <div class="ml-metric-desc">XGBoost CV = 5 folds</div>
-        </div>
-        """, unsafe_allow_html=True)
 
     st.markdown('<hr class="dash-hr">', unsafe_allow_html=True)
 
     col_l, col_r = st.columns(2, gap="large")
     with col_l:
         st.markdown('<p class="sec-eyebrow">Phân phối rủi ro theo biến số</p>'
-                    '<p class="sec-title">Tỷ lệ rủi ro theo phân khúc & khu vực</p>', unsafe_allow_html=True)
-        
-        df_risk_seg = ml.groupby("customer_segment", as_index=False)["target_late_delivery_risk"].mean()
-        fig = px.bar(df_risk_seg, x="customer_segment", y="target_late_delivery_risk",
-                     color="target_late_delivery_risk",
-                     color_continuous_scale=[[0,"#059669"],[0.4,"#d97706"],[1,"#dc2626"]],
-                     labels={"customer_segment":"Customer Segment","target_late_delivery_risk":"Tỷ lệ rủi ro"},
-                     text=[f"{v:.1%}" for v in df_risk_seg["target_late_delivery_risk"]],
-                     text_auto=True)
-        fig.update_layout(**BASE, title=TITLE("Tỷ lệ rủi ro theo phân khúc khách hàng"),
-                          xaxis=XBASE, yaxis={**YBASE,"tickformat":".0%","range":[0,0.8]},
+                    '<p class="sec-title">Tỷ lệ rủi ro theo phân khúc khách hàng</p>', unsafe_allow_html=True)
+
+        df_risk_seg = (
+            ml.groupby("customer_segment", as_index=False)["target_late_delivery_risk"]
+              .mean()
+              .sort_values("target_late_delivery_risk", ascending=False)
+        )
+        fig = px.bar(
+            df_risk_seg,
+            x="customer_segment",
+            y="target_late_delivery_risk",
+            color="target_late_delivery_risk",
+            color_continuous_scale=[[0, "#059669"], [0.45, "#d97706"], [1, "#dc2626"]],
+            labels={"customer_segment": "Phân khúc khách hàng", "target_late_delivery_risk": "Tỷ lệ rủi ro"},
+            text=[f"{v:.1%}" for v in df_risk_seg["target_late_delivery_risk"]],
+            text_auto=True,
+        )
+        # FIX: range y động thay cho [0, 0.8] cố định — tránh cắt label khi giá trị gần trần
+        max_seg_risk = float(df_risk_seg["target_late_delivery_risk"].max()) if not df_risk_seg.empty else 0.1
+        fig.update_layout(**BASE)
+        fig.update_layout(title=TITLE("Tỷ lệ rủi ro theo phân khúc khách hàng"), xaxis=XBASE,
+                          yaxis={**YBASE, "tickformat": ".0%", "range": [0, max(max_seg_risk*1.3, 0.1)]},
                           height=380, showlegend=False)
         st.plotly_chart(fig, use_container_width=True)
 
     with col_r:
-        st.markdown('<p class="sec-eyebrow">Phân phối rủi ro theo shipping_mode</p>'
-                    '<p class="sec-title">Phương thức vận chuyển nào rủi ro nhất?</p>', unsafe_allow_html=True)
-        
-        df_risk_mode = ml.groupby("shipping_mode", as_index=False)["target_late_delivery_risk"].mean()
-        colors_mode = ["#dc2626" if r>0.7 else "#f97316" if r>0.5 else "#059669" for r in df_risk_mode["target_late_delivery_risk"]]
-        fig = go.Figure(go.Bar(x=df_risk_mode["shipping_mode"], y=df_risk_mode["target_late_delivery_risk"],
-                               marker_color=colors_mode,
-                               text=[f"{v:.1%}" for v in df_risk_mode["target_late_delivery_risk"]],
-                               textposition="outside",
-                               textfont=dict(size=12, color="#000000"),
-                               hovertemplate="<b>%{x}</b><br>Rủi ro: %{y:.1%}<extra></extra>"))
-        fig.update_layout(**BASE, title=TITLE("Tỷ lệ rủi ro theo phương thức vận chuyển"),
-                          xaxis=XBASE, yaxis={**YBASE,"tickformat":".0%","range":[0,0.8]},
+        st.markdown('<p class="sec-eyebrow">Phân phối rủi ro theo phương thức vận chuyển</p>'
+                    '<p class="sec-title">Địa phương nào có rủi ro cao nhất?</p>', unsafe_allow_html=True)
+
+        df_risk_mode = (
+            ml.groupby("shipping_mode", as_index=False)["target_late_delivery_risk"]
+              .mean()
+              .sort_values("target_late_delivery_risk", ascending=False)
+        )
+        colors_mode = ["#dc2626" if r > 0.7 else "#f97316" if r > 0.5 else "#059669" for r in df_risk_mode["target_late_delivery_risk"]]
+        fig = go.Figure(go.Bar(
+            x=df_risk_mode["shipping_mode"],
+            y=df_risk_mode["target_late_delivery_risk"],
+            marker_color=colors_mode,
+            text=[f"{v:.1%}" for v in df_risk_mode["target_late_delivery_risk"]],
+            textposition="outside",
+            textfont=dict(size=12, color="#000000"),
+            hovertemplate="<b>%{x}</b><br>Rủi ro: %{y:.1%}<extra></extra>",
+        ))
+        # FIX: range y động thay cho [0, 0.8] cố định — tránh cắt label khi giá trị gần trần
+        max_mode_risk = float(df_risk_mode["target_late_delivery_risk"].max()) if not df_risk_mode.empty else 0.1
+        fig.update_layout(**BASE)
+        fig.update_layout(title=TITLE("Tỷ lệ rủi ro theo phương thức vận chuyển"), xaxis=XBASE,
+                          yaxis={**YBASE, "tickformat": ".0%", "range": [0, max(max_mode_risk*1.3, 0.1)]},
                           height=380)
         st.plotly_chart(fig, use_container_width=True)
 
+    # ── FIX/BỔ SUNG: Khối "risk band cards" — trước đây CSS .risk-card /
+    # .risk-very-high/high/medium/watch/low được định nghĩa nhưng KHÔNG hề
+    # được sử dụng ở bất kỳ đâu trong code. Khối dưới đây tận dụng đúng các
+    # class đó, và chỉ dùng số liệu tỷ lệ rủi ro trung bình THẬT đã tính từ
+    # mart_ml_delivery_risk_features (df_risk_mode ở trên) — không tự bịa
+    # hay tính điểm dự báo mới.
+    st.markdown('<hr class="dash-hr">', unsafe_allow_html=True)
+    st.markdown('<p class="sec-eyebrow">Phân loại mức độ rủi ro · shipping_mode</p>'
+                '<p class="sec-title">Xếp hạng rủi ro theo phương thức vận chuyển (dữ liệu thực từ mart)</p>', unsafe_allow_html=True)
+
+    def risk_band(rate):
+        if rate > 0.70: return "risk-very-high", "Rất cao"
+        if rate > 0.55: return "risk-high", "Cao"
+        if rate > 0.40: return "risk-medium", "Trung bình"
+        if rate > 0.25: return "risk-watch", "Cần theo dõi"
+        return "risk-low", "Thấp"
+
+    if not df_risk_mode.empty:
+        risk_cols = st.columns(len(df_risk_mode), gap="small")
+        for i, (_, row) in enumerate(df_risk_mode.iterrows()):
+            band_cls, band_lbl = risk_band(row["target_late_delivery_risk"])
+            with risk_cols[i]:
+                st.markdown(f"""
+                <div class="risk-card {band_cls}">
+                    <div class="risk-label">{band_lbl}</div>
+                    <div class="risk-range">{row['shipping_mode']}</div>
+                    <div class="risk-desc">Tỷ lệ rủi ro trung bình: <b>{row['target_late_delivery_risk']:.1%}</b><br>Nguồn: mart_ml_delivery_risk_features</div>
+                </div>
+                """, unsafe_allow_html=True)
+    else:
+        st.info("Không có đủ dữ liệu trong mart để phân loại mức độ rủi ro.")
+
     st.markdown('<hr class="dash-hr">', unsafe_allow_html=True)
 
-    st.markdown('<p class="sec-eyebrow">SHAP Explainability · Feature Importance</p>'
-                '<p class="sec-title">Top 8 yếu tố ảnh hưởng đến rủi ro giao hàng trễ</p>', unsafe_allow_html=True)
-    
-    shap_features = [
-        ("days_for_shipment_scheduled", 0.28, 1),
-        ("quantity", 0.18, 1),
-        ("profit_ratio", 0.12, -1),
-        ("discount_rate", 0.10, 1),
-        ("product_unit_price", 0.09, -1),
-        ("order_day_of_week", 0.08, 1),
-        ("sales_amount", 0.07, 1),
-        ("order_month", 0.06, -1),
-    ]
-    
-    for name, imp, direction in shap_features:
-        pct_val = imp * 100
-        bar_color = "#dc2626" if direction > 0 else "#059669"
-        cls = "shap-bar-pos" if direction > 0 else "shap-bar-neg"
-        label = "↑ rủi ro" if direction > 0 else "↓ rủi ro"
+    st.markdown('<p class="sec-eyebrow">Risk drivers from mart data</p>'
+                '<p class="sec-title">Top 8 yếu tố có mức độ phân biệt rủi ro cao nhất</p>', unsafe_allow_html=True)
+
+    if not risk_feature_df.empty:
+        for _, row in risk_feature_df.iterrows():
+            pct_val = min(100.0, max(8.0, float(row["risk_gap"]) * 100.0))
+            cls = "shap-bar-pos" if row["risk_gap"] >= 0 else "shap-bar-neg"
+            label = "↑ rủi ro" if row["risk_gap"] >= 0 else "↓ rủi ro"
+            st.markdown(f"""
+            <div class="shap-row">
+                <div class="shap-feat">{row['feature']}</div>
+                <div class="shap-bar-wrap"><div class="{cls}" style="width:{pct_val:.1f}%;"></div></div>
+                <div class="shap-val">{pct_val:.1f}%</div>
+                <div style='font-size:0.7rem;color:#4a6077;min-width:60px;'>{label}</div>
+            </div>
+            """, unsafe_allow_html=True)
+    else:
+        st.info("Không có đủ dữ liệu trong mart để tính mức độ phân biệt rủi ro cho các biến hiện tại.")
+
+    if not risk_feature_df.empty:
+        top_feature = risk_feature_df.iloc[0]["feature"]
         st.markdown(f"""
-        <div class="shap-row">
-            <div class="shap-feat">{name}</div>
-            <div class="shap-bar-wrap"><div class="{cls}" style="width:{pct_val:.1f}%;"></div></div>
-            <div class="shap-val">{pct_val:.1f}%</div>
-            <div style='font-size:0.7rem;color:#4a6077;min-width:60px;'>{label}</div>
+        <div style='background:#f0f4f9;border-radius:8px;padding:16px 20px;margin-top:16px;border-left:4px solid #7c3aed;'>
+            <div style='font-size:0.75rem;color:#4a6077;line-height:1.8;'>
+                <b style='color:#0b1425;'>Mart interpretation:</b>
+                Biến <b>{top_feature}</b> cho thấy mức khác biệt rủi ro lớn nhất giữa các nhóm trong bảng <b>mart_ml_delivery_risk_features</b>.
+                Các giá trị dưới đây được tính trực tiếp từ tỷ lệ rủi ro trung bình của từng nhóm trong mart.
+            </div>
         </div>
         """, unsafe_allow_html=True)
-    
-    st.markdown(f"""
-    <div style='background:#f0f4f9;border-radius:8px;padding:16px 20px;margin-top:16px;border-left:4px solid #7c3aed;'>
-        <div style='font-size:0.75rem;color:#4a6077;line-height:1.8;'>
-            <b style='color:#0b1425;'> SHAP Interpretation:</b>
-            <span style='color:#dc2626;'>■</span> <span style='color:#059669;'>■</span>
-            Dựa trên phân tích SHAP từ mô hình XGBoost, biến <b>days_for_shipment_scheduled</b> 
-            (thời gian vận chuyển dự kiến) có tác động mạnh nhất đến rủi ro giao hàng trễ. 
-            Số lượng đơn hàng (<b>quantity</b>) và <b>profit_ratio</b> cũng là các yếu tố quan trọng.
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════════
 # TAB 6 ─ INSIGHTS & RECOMMENDATIONS
@@ -971,79 +1177,79 @@ with tab6:
 
     col_i1, col_i2 = st.columns(2, gap="large")
     with col_i1:
-        max_late = max(dp.groupby("shipping_mode")["late_delivery_rate"].mean()) if not dp.empty else 0
         st.markdown(f"""
         <div class="insight-card">
             <div class="i-title"> Hiệu suất giao hàng</div>
             <div class="i-body">
                 Tỷ lệ giao hàng trễ trung bình là <b>{avg_late:.1%}</b> – đang ở mức <b>{late_lbl}</b>.
-                Phương thức <b>Standard</b> có tỷ lệ trễ cao nhất (> {max_late:.1%})
+                Phương thức <b>{top_shipping_mode}</b> có tỷ lệ trễ cao nhất (<b>{top_shipping_rate:.1%}</b>).
             </div>
             <div class="i-rec">
-                  <b>Khuyến nghị:</b> Ưu tiên cải thiện quy trình vận chuyển Standard, 
-                đánh giá lại nhà cung cấp dịch vụ.
+                  <b>Khuyến nghị:</b> Ưu tiên cải thiện quy trình vận chuyển cho <b>{top_shipping_mode}</b>.
             </div>
         </div>
         """, unsafe_allow_html=True)
         
-        st.markdown("""
+        st.markdown(f"""
         <div class="insight-card">
             <div class="i-title"> Tối ưu chiết khấu</div>
             <div class="i-body">
-                Phân khúc <b>Corporate</b> có profit margin cao nhưng discount rate thấp.
-                Trong khi <b>Consumer</b> được hưởng discount cao nhưng margin thấp.
+                Phân khúc <b>{top_margin_segment}</b> có profit margin cao nhất, trong khi <b>{top_discount_segment}</b> có chiết khấu trung bình cao nhất.
             </div>
             <div class="i-rec">
-                  <b>Khuyến nghị:</b> Tái cấu trúc chính sách discount cho Consumer để tối ưu lợi nhuận.
+                  <b>Khuyến nghị:</b> Tái cấu trúc chính sách discount cho <b>{top_discount_segment}</b> để tối ưu lợi nhuận.
             </div>
         </div>
         """, unsafe_allow_html=True)
 
     with col_i2:
-        st.markdown("""
+        st.markdown(f"""
         <div class="insight-card">
             <div class="i-title"> Phân tích thị trường</div>
             <div class="i-body">
-                Thị trường <b>APAC</b> có doanh thu cao nhất nhưng tỷ lệ trễ cũng cao.
-                <b>Europe</b> có tỷ lệ trễ thấp nhất.
+                Thị trường <b>{top_revenue_market}</b> có doanh thu cao nhất, trong khi <b>{lowest_late_market}</b> có tỷ lệ trễ thấp nhất theo mart executive summary.
             </div>
             <div class="i-rec">
-                  <b>Khuyến nghị:</b> Áp dụng mô hình vận hành của Europe cho APAC để tăng hiệu quả.
+                  <b>Khuyến nghị:</b> Áp dụng mô hình vận hành của <b>{lowest_late_market}</b> cho <b>{top_revenue_market}</b> để tăng hiệu quả.
             </div>
         </div>
         """, unsafe_allow_html=True)
         
-        st.markdown("""
+        st.markdown(f"""
         <div class="insight-card">
             <div class="i-title"> ML Risk Prediction</div>
             <div class="i-body">
-                Mô hình XGBoost đạt ROC-AUC <b>80.29%</b>. 
-                Yếu tố quan trọng nhất: <b>days_for_shipment_scheduled</b> và <b>quantity</b>.
+                Bảng <b>mart_ml_delivery_risk_features</b> hiện có <b>{ml_total:,}</b> hàng và <b>{ml_risk_count:,}</b> hàng thuộc nhóm rủi ro cao.
+                Yếu tố phân biệt rủi ro lớn nhất hiện tại là <b>{risk_feature_df.iloc[0]['feature'] if not risk_feature_df.empty else 'N/A'}</b>.
             </div>
             <div class="i-rec">
-                 💡 <b>Khuyến nghị:</b> Tích hợp ML vào hệ thống đặt hàng để cảnh báo rủi ro trước 7 ngày.
+                <b>Khuyến nghị:</b> Tích hợp dữ liệu ML mart này vào quy trình đặt hàng để cảnh báo rủi ro sớm.
             </div>
         </div>
         """, unsafe_allow_html=True)
 
     st.markdown('<hr class="dash-hr">', unsafe_allow_html=True)
 
-    st.markdown('<p class="sec-eyebrow">Action Priority Matrix</p>'
+    st.markdown('<p class="sec-eyebrow">Ma trận ưu tiên hành động</p>'
                 '<p class="sec-title">Ma trận ưu tiên hành động</p>', unsafe_allow_html=True)
     
-    priority_data = pd.DataFrame({
-        "Khu vực": ["APAC - Standard", "LATAM - Standard", "APAC - Express", "EU - Standard", "APAC - Standard"],
-        "Tỷ lệ trễ": [0.45, 0.52, 0.38, 0.18, 0.45],
-        "Doanh thu": [5000000, 3200000, 2800000, 4500000, 5000000],
-        "Tác động": ["Cao", "Trung bình", "Cao", "Cao", "Cao"],
-        "Khó khăn": ["Trung bình", "Thấp", "Cao", "Thấp", "Trung bình"],
-    })
+    priority_data = (
+        dp.groupby(["market", "shipping_mode"], as_index=False)
+          .agg(
+              Tỷ_lệ_trễ=("late_delivery_rate", "mean"),
+              Doanh_thu=("total_sales", "sum"),
+              Đơn_hàng=("order_count", "sum"),
+          )
+          .assign(Khu_vực=lambda d: d["market"] + " - " + d["shipping_mode"])
+          .sort_values(["Tỷ_lệ_trễ", "Doanh_thu"], ascending=[False, False])
+          .head(8)
+    )
     
-    fig = px.scatter(priority_data, x="Tỷ lệ trễ", y="Doanh thu",
-                     size="Doanh thu", color="Khu vực",
-                     hover_name="Khu vực",
-                     text="Khu vực",
-                     labels={"Tỷ lệ trễ":"Tỷ lệ giao hàng trễ", "Doanh thu":"Doanh thu (USD)"},
+    fig = px.scatter(priority_data, x="Tỷ_lệ_trễ", y="Doanh_thu",
+                     size="Doanh_thu", color="Khu_vực",
+                     hover_name="Khu_vực",
+                     text="Khu_vực",
+                     labels={"Tỷ_lệ_trễ":"Tỷ lệ giao hàng trễ", "Doanh_thu":"Doanh thu (USD)"},
                      color_discrete_sequence=PAL)
     fig.add_hline(y=4000000, line_dash="dash", line_color="#64748b", opacity=0.5)
     fig.add_vline(x=0.35, line_dash="dash", line_color="#64748b", opacity=0.5)
@@ -1058,29 +1264,30 @@ with tab6:
                       legend=dict(x=0.75, y=1.05, orientation="h", bgcolor="rgba(255,255,255,0.8)"))
     st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown("""
+    risk_feature_label = risk_feature_df.iloc[0]["feature"] if not risk_feature_df.empty else "N/A"
+    st.markdown(f"""
     <div style='background:#fff;border:1px solid #dde6f0;border-radius:12px;padding:20px 24px;margin-top:16px;'>
-        <div style='font-weight:700;color:#0b1425;font-size:1rem;margin-bottom:12px;'>📋 Action Plan</div>
+        <div style='font-weight:700;color:#0b1425;font-size:1rem;margin-bottom:12px;'>Kế hoạch hành động</div>
         <div style='display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:0.82rem;color:#4a6077;line-height:1.8;'>
             <div style='background:#f0fdf4;padding:12px 16px;border-radius:8px;border-left:3px solid #059669;'>
-                <b style='color:#0b1425;'>🔴 Khẩn cấp:</b><br>
-                Tối ưu Standard shipping tại APAC<br>
-                <span style='font-size:0.7rem;color:#6a85a0;'>Giảm 15% trễ trong Q3</span>
+                <b style='color:#0b1425;'>Khẩn cấp:</b><br>
+                Tối ưu {top_shipping_mode} tại {top_revenue_market}<br>
+                <span style='font-size:0.7rem;color:#6a85a0;'>Tỷ lệ trễ hiện tại: {top_shipping_rate:.1%}</span>
             </div>
             <div style='background:#fffbeb;padding:12px 16px;border-radius:8px;border-left:3px solid #d97706;'>
-                <b style='color:#0b1425;'>🟡 Quan trọng:</b><br>
-                Điều chỉnh policy discount cho Consumer<br>
-                <span style='font-size:0.7rem;color:#6a85a0;'>Tăng margin 5%</span>
+                <b style='color:#0b1425;'>Quan trọng:</b><br>
+                Điều chỉnh policy discount cho {top_discount_segment}<br>
+                <span style='font-size:0.7rem;color:#6a85a0;'>Tập trung vào phân khúc có discount cao</span>
             </div>
             <div style='background:#eff6ff;padding:12px 16px;border-radius:8px;border-left:3px solid #1a6fdc;'>
-                <b style='color:#0b1425;'>🔵 Chiến lược:</b><br>
-                Mở rộng mô hình ML sang các thị trường khác<br>
-                <span style='font-size:0.7rem;color:#6a85a0;'>Nâng cấp MLOps pipeline</span>
+                <b style='color:#0b1425;'>Chiến lược:</b><br>
+                Mở rộng dữ liệu ML mart cho các thị trường khác<br>
+                <span style='font-size:0.7rem;color:#6a85a0;'>Tăng chất lượng dự báo rủi ro</span>
             </div>
             <div style='background:#f5f3ff;padding:12px 16px;border-radius:8px;border-left:3px solid #7c3aed;'>
-                <b style='color:#0b1425;'>🟣 Phân tích:</b><br>
-                SHAP Deep Dive: top 3 features<br>
-                <span style='font-size:0.7rem;color:#6a85a0;'>Báo cáo kỹ thuật</span>
+                <b style='color:#0b1425;'>Phân tích:</b><br>
+                Theo dõi biến {risk_feature_label} trong mart<br>
+                <span style='font-size:0.7rem;color:#6a85a0;'>Giữ nguyên nguồn dữ liệu từ mart</span>
             </div>
         </div>
     </div>
@@ -1155,11 +1362,11 @@ with tab7:
     st.markdown("""
     <div style='background: linear-gradient(135deg, #4c1d95 0%, #1e3a8a 100%); border-radius:14px; padding:24px 28px; margin-bottom:24px; border:1px solid #4338ca; box-shadow:0 4px 12px rgba(76,29,149,0.15)'>
       <div style='display:flex; align-items:center; gap:16px'>
-        <div style='background:rgba(255,255,255,0.12); width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.6rem; border:1px solid rgba(255,255,255,0.2)'>🤖</div>
+        <div style='background:rgba(255,255,255,0.12); width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.05rem; font-weight:700; border:1px solid rgba(255,255,255,0.2); color:#f0f8ff'>AI</div>
         <div>
           <b style='color:#f0f8ff;font-size:0.95rem'>Trợ lý logistics thông minh</b><br>
           Được cung cấp ngữ cảnh đầy đủ từ <b style='color:#4ab3f0'>Gold Layer</b> — KPI tổng quan, hiệu suất giao hàng, doanh thu theo thị trường và kết quả ML dự báo rủi ro. Đặt câu hỏi bằng <b>tiếng Việt hoặc tiếng Anh</b>.<br>
-          <span style='color:#a78bfa'> Groq LLaMA-3.3-70B · Streaming · Retry tự động · Export lịch sử</span>
+          <span style='color:#a78bfa'>Groq LLaMA-3.3-70B · Phản hồi theo ngữ cảnh · Retry tự động</span>
         </div>
       </div>
     </div>""", unsafe_allow_html=True)
@@ -1184,9 +1391,14 @@ with tab7:
 
     # ── Context Builder
     ctx_parts = []
+    if isinstance(date_range, tuple) and len(date_range) == 2:
+        date_label = f"{date_range[0]} → {date_range[1]}"
+    else:
+        date_label = str(date_range)
+
     ctx_parts.append(f"""=== THÔNG TIN TỔNG QUAN HỆ THỐNG (BỘ LỌC HIỆN TẠI) ===
 - Thị trường lựa chọn: {sel_market}
-- Khoảng thời gian: {date_range[0]} → {date_range[1] if len(date_range) > 1 else date_range[0]}
+- Khoảng thời gian: {date_label}
 - Phương thức vận chuyển: {sel_mode}
 - Phân khúc khách hàng: {sel_seg}
 - Tổng doanh thu: {fmt_M(total_sales)}
@@ -1304,7 +1516,7 @@ with tab7:
             if not st.session_state["chatbot_messages"]:
                 st.markdown("""
                 <div style='text-align:center;padding:52px 20px;color:#8a9fb0'>
-                  <div style='font-size:3rem;margin-bottom:12px'>💬</div>
+                  <div style='font-size:1.4rem;margin-bottom:12px;font-weight:700;color:#4a5568'>Chat</div>
                   <b style='color:#4a5568'>Chưa có tin nhắn nào</b><br>
                   <span style='font-size:0.8rem'>Hãy chọn một câu hỏi nhanh phía trên hoặc nhập nội dung vào hộp thoại bên dưới để bắt đầu thảo luận với Trợ lý AI.</span>
                 </div>""", unsafe_allow_html=True)
@@ -1315,7 +1527,7 @@ with tab7:
                         st.markdown(f"""
                         <div class="chat-row user">
                           <div class="msg-bubble user">
-                            <span style="font-size:0.7rem;opacity:0.75;display:block;margin-bottom:3px;text-align:right">👤 Bạn • {msg.get('timestamp','')}</span>
+                            <span style="font-size:0.7rem;opacity:0.75;display:block;margin-bottom:3px;text-align:right">Bạn • {msg.get('timestamp','')}</span>
                             {msg['content']}
                           </div>
                         </div>""", unsafe_allow_html=True)
@@ -1323,26 +1535,32 @@ with tab7:
                         st.markdown(f"""
                         <div class="chat-row bot">
                           <div class="msg-bubble bot">
-                            <span style="font-size:0.7rem;color:#7c3aed;font-weight:700;display:block;margin-bottom:3px">🤖 Trợ lý AI • {msg.get('timestamp','')}</span>
+                            <span style="font-size:0.7rem;color:#7c3aed;font-weight:700;display:block;margin-bottom:3px">Trợ lý AI • {msg.get('timestamp','')}</span>
                             {msg['content']}
                           </div>
                         </div>""", unsafe_allow_html=True)
                         
+                        # FIX: Nút feedback trước đây dùng <button onclick="return false;">
+                        # nên bấm vào KHÔNG có tác dụng gì (bug UI thật). Thay bằng
+                        # st.button thật, có lưu trạng thái vào session_state.
                         fb_state = st.session_state["chatbot_feedback"].get(idx, None)
-                        c_up = "active-up" if fb_state == "up" else ""
-                        c_down = "active-down" if fb_state == "down" else ""
-                        
-                        st.markdown(f"""
-                        <div class="fb-row">
-                          <button class="fb-btn {c_up}" onclick="return false;">👍 Hữu ích</button>
-                          <button class="fb-btn {c_down}" onclick="return false;">👎 Chưa tốt</button>
-                        </div>""", unsafe_allow_html=True)
+                        fb_c1, fb_c2, fb_c3 = st.columns([1, 1, 8])
+                        with fb_c1:
+                            up_label = "✅ 👍" if fb_state == "up" else "👍 Hữu ích"
+                            if st.button(up_label, key=f"fb_up_{idx}", use_container_width=True):
+                                st.session_state["chatbot_feedback"][idx] = "up"
+                                st.rerun()
+                        with fb_c2:
+                            down_label = "✅ 👎" if fb_state == "down" else "👎 Chưa tốt"
+                            if st.button(down_label, key=f"fb_down_{idx}", use_container_width=True):
+                                st.session_state["chatbot_feedback"][idx] = "down"
+                                st.rerun()
                         
                         if "followups" in msg and msg["followups"]:
                             st.markdown('<div class="followup-row">', unsafe_allow_html=True)
                             for f_idx, fu in enumerate(msg["followups"]):
                                 if st.button(
-                                    f"💡 {fu}",
+                                    f"{fu}",
                                     key=f"fu_{idx}_{f_idx}",
                                     use_container_width=True,
                                     help=fu,
