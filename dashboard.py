@@ -1254,14 +1254,15 @@ with tab6:
     fig.add_hline(y=4000000, line_dash="dash", line_color="#64748b", opacity=0.5)
     fig.add_vline(x=0.35, line_dash="dash", line_color="#64748b", opacity=0.5)
     fig.add_annotation(x=0.15, y=5500000, text=" Ưu tiên cao", showarrow=False,
-                       font=dict(size=12, color="#059669", weight=700))
+                       font=dict(size=12, color="#059669", weight=700), yref="y")
     fig.add_annotation(x=0.50, y=2000000, text="🔍 Cần xem xét", showarrow=False,
-                       font=dict(size=12, color="#d97706", weight=700))
+                       font=dict(size=12, color="#d97706", weight=700), yref="y")
+    fig.update_traces(textposition="top center", textfont=dict(size=10), marker=dict(line=dict(width=1, color="#ffffff")))
     fig.update_layout(**BASE, title=TITLE("Ma trận ưu tiên: Tỷ lệ trễ vs Doanh thu"),
                       xaxis={**XBASE,"tickformat":".0%","range":[0,0.6]},
                       yaxis={**YBASE,"tickprefix":"$","tickformat":",.0f"},
-                      height=450, showlegend=True,
-                      legend=dict(x=0.75, y=1.05, orientation="h", bgcolor="rgba(255,255,255,0.8)"))
+                      height=480, showlegend=True,
+                      legend=dict(x=0.5, y=1.12, xanchor="center", orientation="h", bgcolor="rgba(255,255,255,0.8)"))
     st.plotly_chart(fig, use_container_width=True)
 
     risk_feature_label = risk_feature_df.iloc[0]["feature"] if not risk_feature_df.empty else "N/A"
